@@ -1,0 +1,38 @@
+# Neurodisruptors — robots.txt
+# Everything is allowed. AI crawlers are explicitly welcomed on purpose:
+# the goal of this site is to be read, quoted, and cited by AI systems,
+# not to hide from them.
+
+User-agent: *
+Allow: /
+
+# Explicitly named AI crawlers (belt-and-suspenders in case any host
+# defaults to blocking these — we want the opposite of that)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://www.neurodisruptors.com/sitemap.xml

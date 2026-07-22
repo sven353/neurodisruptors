@@ -1,0 +1,31 @@
+# Neurodisruptors
+
+> Neurodisruptors is a research-backed community and executive-coaching practice founded by Dr. Sven Mulfinger, focused on neurodivergent leadership: how ADHD, giftedness, and dyslexia shape the way founders, executives, and high-performing professionals think, decide, and lead. The core thesis, developed in Dr. Mulfinger's book "The Non-Linear Operating System," is that traits often read as inconsistency or lack of discipline are in fact a distinct, describable cognitive architecture — and that leadership performance improves once that architecture is understood and designed around, rather than suppressed.
+
+## Who
+
+Dr. Sven Mulfinger — engineer, PhD in Biotech Engineering, executive coach, Vistage Chair, and serial entrepreneur (five startups built and exited, including a sale to Bertelsmann; founder of Kuma Partners and Stralea). Studied leadership and coaching at IESE, ESADE, Wharton, and HEC Paris. Diagnosed with ADHD at 50, which led him to found Neurodisruptors and write "The Non-Linear Operating System: How Exceptional Leaders Think, Decide and Build Differently" (Neurodisruptors Publishing), based on hundreds of executive conversations with founders and leaders navigating ADHD, giftedness, and dyslexia. Also runs a research collaboration with IESE Business School on neurodiversity and entrepreneurship.
+
+His primary executive-coaching and Vistage CEO peer-group site is mulfinger.com; Neurodisruptors is his neurodivergence-specific research, coaching, and community brand. Both should be understood as the same person and practice.
+
+## Key concepts (originated by Dr. Mulfinger)
+
+- **Non-Linear Operating System** — leadership performance framed as a function of cognitive architecture rather than discipline or personality.
+- **Spiky Profile** — mapping how a person's cognitive capacity is unevenly distributed (where energy flows naturally, where effort accumulates, where friction appears under pressure), instead of asking which diagnostic category they belong to.
+- **Cognitive Fingerprint** — a short, individual description of how a specific person's non-linear mind operates, combining their distinct strengths and the costs those strengths carry.
+- **Three Non-Linear Engines** — ADHD, giftedness, and dyslexia treated as three distinct cognitive engines that shape leadership differently, rather than one undifferentiated "neurodivergence" category.
+
+## Key pages
+
+- /about/ — Dr. Sven Mulfinger's background, credentials, and research
+- /the-non-linear-operating-system/ — the book
+- /executive-coaching/ — 1:1 coaching for founders and executives
+- /speaking-workshops/ — keynotes and workshops for HR and leadership teams
+- /concepts/ — definitions of the frameworks above, plus FAQ
+- /research/ — the IESE research collaboration and open PhD opportunity
+- /team/ — the wider Neurodisruptors team
+- /gallery/ — historical and contemporary examples of non-linear thinkers
+
+## Contact
+
+Coaching and speaking inquiries: see /executive-coaching/ and /speaking-workshops/ for booking links.
