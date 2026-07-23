@@ -355,11 +355,51 @@ section h2 {
   margin-top: 18px;
 }
 
-.thumb-row img {
+.thumb-row .thumb {
+  position: relative;
+}
+
+.thumb-row .thumb img {
   border-radius: 8px;
   width: 100%;
   height: 80px;
   object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+
+.thumb-tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-align: left;
+  z-index: 70;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+}
+
+.thumb-tooltip strong {
+  display: block;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+
+.thumb:hover .thumb-tooltip,
+.thumb:focus-within .thumb-tooltip,
+.thumb:focus .thumb-tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* ---------- Buttons ---------- */
