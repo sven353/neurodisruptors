@@ -194,8 +194,21 @@
     <div class="container center">
       <h2>Join our next Mastermind for non-linear minds</h2>
       <p class="lede">Monthly sessions. This is an exclusive, invitation-only event.</p>
-      <p>Please contact us through LinkedIn to request an invitation.</p>
-      <a class="btn btn-primary" href="https://www.linkedin.com/in/svenmulfinger" target="_blank" rel="noopener">Tell me more...</a>
+      <p>Tell us a bit about you and we'll follow up about the next session.</p>
+      <!--
+        Formspree setup: replace YOUR_FORM_ID below. See README.md for steps.
+      -->
+      <form class="stacked" action="https://formspree.io/f/mzdnavjj" method="POST" style="margin-left:auto;margin-right:auto;text-align:left;">
+        <div>
+          <label for="mm-name">Name *</label>
+          <input id="mm-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="mm-email">Email *</label>
+          <input id="mm-email" name="email" type="email" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Request an invitation</button>
+      </form>
     </div>
   </section>
 

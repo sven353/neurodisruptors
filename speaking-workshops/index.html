@@ -113,11 +113,24 @@
         </div>
         <div>
           <label for="sw-audience">Audience size</label>
-          <input id="sw-audience" name="audience_size" type="text">
+          <select id="sw-audience" name="audience_size">
+            <option value="">Select a range&hellip;</option>
+            <option value="Under 20">Under 20</option>
+            <option value="20-50">20&ndash;50</option>
+            <option value="50-150">50&ndash;150</option>
+            <option value="150+">150+</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
         </div>
         <div>
-          <label for="sw-format">Format of interest (keynote, workshop, team session)</label>
-          <input id="sw-format" name="format" type="text">
+          <label for="sw-format">Format of interest</label>
+          <select id="sw-format" name="format">
+            <option value="">Select a format&hellip;</option>
+            <option value="Keynote">Keynote</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Team session">Team session</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
         </div>
         <div>
           <label for="sw-details">What are you hoping to get out of it?</label>
