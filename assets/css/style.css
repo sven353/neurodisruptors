@@ -1,19 +1,20 @@
 /* ===== Neurodisruptors — shared stylesheet ===== */
 
 :root {
-  --ink: #1c1730;
-  --ink-soft: #4a4560;
-  --bg: #fbfaf8;
-  --bg-alt: #f1eefc;
-  --primary: #4b2e83;
+  --ink: #f5f3f0;
+  --ink-soft: #b9b6c4;
+  --bg: #14111f;
+  --bg-alt: #1c1830;
+  --surface: #221e3a;
+  --primary: #7c86e0;
   --primary-dark: #34205c;
   --accent: #e08a2c;
-  --accent-2: #2c9c8f;
-  --border: #e4e0f0;
+  --accent-2: #4fc3b5;
+  --border: #2f2a48;
   --white: #ffffff;
   --radius: 14px;
   --max-width: 1100px;
-  --shadow: 0 6px 24px rgba(28, 23, 48, 0.08);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 * { box-sizing: border-box; }
@@ -42,7 +43,7 @@ a:hover { text-decoration: underline; }
 /* ---------- Header / Nav ---------- */
 
 .site-header {
-  background: var(--white);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -152,7 +153,7 @@ a:hover { text-decoration: underline; }
   top: calc(100% + 6px);
   right: 0;
   min-width: 220px;
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -207,7 +208,7 @@ a:hover { text-decoration: underline; }
 .hero h1 {
   font-size: clamp(2rem, 4vw, 2.75rem);
   margin: 0 0 12px;
-  color: var(--primary-dark);
+  color: var(--ink);
 }
 
 .hero .lede {
@@ -234,12 +235,12 @@ section {
 
 section h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--primary-dark);
+  color: var(--ink);
   margin-top: 0;
 }
 
 .section-alt {
-  background: var(--white);
+  background: var(--surface);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -263,7 +264,7 @@ section h2 {
 }
 
 .card {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
@@ -275,7 +276,7 @@ section h2 {
 
 .card h3 {
   margin-top: 0;
-  color: var(--primary-dark);
+  color: var(--ink);
 }
 
 /* ---------- People / avatar grids ---------- */
@@ -296,7 +297,7 @@ section h2 {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--white);
+  border: 3px solid var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -311,7 +312,7 @@ section h2 {
   grid-template-columns: auto 1fr;
   gap: 28px;
   align-items: center;
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
@@ -324,14 +325,14 @@ section h2 {
   height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--white);
+  border: 3px solid var(--surface);
   box-shadow: var(--shadow);
 }
 
 .featured-person h3 {
   margin: 0 0 4px;
   font-size: 1.3rem;
-  color: var(--primary-dark);
+  color: var(--ink);
 }
 
 .featured-person .role {
@@ -356,7 +357,7 @@ section h2 {
 }
 
 .leader-card {
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
@@ -376,7 +377,7 @@ section h2 {
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 2px solid var(--bg-alt);
+  border: 2px solid var(--bg);
 }
 
 .leader-avatar-fallback {
@@ -395,7 +396,7 @@ section h2 {
 
 .leader-card-head h3 {
   margin: 0 0 2px;
-  color: var(--primary-dark);
+  color: var(--ink);
 }
 
 .leader-venture {
@@ -410,7 +411,7 @@ section h2 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 700;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-top: 12px;
 }
 
@@ -451,7 +452,7 @@ section h2 {
   left: 50%;
   transform: translateX(-50%);
   width: 240px;
-  background: var(--white);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -468,7 +469,7 @@ section h2 {
 
 .thumb-tooltip strong {
   display: block;
-  color: var(--primary-dark);
+  color: var(--ink);
   margin-bottom: 4px;
 }
 
@@ -536,7 +537,8 @@ input, textarea, select {
   border: 1px solid var(--border);
   font-family: inherit;
   font-size: 1rem;
-  background: var(--white);
+  background: var(--surface);
+  color: var(--ink);
 }
 
 input:focus, textarea:focus, select:focus {
@@ -561,7 +563,7 @@ input:focus, textarea:focus, select:focus {
 .quote-block .quote-lede {
   font-size: 1.35rem;
   font-weight: 600;
-  color: var(--primary-dark);
+  color: var(--ink);
   margin-top: 0;
 }
 
@@ -581,16 +583,16 @@ input:focus, textarea:focus, select:focus {
 
 .site-footer {
   background: var(--primary-dark);
-  color: #d9d3ee;
+  color: var(--ink-soft);
   padding: 40px 0 24px;
   margin-top: 40px;
 }
 
-.site-footer a { color: #f0ecff; }
+.site-footer a { color: var(--ink); }
 
 .footer-disclaimer {
   font-size: 0.85rem;
-  color: #c3bce0;
+  color: var(--ink-soft);
   max-width: 800px;
   margin-bottom: 20px;
 }
@@ -651,7 +653,7 @@ input:focus, textarea:focus, select:focus {
 
 .tag {
   background: var(--bg-alt);
-  color: var(--primary-dark);
+  color: var(--primary);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.85rem;
