@@ -84,11 +84,13 @@ a:hover { text-decoration: underline; }
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px 6px;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2px;
   list-style: none;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
 .nav-links a {
@@ -107,16 +109,92 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+/* ---------- Nav "More" dropdown ---------- */
+
+.nav-item-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle[aria-expanded="true"],
+.dropdown-toggle.active {
+  background: var(--bg-alt);
+  color: var(--primary);
+}
+
+.dropdown-caret {
+  font-size: 0.7em;
+  transition: transform 0.15s ease;
+}
+
+.dropdown-toggle[aria-expanded="true"] .dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 220px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  z-index: 60;
+}
+
+.dropdown-menu.open { display: block; }
+
+.dropdown-menu li a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 6px;
+  white-space: normal;
+}
+
 @media (max-width: 880px) {
   .nav-toggle { display: block; }
   .nav-links {
     display: none;
     flex-direction: column;
+    align-items: stretch;
     width: 100%;
     padding: 12px 0 4px;
+    white-space: normal;
   }
   .nav-links.open { display: flex; }
   .nav-links a { width: 100%; }
+  .nav-item-dropdown { width: 100%; }
+  .dropdown-toggle { width: 100%; justify-content: space-between; }
+  .dropdown-menu {
+    display: none;
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: var(--bg-alt);
+    margin: 4px 0 4px 10px;
+    width: calc(100% - 10px);
+  }
+  .dropdown-menu.open { display: block; }
 }
 
 /* ---------- Hero ---------- */
@@ -190,6 +268,9 @@ section h2 {
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card h3 {
@@ -223,6 +304,48 @@ section h2 {
   margin-top: 10px;
   font-weight: 600;
   font-size: 0.92rem;
+}
+
+.featured-person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  margin-top: 24px;
+}
+
+.featured-person img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  box-shadow: var(--shadow);
+}
+
+.featured-person h3 {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+
+.featured-person .role {
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 560px) {
+  .featured-person { grid-template-columns: 1fr; text-align: center; }
+  .featured-person img { margin: 0 auto; }
 }
 
 .thumb-row {
@@ -311,6 +434,20 @@ input:focus, textarea:focus, select:focus {
 
 /* ---------- Callout / disclaimer ---------- */
 
+.quote-block {
+  max-width: 760px;
+  margin: 0 auto;
+  border-left: 4px solid var(--accent-2);
+  padding-left: 28px;
+}
+
+.quote-block .quote-lede {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-top: 0;
+}
+
 .callout {
   background: var(--bg-alt);
   border-radius: var(--radius);
@@ -354,6 +491,23 @@ input:focus, textarea:focus, select:focus {
   width: auto;
   filter: brightness(0) invert(1);
   opacity: 0.85;
+}
+
+/* Logos with their own opaque/dark backgrounds break the invert filter above
+   (it turns the whole rectangle into a solid white block). Give those a
+   plain white chip instead so the logo's real colors/contrast show through. */
+.footer-logo-chip {
+  display: inline-flex;
+  align-items: center;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.footer-logo-chip img {
+  filter: none;
+  opacity: 1;
+  height: 24px;
 }
 
 .footer-bottom {
