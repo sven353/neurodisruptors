@@ -36,9 +36,15 @@ Netlify: connect the repo, publish directory `.`, no build command. The contact 
 
 GitHub Pages: works as is, including the legacy redirects (via the stub pages). Netlify Forms does not run on GitHub Pages, so the form needs another endpoint there (Formspree or similar: change the form `action`).
 
+## Changelog
+
+- Phase 2 (14 Oct 2026): new hero (headline, sub-headline, dual CTA), institutional proof bar, dual-track overview (#tracks) for founders and for boards. Spiky profile figure shows from 960px up.
+- Phase 1 (14 Oct 2026): four-link navigation, mobile drawer, single-page skeleton, footer, legal pages, legacy redirects.
+
 ## Open items before go-live
 
 - Legal notice: add NIF/CIF and registry details (highlighted in yellow on the page).
 - Contact form: confirm the hosting (Netlify Forms) or swap the endpoint.
 - Calendly: the event slug still reads `free-15-minute-adhd-strategy-snapshot-call`.
-- Portrait for the About section (Phase 2).
+- Portrait for the About section.
+- Proof bar claims: confirm the IE collaboration and the 100+ founders figure before launch.
