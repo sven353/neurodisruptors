@@ -33,17 +33,336 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Neurodisruptors",
-    "url": "https://www.neurodisruptors.com/",
-    "description": "Strategic sparring and cognitive architecture for non-linear leaders.",
-    "areaServed": "Europe",
-    "address": { "@type": "PostalAddress", "addressLocality": "Barcelona", "addressCountry": "ES" },
-    "founder": {
-      "@type": "Person",
-      "name": "Dr. Sven Mulfinger",
-      "sameAs": ["https://www.linkedin.com/in/svenmulfinger"]
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.neurodisruptors.com/#website",
+        "url": "https://www.neurodisruptors.com/",
+        "name": "Neurodisruptors",
+        "inLanguage": "en-GB",
+        "publisher": {
+          "@id": "https://www.neurodisruptors.com/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.neurodisruptors.com/#webpage",
+        "url": "https://www.neurodisruptors.com/",
+        "name": "Neurodisruptors | Strategic Sparring & Cognitive Architecture for Non-Linear Leaders",
+        "description": "Confidential strategic sparring for founders and CEOs navigating complexity with ADHD, giftedness and spiky cognitive profiles. Keynotes and architectural workshops for boards.",
+        "inLanguage": "en-GB",
+        "isPartOf": {
+          "@id": "https://www.neurodisruptors.com/#website"
+        },
+        "about": {
+          "@id": "https://www.neurodisruptors.com/#organization"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.neurodisruptors.com/assets/img/og-image.png",
+          "width": 1200,
+          "height": 630
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does executive sparring differ from traditional executive coaching?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most executive coaching works from a uniform competency model and focuses on rounding out weaknesses. Executive sparring with Dr. Sven Mulfinger is a confidential, high-velocity thought partnership on the decisions a founder or CEO is facing now. It maps the leader's spiky cognitive profile (ADHD, giftedness, rapid synthesis) and builds operational scaffolding around those strengths so they no longer need to be masked."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Spiky Profile framework?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Spiky Profile is an operational model developed by Dr. Sven Mulfinger, grounded in executive case studies and his research collaboration with IESE Business School. It maps a leader's cognitive capacity across perception, synthesis and execution, identifying breakthrough strengths alongside operational valleys. It replaces clinical labels with a non-clinical language that founders, boards and teams can use to align roles and governance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What engagements are available for boards, investors and HR leaders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three formats: a keynote, The Non-Linear Edge in the C-Suite; a board working session, Bridging the Cognitive Interface, on reading executive variance and preventing founder burnout; and an enterprise workshop, Designing Systems for Cognitive Spikes, for executive teams and HR. Sessions run from 45 minutes to half a day and are scoped after a first conversation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are engagements delivered and in which languages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neurodisruptors is based in Barcelona. Dr. Sven Mulfinger works in person in Barcelona, London, Berlin, Paris and Zurich, across other European business hubs and confidentially by video. Sparring, keynotes and board workshops are delivered in English, Spanish, German or French."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.neurodisruptors.com/#organization",
+        "name": "Neurodisruptors",
+        "url": "https://www.neurodisruptors.com/",
+        "description": "Strategic sparring and cognitive architecture for non-linear leaders.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.neurodisruptors.com/assets/img/logo.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://www.neurodisruptors.com/assets/img/og-image.png",
+        "founder": {
+          "@id": "https://www.neurodisruptors.com/#founder"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressRegion": "Catalonia",
+          "addressCountry": "ES"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Barcelona"
+          },
+          {
+            "@type": "City",
+            "name": "London"
+          },
+          {
+            "@type": "City",
+            "name": "Berlin"
+          },
+          {
+            "@type": "City",
+            "name": "Paris"
+          },
+          {
+            "@type": "City",
+            "name": "Zurich"
+          },
+          {
+            "@type": "Continent",
+            "name": "Europe"
+          }
+        ],
+        "knowsLanguage": [
+          "en",
+          "es",
+          "de",
+          "fr"
+        ],
+        "knowsAbout": [
+          "Neurodivergent leadership",
+          "ADHD in the C-suite",
+          "Giftedness in executives",
+          "Spiky cognitive profiles",
+          "Spiky Profile Framework",
+          "Executive sparring",
+          "C-suite decision making",
+          "Board governance for non-linear founders"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Enquiries",
+          "url": "https://www.neurodisruptors.com/#connect",
+          "availableLanguage": [
+            "English",
+            "Spanish",
+            "German",
+            "French"
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.neurodisruptors.com/#founder",
+        "name": "Sven Mulfinger",
+        "alternateName": "Dr. Sven Mulfinger",
+        "honorificPrefix": "Dr.",
+        "jobTitle": "Executive Coach and Strategic Advisor",
+        "url": "https://www.neurodisruptors.com/#about",
+        "description": "Executive coach, offsite facilitator and strategic advisor to founders and C-suite teams across Europe, specialising in non-linear cognition, ADHD and giftedness in leadership. Author of The Non-Linear Operating System and research collaborator with IESE Business School.",
+        "sameAs": [
+          "https://www.linkedin.com/in/svenmulfinger"
+        ],
+        "knowsLanguage": [
+          "en",
+          "es",
+          "de",
+          "fr"
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "PhD in Biotech Engineering"
+        },
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "IESE Business School",
+          "url": "https://www.iese.edu"
+        },
+        "worksFor": [
+          {
+            "@id": "https://www.neurodisruptors.com/#organization"
+          },
+          {
+            "@type": "Organization",
+            "name": "Kuma Partners",
+            "url": "https://kuma.partners"
+          }
+        ],
+        "workLocation": {
+          "@type": "Place",
+          "name": "Barcelona",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Barcelona",
+            "addressCountry": "ES"
+          }
+        },
+        "knowsAbout": [
+          "Neurodivergent leadership",
+          "ADHD in executives",
+          "Executive sparring",
+          "Leadership offsites",
+          "Board facilitation",
+          "Intercultural leadership"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.neurodisruptors.com/#service-sparring",
+        "name": "Executive Sparring for Non-Linear Leaders",
+        "serviceType": "Executive coaching",
+        "url": "https://www.neurodisruptors.com/#sparring",
+        "provider": {
+          "@id": "https://www.neurodisruptors.com/#organization"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Barcelona"
+          },
+          {
+            "@type": "City",
+            "name": "London"
+          },
+          {
+            "@type": "City",
+            "name": "Berlin"
+          },
+          {
+            "@type": "City",
+            "name": "Paris"
+          },
+          {
+            "@type": "City",
+            "name": "Zurich"
+          },
+          {
+            "@type": "Continent",
+            "name": "Europe"
+          }
+        ],
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Founders, CEOs and C-suite executives"
+        },
+        "description": "Confidential one-to-one strategic sparring and cognitive architecture design for founders and CEOs with ADHD, giftedness and spiky cognitive profiles."
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.neurodisruptors.com/#service-boards",
+        "name": "Board Workshops and Keynotes on Neurodivergent Leadership",
+        "serviceType": "Keynote speaking and board workshops",
+        "url": "https://www.neurodisruptors.com/#workshops",
+        "provider": {
+          "@id": "https://www.neurodisruptors.com/#organization"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Barcelona"
+          },
+          {
+            "@type": "City",
+            "name": "London"
+          },
+          {
+            "@type": "City",
+            "name": "Berlin"
+          },
+          {
+            "@type": "City",
+            "name": "Paris"
+          },
+          {
+            "@type": "City",
+            "name": "Zurich"
+          },
+          {
+            "@type": "Continent",
+            "name": "Europe"
+          }
+        ],
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Boards, investors, executive committees and HR leaders"
+        },
+        "description": "Keynotes, board working sessions and enterprise workshops that align boards and executive teams around high-performance cognitive spikes and prevent founder burnout.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Signature engagements",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Keynote: The Non-Linear Edge in the C-Suite"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Board Working Session: Bridging the Cognitive Interface"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Enterprise Workshop: Designing Systems for Cognitive Spikes"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Book",
+        "@id": "https://www.neurodisruptors.com/#book",
+        "name": "The Non-Linear Operating System",
+        "alternativeHeadline": "How Exceptional Leaders Think, Decide and Build Differently",
+        "author": {
+          "@id": "https://www.neurodisruptors.com/#founder"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Neurodisruptors Publishing"
+        },
+        "inLanguage": "en",
+        "creativeWorkStatus": "In review",
+        "url": "https://www.neurodisruptors.com/#book",
+        "about": [
+          "ADHD in leadership",
+          "Giftedness",
+          "Dyslexia",
+          "Non-linear cognition",
+          "Spiky Profile Framework"
+        ]
+      }
+    ]
   }
   </script>
   <script defer src="/assets/js/main.js"></script>
@@ -217,7 +536,7 @@
         </ol>
 
         <div class="section-foot">
-          <p class="muted">Confidential. In person in Barcelona or remote.</p>
+          <p class="muted">Confidential. In person in Barcelona, London, Berlin, Paris and Zurich or remote, in English, Spanish, German or French.</p>
           <a class="btn btn--primary btn--lg" href="#connect" data-interest="sparring">Request Sparring Intake <span class="arrow" aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
@@ -256,7 +575,7 @@
         </ul>
 
         <div class="section-foot">
-          <p class="muted">From a 45-minute keynote to a half-day working session.</p>
+          <p class="muted">From a 45-minute keynote to a half-day working session, delivered across Europe in English, Spanish, German or French.</p>
           <a class="btn btn--primary btn--lg" href="#connect" data-interest="workshop">Request a Speaking / Workshop Proposal <span class="arrow" aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
@@ -352,7 +671,7 @@
 
         <div class="about__aside">
           <ul class="facts">
-            <li><span>Based in</span><span>Barcelona, working across Europe</span></li>
+            <li><span>Based in</span><span>Barcelona, in person across Europe and remote</span></li>
             <li><span>Languages</span><span>English, Spanish, French and German</span></li>
             <li><span>Also leads</span><span><a href="https://kuma.partners" rel="noopener">Kuma Partners</a></span></li>
             <li><span>Connect</span><span><a href="https://www.linkedin.com/in/svenmulfinger" rel="noopener">LinkedIn</a></span></li>
@@ -366,6 +685,37 @@
               <li>Prof. Nicolas T. Deuschel, Universidad Carlos III de Madrid</li>
               <li>Prof. Iñigo Gallo, IESE Business School (2015 case study)</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ (GEO) ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Strategic Context</p>
+            <h2 class="h2" id="faq-title">Frequently asked <em>questions</em>.</h2>
+          </div>
+          <p class="lead">Direct answers for founders, boards and HR leaders weighing an engagement.</p>
+        </div>
+        <div class="faq">
+          <div class="faq__item">
+            <h3 class="faq__q">How does executive sparring differ from traditional executive coaching?</h3>
+            <p>Most executive coaching works from a uniform competency model and focuses on rounding out weaknesses. Executive sparring with Dr. Sven Mulfinger is a confidential, high-velocity thought partnership on the decisions a founder or CEO is facing now. It maps the leader's spiky cognitive profile (ADHD, giftedness, rapid synthesis) and builds operational scaffolding around those strengths so they no longer need to be masked.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">What is the Spiky Profile framework?</h3>
+            <p>The Spiky Profile is an operational model developed by Dr. Sven Mulfinger, grounded in executive case studies and his research collaboration with IESE Business School. It maps a leader's cognitive capacity across perception, synthesis and execution, identifying breakthrough strengths alongside operational valleys. It replaces clinical labels with a non-clinical language that founders, boards and teams can use to align roles and governance.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">What engagements are available for boards, investors and HR leaders?</h3>
+            <p>Three formats: a keynote, The Non-Linear Edge in the C-Suite; a board working session, Bridging the Cognitive Interface, on reading executive variance and preventing founder burnout; and an enterprise workshop, Designing Systems for Cognitive Spikes, for executive teams and HR. Sessions run from 45 minutes to half a day and are scoped after a first conversation.</p>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q">Where are engagements delivered and in which languages?</h3>
+            <p>Neurodisruptors is based in Barcelona. Dr. Sven Mulfinger works in person in Barcelona, London, Berlin, Paris and Zurich, across other European business hubs and confidentially by video. Sparring, keynotes and board workshops are delivered in English, Spanish, German or French.</p>
           </div>
         </div>
       </div>

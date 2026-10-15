@@ -329,3 +329,66 @@ Regression against the Phase 4 build: Phase 1 71/71 passed, Phase 2 51/51 passed
 
 42/42 passed
 ```
+
+## Phase 5: Generative Engine Optimisation (GEO)
+
+Run on 15 October 2026. JSON-LD is parsed as strict JSON, then every type and property is checked against the official schema.org vocabulary (release 29.3, schemaorg-current-https.jsonld from the schemaorg GitHub repository), with class inheritance and value ranges resolved offline. Page checks use headless Chromium (Playwright) and axe-core 4.
+
+Result: zero JSON-LD syntax errors and zero vocabulary errors. Regression against the Phase 5 build: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed.
+
+After deploy, run the live URL through validator.schema.org and Google Rich Results Test as a final external check. Google currently shows FAQ rich results mainly for government and health sites, so the FAQ markup works mainly for AI answer engines and for understanding, rather than for snippets in Google.
+
+```
+[1 JSON-LD syntax]
+  PASS  All 1 JSON-LD block(s) across the site parse as strict JSON
+  PASS  index.html uses @context https://schema.org with an @graph
+  PASS  Graph nodes: WebSite, FAQPage, Organization, Person, Service, Service, Book
+  PASS  No '</' sequence inside the JSON-LD that could close the script tag early
+
+[2 schema.org vocabulary]
+  PASS  Every type and all 122 properties exist in schema.org 29.3 and are valid for their type (inheritance resolved)
+  PASS  Every nested object's type falls within the property's declared range
+  PASS  No superseded types or properties
+  PASS  Info: properties schema.org still tags as 'pending' (adoption phase, not deprecated): creativeWorkStatus, credentialCategory, hasCredential, jobTitle, knowsAbout, knowsLanguage, provider
+
+[3 Graph integrity]
+  PASS  7 @id nodes, all unique
+  PASS  All 15 @id references resolve inside the graph
+  PASS  Person and Organization point at each other (founder / worksFor)
+  PASS  Both Services and the Book link to the graph (provider / author)
+  PASS  Person: Dr. prefix, PhD credential, IESE affiliation, languages en/es/de/fr, LinkedIn sameAs
+  PASS  Organization: Barcelona address, areaServed Europe plus 5 cities, knowsAbout covers ADHD in the C-suite and the Spiky Profile Framework
+  PASS  All 14 own-domain URLs in the schema point at real files or page anchors
+  PASS  Organization logo is a dedicated square image (512x512), not the social banner
+
+[4 FAQ]
+  PASS  4 visible Q&A pairs, each identical to the FAQPage schema (question and answer text)
+  PASS  Covers the 4 intents: sparring vs coaching, Spiky Profile, board/HR formats, geography and languages
+  PASS  #faq sits directly above #connect (section order: hero, hero, tracks, sparring, workshops, framework, about, faq, connect)
+  PASS  Heading outline in #faq: one h2 then four h3
+
+[5 Entities]
+  PASS  City 'Barcelona' in visible body text (5x)
+  PASS  City 'London' in visible body text (2x)
+  PASS  City 'Berlin' in visible body text (2x)
+  PASS  City 'Paris' in visible body text (2x)
+  PASS  City 'Zurich' in visible body text (2x)
+  PASS  Language 'English' in visible body text (4x)
+  PASS  Language 'Spanish' in visible body text (4x)
+  PASS  Language 'German' in visible body text (4x)
+  PASS  Language 'French' in visible body text (4x)
+  PASS  Languages named in the sparring and workshop sections themselves (where buyers decide)
+  PASS  Key entities co-occur in body text: IESE Business School 4x, Dr. Sven Mulfinger 5x, Spiky Profile 6x
+  PASS  llms.txt present with 10 site links, all resolving
+  PASS  robots.txt allows all crawlers, AI search bots included (no Disallow rules)
+
+[6 Page]
+  PASS  375px: FAQ in 1 column(s), no overflow, 0 axe violations, 0 console errors, browser parses 7 graph nodes
+  PASS  768px: FAQ in 1 column(s), no overflow, 0 axe violations, 0 console errors, browser parses 7 graph nodes
+  PASS  1280px: FAQ in 2 column(s), no overflow, 0 axe violations, 0 console errors, browser parses 7 graph nodes
+  PASS  No em or en dashes in page, schema or llms.txt
+  PASS  No serial comma before 'and' in page copy, schema or llms.txt
+  PASS  UK spelling in new copy (specialising, organisation)
+
+39/39 passed
+```

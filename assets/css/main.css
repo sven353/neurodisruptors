@@ -507,3 +507,13 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   .confirm__grid { grid-template-columns: 7fr 4fr; gap: 5rem; }
   .confirm__mark { display: block; width: min(100%, 340px); justify-self: end; opacity: .9; }
 }
+
+/* Strategic context / FAQ (GEO) */
+.faq { display: grid; border-top: 1px solid var(--ink); }
+.faq__item { padding: 1.75rem 0 2rem; border-bottom: 1px solid var(--rule); display: grid; gap: .85rem; align-content: start; }
+.faq__q { font-family: var(--font-serif); font-size: clamp(1.45rem, 2.2vw, 1.8rem); line-height: 1.12; letter-spacing: -0.01em; }
+.faq__item p { margin: 0; color: var(--ink-2); max-width: 36rem; }
+@media (min-width: 900px) {
+  .faq { grid-template-columns: 1fr 1fr; column-gap: 4rem; }
+  .faq__item { padding: 2.25rem 0 2.5rem; }
+}
