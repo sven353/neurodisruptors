@@ -128,6 +128,24 @@
     if (q) selectInterest(q);
   } catch (err) { /* URLSearchParams unsupported: ignore */ }
 
+  /* ---------- Short option labels on narrow screens ----------
+     The submitted value never changes, only the visible label, so the closed
+     dropdown never clips on a phone. */
+  if (interest) {
+    var narrow = window.matchMedia("(max-width: 479px)");
+    var applyLabels = function () {
+      for (var i = 0; i < interest.options.length; i++) {
+        var o = interest.options[i];
+        if (!o.hasAttribute("data-full")) o.setAttribute("data-full", o.textContent);
+        var short = o.getAttribute("data-short");
+        o.textContent = narrow.matches && short ? short : o.getAttribute("data-full");
+      }
+    };
+    applyLabels();
+    if (narrow.addEventListener) narrow.addEventListener("change", applyLabels);
+    else if (narrow.addListener) narrow.addListener(applyLabels);
+  }
+
   /* ---------- Footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = String(new Date().getFullYear());

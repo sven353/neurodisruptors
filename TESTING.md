@@ -172,3 +172,160 @@ Automated runs on 14 October 2026 with headless Chromium (Playwright), axe-core 
 
 71/71 passed
 ```
+
+## Phase 3: offer refinement, friction removal, conversion sections
+
+Run on 15 October 2026 with headless Chromium (Playwright), axe-core 4 and BeautifulSoup. Phase 1 and Phase 2 suites re-run against the Phase 3 build: Phase 1 71/71 passed, Phase 2 51/51 passed.
+
+```
+[0 Brief]
+  PASS  Third-party booking slug removed from every file in the repo
+  PASS  'Not medical advice' gone from homepage and shared footer
+  PASS  Medical notice kept inside legal-notice/
+  PASS  Passive phrase removed: 'We look at what happens'
+  PASS  Passive phrase removed: 'A short assessment and a structured conversation'
+  PASS  Passive phrase removed: 'A short first call'
+  PASS  Headline #sparring-title
+  PASS  Headline #workshops-title
+  PASS  Sparring: 4 executive cards with the brief's titles
+  PASS  Workshops: 3 signature offerings
+  PASS  Framework: Flat Corporate Baseline vs Spiky Profile panels
+  PASS  Framework: 4 milestones 01 Map, 02 Stress-Test, 03 Scaffold, 04 Translate
+  PASS  Dropdown carries the 5 brief options
+  PASS  Context placeholder set
+  PASS  Connect subhead matches brief
+  PASS  No em or en dashes in page text
+  PASS  No serial comma before 'and' in visible copy
+
+[1 Preselect]
+  PASS  'Request Sparring Intake' smooth-scrolls to #connect (18 frames, lands 88px) and selects 'Private Sparring (Founder / CEO)'
+  PASS  'Request a Speaking / Workshop Proposal' smooth-scrolls to #connect (18 frames, lands 88px) and selects 'Board / Executive Workshop'
+  PASS  'Request an advance copy' smooth-scrolls to #connect (16 frames, lands 88px) and selects 'Advance Copy: The Non-Linear Operating System'
+  PASS  'Book Private Sparring (hero)' smooth-scrolls to #connect (19 frames, lands 88px) and selects 'Private Sparring (Founder / CEO)'
+  PASS  Deep link ?interest=keynote#connect preselects 'Keynote Speaking'
+  PASS  Keyboard: after a CTA jump, Tab continues into the form area
+  PASS  Zero console errors or warnings during CTA tests
+
+[2 Links]
+  PASS  #sparring exists exactly once
+  PASS  #workshops exists exactly once
+  PASS  #framework exists exactly once
+  PASS  #about exists exactly once
+  PASS  #connect exists exactly once
+  PASS  #book exists exactly once
+  PASS  #research exists exactly once
+  PASS  All 11 in-page anchor hrefs on the homepage resolve
+  PASS  Every '/#anchor' link on subpages and footers resolves on the homepage
+  PASS  Footer link /#research from a subpage lands on the target (88px)
+  PASS  Footer link /#book from a subpage lands on the target (88px)
+
+[3 Layout]
+  PASS  375px: columns cards/offers/contrast/milestones = (1, 1, 1, 1)
+  PASS  375px: hierarchy h2 34px > card title 26px > body 17px
+  PASS  375px: section padding 80px (generous whitespace, 80px+)
+  PASS  375px: dropdown shows longest option in full (214px text in 286px)
+  PASS  375px: no element overflows the viewport (page 375px)
+  PASS  375px: axe-core WCAG 2.1 AA, colour contrast included: 0 violations
+  PASS  768px: columns cards/offers/contrast/milestones = (2, 1, 2, 2)
+  PASS  768px: hierarchy h2 35px > card title 26px > body 17px
+  PASS  768px: section padding 84px (generous whitespace, 80px+)
+  PASS  768px: dropdown shows longest option in full (379px text in 650px)
+  PASS  768px: no element overflows the viewport (page 768px)
+  PASS  768px: axe-core WCAG 2.1 AA, colour contrast included: 0 violations
+  PASS  1280px: columns cards/offers/contrast/milestones = (2, 3, 2, 4)
+  PASS  1280px: hierarchy h2 58px > card title 31px > body 17px
+  PASS  1280px: section padding 141px (generous whitespace, 80px+)
+  PASS  1280px: dropdown shows longest option in full (379px text in 502px)
+  PASS  1280px: no element overflows the viewport (page 1280px)
+  PASS  1280px: axe-core WCAG 2.1 AA, colour contrast included: 0 violations
+  PASS  1440px: columns cards/offers/contrast/milestones = (2, 3, 2, 4)
+  PASS  1440px: hierarchy h2 58px > card title 32px > body 17px
+  PASS  1440px: section padding 144px (generous whitespace, 80px+)
+  PASS  1440px: dropdown shows longest option in full (379px text in 502px)
+  PASS  1440px: no element overflows the viewport (page 1440px)
+  PASS  1440px: axe-core WCAG 2.1 AA, colour contrast included: 0 violations
+  PASS  375px: book option shows 'Advance Copy: The Book' (value still 'book'), full label returns at 1280px
+  PASS  Key text contrast 4.5:1 or better: card body 9.81, card number 6.16, offer body 11.18, offer audience 7.76, baseline caption 9.81, spiky caption 12.76, milestone 17.04, form label 11.18, connect list 11.18
+
+[4 Netlify/Git]
+  PASS  Exactly one form on the page
+  PASS  data-netlify="true" and method POST
+  PASS  Hidden form-name input matches form name 'conversation'
+  PASS  Honeypot 'company_website' field exists, is off-screen and skipped by keyboard
+  PASS  Success redirect '/thanks/' exists
+  PASS  All 7 fields carry a name (Netlify only stores named fields)
+  PASS  Dropdown values unique and stable for CRM mapping: sparring, workshop, keynote, book, other
+  PASS  Required fields: consent, email, name
+  PASS  Every visible field has a <label for>
+  PASS  Zip passes CRC test
+  PASS  Zip matches the tested working tree (38 files)
+  PASS  Every file in the zip is byte-identical to the tested source
+
+73/73 passed
+```
+
+## Phase 4: pre-launch finalisation
+
+Run on 15 October 2026 with headless Chromium (Playwright), axe-core 4, html-validate, csstree-validator and BeautifulSoup. The form submission runs against a local server that stands in for Netlify Forms: it records the POST and redirects to the form action, as Netlify does. Live Netlify capture is confirmed by one real test submission after deploy.
+
+Regression against the Phase 4 build: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed.
+
+```
+[1 Booking link removal]
+  PASS  Zero case-insensitive occurrences of the removed booking tool's name across all 38 project files (text and binary)
+  PASS  No booking or scheduling links left on the homepage
+  PASS  Secondary path reads 'Prefer direct contact?' + 'Message Sven directly on LinkedIn →'
+  PASS  Primary path is the intake form: name, email, interest, organisation, message plus consent
+
+[2 Form]
+  PASS  data-netlify="true", method POST, name="conversation"
+  PASS  Hidden form-name = conversation
+  PASS  Honeypot 'company_website' present, tabindex -1, wrapped aria-hidden and off-screen
+  PASS  action="/thanks/" points at an existing page
+  PASS  Empty submit is blocked by required fields (no POST sent, still on homepage)
+  PASS  Submit POSTs to /thanks/ and lands on /thanks/ (/thanks/)
+  PASS  Payload: form-name, name, email, interest=workshop, organisation, message, consent=yes
+  PASS  Honeypot submitted empty by a human visitor
+  PASS  Confirmation shows 'Enquiry received.'
+  PASS  Confirmation body: personal review, 24 to 48 hours
+  PASS  Secondary links: 'Connect on LinkedIn' + 'Return to Neurodisruptors'
+  PASS  'Return to Neurodisruptors' goes back to the homepage
+  PASS  /thanks/ is noindex (kept out of search results)
+
+[3 LinkedIn]
+  PASS  #connect direct link href = https://www.linkedin.com/in/svenmulfinger
+  PASS  /thanks/ 'Connect on LinkedIn' href = https://www.linkedin.com/in/svenmulfinger
+  PASS  Every LinkedIn link on the site uses the same profile URL
+  PASS  Clicking the #connect link navigates to the LinkedIn profile (request intercepted in test)
+
+[4 DOM]
+  PASS  Zero console errors or warnings on 5 pages
+  PASS  No broken internal links or anchors on any page
+  PASS  No placeholder text or draft markers in any page or stylesheet
+  PASS  Draft highlight style (.todo, #fff3c4) removed from CSS
+  PASS  Legal notice owner block: Owner Sven Mulfinger; NIF ES4339734W; Address Impact Hub Barcelona, Carrer de Pujades 94-96, 08005 Barcelona, Spain; Email info@stralea.com; Website www.neurodisruptors.com
+  PASS  axe-core WCAG 2.1 AA and no horizontal overflow: home, thanks, legal, privacy at 375 and 1280px
+
+[5 Metadata]
+  PASS  index.html <title> and meta description match the brief
+  PASS  404.html: Open Graph and Twitter tags identical to index.html
+  PASS  thanks/index.html: Open Graph and Twitter tags identical to index.html
+  PASS  privacy-policy/index.html: Open Graph and Twitter tags identical to index.html
+  PASS  legal-notice/index.html: Open Graph and Twitter tags identical to index.html
+  PASS  OG and Twitter title/description equal the brief's title and description
+  PASS  twitter:card summary_large_image, og:locale en_GB, og:type website
+  PASS  OG image exists locally and is 1200x630
+  PASS  No serial comma in the meta description (UK style)
+
+[4 DOM]
+  PASS  CSS validates (csstree-validator)
+  PASS  HTML validates on all 17 pages (html-validate recommended; title length rule relaxed for the brief's 84-character title)
+
+[6 ZIP]
+  PASS  Zip passes CRC test
+  PASS  Zip contains exactly the tested tree (38 files, dotfiles included)
+  PASS  Every file byte-identical to the tested source
+  PASS  Zero occurrences of the removed booking tool's name inside the zip itself
+
+42/42 passed
+```
