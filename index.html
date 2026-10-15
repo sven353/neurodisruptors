@@ -792,9 +792,10 @@
           </div>
         </div>
 
-        <form class="form" name="conversation" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_website">
+        <form class="form" name="conversation" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="conversation">
-          <p class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></p>
+          <input type="hidden" name="subject" data-remove-prefix value="New inquiry from neurodisruptors.com (%{submissionId})">
+          <p class="hp" hidden aria-hidden="true"><label>Leave this empty <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
           <div class="form__row form__row--2">
             <div class="field">

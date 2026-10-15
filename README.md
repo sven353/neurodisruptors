@@ -40,6 +40,14 @@ A 404 page after submitting the form, while GET /thanks/ works, means Netlify di
 3. Deploys: Trigger deploy, Clear cache and deploy site. The deploy summary should list the form "conversation".
 4. Send one test inquiry from the live site. It should land on /thanks/ and appear under Forms, Active forms, conversation. Then set up email notifications there.
 
+## Form notifications: if an inquiry email does not arrive
+
+1. Forms, conversation: open the form and look at Verified submissions. If the test is there, the form works and the problem is the email. If it is not there, switch to Spam submissions. If it is in neither list, the submission was rejected before storage (honeypot filled, or form detection not active on that deploy).
+2. A submission in Spam never triggers a notification. Mark it as verified, and use realistic content for tests (Akismet flags "test", "asdf" and repeated identical messages).
+3. Forms, Submission notifications: the email notification must point at this form (or "any form") and at the right address. Netlify sends from formresponses@netlify.com; replies go to the sender's email.
+4. Google Workspace (kuma.partners mail runs on smtp.google.com): search All Mail and Spam for from:formresponses@netlify.com. If an admin quarantine is active, check admin.google.com, Reporting, Email log search. Add a Gmail filter for from:formresponses@netlify.com with "Never send it to Spam".
+5. Redundancy: add a second email notification to an address on another domain, plus an outgoing webhook (Zapier, Make or n8n) that posts each inquiry to Slack or HubSpot. Netlify's own forum has open reports of verified submissions where no email was ever sent, so do not rely on email alone.
+
 ## Applying a release from a zip
 
 Uploading a zip through GitHub's web interface adds and overwrites files but never deletes them. To make the repo match a release exactly, run this in your local clone:
@@ -69,6 +77,7 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Form delivery (15 Oct 2026): honeypot renamed from company_website to bot-field and fully hidden (display none), because the old field sat off-screen where browser autofill could fill it, which makes Netlify silently drop the submission. Added a hidden subject field so notifications arrive as "New inquiry from neurodisruptors.com (id)" without the [Netlify] prefix.
 - Form confirmation fix (15 Oct 2026): /thanks/ copy updated ("Inquiry received."), Return to Homepage and Connect on LinkedIn buttons, font preloads on every subpage. _redirects audited: no rule can catch /thanks/, /privacy-policy/ or /legal-notice/. Site wording switched from enquiry to inquiry. The live 404 after submit comes from Netlify settings, see the checklist below.
 - Cleanup (15 Oct 2026): removed V1 clutter (.DS_Store files, scripts/, 41 gallery and 16 leaders photos, unused V1 team photos, logos, illustrations and style.css). Kept three source images for later phases. Added .gitignore. Legacy redirect stubs kept until hosting is confirmed.
 - Phase 6 (15 Oct 2026): FAQ rebuilt as six book-grounded questions in a scan-and-expand pattern (question and one-sentence answer always visible, detail on demand). Accessible accordion: button inside the heading, aria-controls, keyboard support, find-in-page reaches collapsed text. The HTML ships fully open so crawlers and no-JS readers get every answer. FAQPage schema mirrors preview plus detail. Madrid added to the city list.

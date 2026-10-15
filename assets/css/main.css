@@ -458,7 +458,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .consent a { color: var(--paper); }
 .form .btn { justify-self: start; margin-top: .5rem; }
 .form__note { font-size: .8125rem; color: #7b7e85; margin: 0; }
-.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.hp, .hp[hidden] { display: none !important; }
 
 /* ---------- Footer ---------- */
 .site-footer { padding-block: clamp(4rem, 8vw, 6rem) 2rem; border-top: 1px solid var(--rule); }

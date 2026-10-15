@@ -512,3 +512,33 @@ Run on 15 October 2026. _redirects is evaluated with Netlify semantics (top to b
 
 21/21 passed
 ```
+
+## Form delivery and notifications
+
+Run on 15 October 2026. The honeypot exposure check serves the live repo (commit b971805) and the new build side by side in headless Chromium. Regression: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 40/40 passed, Phase 6 21/21 passed, /thanks/ suite 21/21 passed.
+
+```
+[1 Form audit]
+  PASS  Exactly one form: name="conversation", method="POST", action="/thanks/", data-netlify="true"
+  PASS  <input type="hidden" name="form-name" value="conversation"> is the first field
+  PASS  netlify-honeypot="bot-field" matches exactly one input with that name
+  PASS  Every field carries a name: form-name, subject, bot-field, name, email, interest, organisation, message, consent
+  PASS  Field name="email" (type=email) present, so Netlify sets Reply-to to the sender
+  PASS  Custom notification subject: "New inquiry from neurodisruptors.com (%{submissionId})" with data-remove-prefix
+  PASS  Honeypot name "bot-field" contains no word browser autofill associates with a profile field
+
+[2 Honeypot exposure]
+  PASS  Live repo honeypot "company_website": rendered in layout=True, focusable=True (off-screen, so reachable by autofill)
+  PASS  New honeypot "bot-field": rendered=False, display=none, focusable=False (autofill and keyboard cannot reach it)
+  PASS  Keyboard Tab order through the form never lands on the honeypot
+
+[3 Submission]
+  PASS  POST /thanks/ lands on /thanks/ with form-name=conversation
+  PASS  Payload carries subject "New inquiry from neurodisruptors.com (%{submissionId})", all six named fields and an empty honeypot
+
+[4 Validity]
+  PASS  index.html validates with the new hidden fields (html-validate)
+  PASS  No other page carries a form Netlify could mistake for a second form
+
+14/14 passed
+```
