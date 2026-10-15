@@ -146,6 +146,26 @@
     else if (narrow.addListener) narrow.addListener(applyLabels);
   }
 
+  /* ---------- FAQ scan-and-expand ----------
+     The HTML ships fully open, so crawlers and no-JS readers get every answer.
+     Here we collapse the detail, keep the preview sentence visible, and use
+     hidden="until-found" where supported so find-in-page still reaches it. */
+  var untilFound = "onbeforematch" in document.body;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-accordion]"), function (item) {
+    var btn = item.querySelector(".faq__toggle");
+    var body = btn && document.getElementById(btn.getAttribute("aria-controls"));
+    if (!body) return;
+    var set = function (open) {
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      item.classList.toggle("is-open", open);
+      if (open) body.removeAttribute("hidden");
+      else body.setAttribute("hidden", untilFound ? "until-found" : "");
+    };
+    set(false);
+    btn.addEventListener("click", function () { set(btn.getAttribute("aria-expanded") !== "true"); });
+    body.addEventListener("beforematch", function () { set(true); });
+  });
+
   /* ---------- Footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = String(new Date().getFullYear());

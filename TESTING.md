@@ -392,3 +392,40 @@ After deploy, run the live URL through validator.schema.org and Google Rich Resu
 
 39/39 passed
 ```
+
+## Phase 6: scan-and-expand FAQ
+
+Run on 15 October 2026 with headless Chromium (Playwright), axe-core 4 and the schema.org 29.3 vocabulary. Regression against the Phase 6 build: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 (GEO schema, updated for six items) 40/40 passed.
+
+```
+[1 Markup]
+  PASS  6 FAQ items, each: h3 > button, preview paragraph, detail region
+  PASS  No heading nested inside a button (the proposed markup's validity bug)
+  PASS  Detail regions use the native <section> element (no role=region on a div)
+  PASS  aria-controls and aria-labelledby wire each button to its own region
+  PASS  Shipped HTML is fully open: aria-expanded=true and no hidden attribute (crawlers and no-JS readers get every answer)
+  PASS  Every preview is one complete sentence that answers the question on its own
+  PASS  Entity binding in the FAQ: Sven, IESE, the book, Spiky Profile, ADHD, giftedness, dyslexia, Barcelona, four languages
+  PASS  House style in FAQ copy: no em/en dashes, no serial comma, no 'not X; it is Y'
+
+[2 Behaviour]
+  PASS  After JS: all 6 collapsed (aria-expanded=false, detail hidden='until-found'), previews still visible
+  PASS  Click opens item 1 (aria-expanded=true, region 132px tall)
+  PASS  Second click closes it again
+  PASS  Keyboard: Enter opens, Space closes (native button semantics)
+  PASS  Items open independently (several can stay open for comparison)
+  PASS  Keyboard Tab lands on the next toggle with a visible focus ring (faq-q4 solid)
+  PASS  Find-in-page: collapsed detail uses hidden='until-found' and opens on beforematch
+  PASS  Scan hierarchy: question 28px > preview 17px >= detail 16px
+  PASS  Zero console errors or warnings
+
+[3 No-JS]
+  PASS  JavaScript disabled: all 6 detail paragraphs render visibly
+
+[4 Layout]
+  PASS  375px: collapsed FAQ 2124px, all open 3645px (42% less to scan), no overflow, toggles 45px tall, 0 axe violations with all open
+  PASS  768px: collapsed FAQ 1581px, all open 2415px (35% less to scan), no overflow, toggles 45px tall, 0 axe violations with all open
+  PASS  1280px: collapsed FAQ 1676px, all open 2458px (32% less to scan), no overflow, toggles 45px tall, 0 axe violations with all open
+
+21/21 passed
+```
