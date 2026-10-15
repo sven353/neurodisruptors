@@ -429,3 +429,49 @@ Run on 15 October 2026 with headless Chromium (Playwright), axe-core 4 and the s
 
 21/21 passed
 ```
+
+## Repository cleanup
+
+Run on 15 October 2026 against a fresh clone of github.com/sven353/neurodisruptors (commit 12b32fa). The apply procedure in the README was replayed on a copy of that clone to confirm exactly which files git deletes, adds and changes. All site suites were re-run on the clean tree: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 40/40 passed, Phase 6 21/21 passed.
+
+```
+[1 Removed]
+  PASS  No .DS_Store anywhere
+  PASS  scripts/ gone
+  PASS  assets/img/gallery/ (41 photos) and assets/img/leaders/ (16 photos) gone
+  PASS  V1 stylesheet assets/css/style.css gone
+  PASS  30 unused V1 top-level images removed (team photos of others, V1 logos, illustrations)
+
+[2 Kept]
+  PASS  20 core production files byte-identical to the live repo (untouched), llms.txt included
+  PASS  Images used by V2 unchanged: favicon, touch icon, OG image, schema logo
+  PASS  Kept for later, byte-identical to originals: portrait, book cover, 2026 square logo (renamed without spaces)
+  PASS  Font licence files kept (OFL requires them alongside the fonts)
+  PASS  .gitignore contains .DS_Store, Thumbs.db, *.log, node_modules/ (.DS_Store, Thumbs.db, *.log, node_modules/, .netlify/)
+
+[3 Redirects]
+  PASS  _redirects has a 301! rule for all 12 legacy paths, with and without trailing slash (24 rules)
+  PASS  Every rule is a forced 301
+  PASS  Every redirect target exists (homepage anchors and /privacy-policy/#cookies)
+  PASS  12 stub folders kept (hosting not confirmed) and each points at the same target as its Netlify rule
+
+[4 References]
+  PASS  All 132 local references in HTML, CSS and JS resolve inside the clean tree
+  PASS  No reference to any removed V1 file
+
+[5 Apply simulation]
+  PASS  git sees 92 deletions, exactly the obsolete V1 files
+  PASS  git sees additions/renames only for .gitignore, .nojekyll and the renamed logo: ['.gitignore', '.nojekyll', 'assets/img/Neurodisruptors logo square transparent 2026.png -> assets/img/logo-square-2026.png']
+  PASS  Modified files: ['README.md'] (README.md only, plus TESTING.md once the report is appended)
+  PASS  After apply, the working tree equals the release tree file for file
+  PASS  Commit succeeds
+  PASS  Working tree shrinks from 40.8 MB to 6.1 MB (133 to 43 files)
+
+[6 ZIP]
+  PASS  Zip passes CRC test
+  PASS  Zip equals the clean tree (43 files, dotfiles included)
+  PASS  No .DS_Store, __MACOSX or Thumbs.db inside the zip
+  PASS  Every file byte-identical to the tested tree
+
+26/26 passed
+```
