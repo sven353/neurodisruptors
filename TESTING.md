@@ -475,3 +475,40 @@ Run on 15 October 2026 against a fresh clone of github.com/sven353/neurodisrupto
 
 26/26 passed
 ```
+
+## Form confirmation route (/thanks/)
+
+Run on 15 October 2026. _redirects is evaluated with Netlify semantics (top to bottom, first match wins, ! forces). The POST runs against a local stand-in for Netlify Forms. Regression: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 40/40 passed, Phase 6 21/21 passed.
+
+```
+[1 _redirects audit]
+  PASS  24 rules in _redirects, none in netlify.toml ([[redirects]] absent)
+  PASS  No splat (*) or placeholder (:name) rules that could catch unrelated paths
+  PASS  No rule matches /thanks, /thanks/, /privacy-policy/, /legal-notice/, /404.html or /
+  PASS  No rule targets the root or a 404 stub for any thanks path
+  PASS  All 12 legacy paths still 301 to their V2 targets (with and without trailing slash)
+  PASS  Forced (!) rules only apply to legacy paths, never to real V2 directories
+
+[2 /thanks/ page]
+  PASS  thanks/index.html exists at the exact path the form action points to (action="/thanks/")
+  PASS  <meta name="robots" content="noindex">
+  PASS  Self-hosted font preloads: instrument-serif-latin-400.woff2, inter-latin-var.woff2
+  PASS  main.css and main.js referenced and present
+  PASS  Site header (4-link nav, CTA, mobile drawer) and footer included
+  PASS  Status: 'Inquiry received.'
+  PASS  Lead message matches brief
+  PASS  Buttons: [('Return to Homepage', '/'), ('Connect on LinkedIn', 'https://www.linkedin.com/in/svenmulfinger')]
+
+[3 POST flow]
+  PASS  1280px: POST /thanks/ with form-name=conversation then lands on /thanks/ showing 'Inquiry received.'
+  PASS  1280px: confirmation page renders with site fonts, no overflow, 0 axe violations, 0 console errors
+  PASS  1280px: 'Return to Homepage' goes to /
+  PASS  375px: POST /thanks/ with form-name=conversation then lands on /thanks/ showing 'Inquiry received.'
+  PASS  375px: confirmation page renders with site fonts, no overflow, 0 axe violations, 0 console errors
+  PASS  375px: 'Return to Homepage' goes to /
+
+[4 Live vs repo (diagnosis)]
+  PASS  Repo HEAD /thanks/ heading is 'Enquiry received.' while the live site still serves 'Thank you.' (Phase 3 build): Netlify is not publishing current pushes
+
+21/21 passed
+```

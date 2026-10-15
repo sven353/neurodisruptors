@@ -31,6 +31,15 @@ llms.txt                   Plain-language site summary for AI assistants and ans
 
 The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Each schema answer is the preview sentence followed by the detail paragraph, or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
 
+## Netlify checklist (form submissions)
+
+A 404 page after submitting the form, while GET /thanks/ works, means Netlify did not treat the POST as a form submission. Check in this order:
+
+1. Site configuration, Build and deploy, Continuous deployment: the site is linked to github.com/sven353/neurodisruptors, branch main, publish directory `.` (the repo root), no build command. If the live site lags behind the repo, this link is missing or builds are failing or paused.
+2. Forms: click Enable form detection if it is shown.
+3. Deploys: Trigger deploy, Clear cache and deploy site. The deploy summary should list the form "conversation".
+4. Send one test inquiry from the live site. It should land on /thanks/ and appear under Forms, Active forms, conversation. Then set up email notifications there.
+
 ## Applying a release from a zip
 
 Uploading a zip through GitHub's web interface adds and overwrites files but never deletes them. To make the repo match a release exactly, run this in your local clone:
@@ -60,6 +69,7 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Form confirmation fix (15 Oct 2026): /thanks/ copy updated ("Inquiry received."), Return to Homepage and Connect on LinkedIn buttons, font preloads on every subpage. _redirects audited: no rule can catch /thanks/, /privacy-policy/ or /legal-notice/. Site wording switched from enquiry to inquiry. The live 404 after submit comes from Netlify settings, see the checklist below.
 - Cleanup (15 Oct 2026): removed V1 clutter (.DS_Store files, scripts/, 41 gallery and 16 leaders photos, unused V1 team photos, logos, illustrations and style.css). Kept three source images for later phases. Added .gitignore. Legacy redirect stubs kept until hosting is confirmed.
 - Phase 6 (15 Oct 2026): FAQ rebuilt as six book-grounded questions in a scan-and-expand pattern (question and one-sentence answer always visible, detail on demand). Accessible accordion: button inside the heading, aria-controls, keyboard support, find-in-page reaches collapsed text. The HTML ships fully open so crawlers and no-JS readers get every answer. FAQPage schema mirrors preview plus detail. Madrid added to the city list.
 - Phase 5 (15 Oct 2026): GEO. JSON-LD knowledge graph (WebSite, FAQPage, Organization, Person, two Services, Book) replaces the single ProfessionalService block. New Strategic Context FAQ above #connect. Cities and languages named in the sparring and workshop copy. Added llms.txt and a square logo for the Organization schema.
