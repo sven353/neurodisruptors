@@ -1,6 +1,6 @@
 # Neurodisruptors V2
 
-Phase 1 rebuild of [neurodisruptors.com](https://www.neurodisruptors.com): information architecture, navigation and site skeleton for founders, CEOs, boards and HR buyers.
+Phase 1 rebuild of [neurodisruptors.com](https://neurodisruptors.com): information architecture, navigation and site skeleton for founders, CEOs, boards and HR buyers.
 
 Plain HTML, CSS and vanilla JS. No build step, no dependencies, no third-party requests (fonts are self-hosted).
 
@@ -30,6 +30,10 @@ llms.txt                   Plain-language site summary for AI assistants and ans
 ## Editing the FAQ
 
 The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Each schema answer is the sentence inside <summary> (.faq__preview) followed by the detail paragraph (.faq__body), or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
+
+## Netlify checklist (domain)
+
+Domain management: set neurodisruptors.com as the primary domain. The www address (www dot neurodisruptors.com) should then answer with a 301 to https://neurodisruptors.com/. Every canonical and Open Graph URL on the site points at the apex, so the apex must be the address that serves the site directly.
 
 ## Netlify checklist (form submissions)
 
@@ -77,6 +81,7 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Social metadata (16 Oct 2026): every page shares one metadata block (title, meta title, description, canonical, full Open Graph and Twitter card set). New dark og-preview.png (1200x630) replaces og-image.png. All absolute URLs (canonical, OG, schema, sitemap, robots, llms.txt) now use the apex https://neurodisruptors.com; set it as the primary domain in Netlify so www redirects to it.
 - Framework and FAQ (16 Oct 2026): #framework now shows a labelled Spiky Profile map (5 spikes, 5 valleys, dashed flat baseline; text labels on desktop, numbered markers plus legend on mobile), an operational contrast table and a scope note. FAQ rebuilt as six native details/summary items; question and first sentence always visible; the FAQPage schema mirrors the full answers. The JavaScript accordion was removed.
 - Editorial update (16 Oct 2026): hero lead grounded in executive load; CTAs now "Apply for Private Sparring" and "Request Enterprise Proposal" (both preselect the form); Track A states the retainer model; formats renamed to Asymmetric Minds in the C-Suite and Bridging the Founder-Board Interface (cards, schema, llms.txt); new dropdown labels with value board-workshop; research now names IESE and IE Business School (Prof. Dr. Thomas Kluetter, Prof. Dr. Nicolas Deuschel); footer advisory disclaimer on every page.
 - Form delivery (15 Oct 2026): honeypot renamed from company_website to bot-field and fully hidden (display none), because the old field sat off-screen where browser autofill could fill it, which makes Netlify silently drop the submission. Added a hidden subject field so notifications arrive as "New inquiry from neurodisruptors.com (id)" without the [Netlify] prefix.

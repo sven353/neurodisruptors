@@ -606,3 +606,37 @@ The Phase 6 accordion suite is retired: its markup no longer exists. Its checks 
 
 31/31 passed
 ```
+
+## Social metadata and Open Graph (16 October 2026)
+
+Scraper view: tags are read from the raw HTML without JavaScript, as LinkedIn, WhatsApp, Slack and X do. Regression on the final build: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 40/40 passed, /thanks/ 21/21 passed, form delivery 14/14 passed, framework and FAQ 31/31 passed.
+
+```
+[1 index.html head]
+  PASS  <title> as briefed
+  PASS  Canonical is https://neurodisruptors.com/
+  PASS  All 20 metadata tags present exactly once with the briefed values
+  PASS  No duplicate meta tags
+  PASS  Metadata sits before any script, so scrapers that read only the first KB still see it
+  PASS  Info: meta description is 178 characters (Google shows about 155 to 160 on desktop)
+
+[2 All pages]
+  PASS  5 content pages carry the same Open Graph and Twitter set and an apex canonical
+  PASS  No legacy or V1 preview references (www host, og-image.png, hero-share, V1 descriptions)
+  PASS  Old og-image.png removed from the repo
+
+[3 og-preview.png]
+  PASS  File exists at the URL path, PNG, 1200x630 (1.91:1)
+  PASS  87 KB: under WhatsApp's roughly 300 KB preview limit and LinkedIn's 5 MB
+  PASS  Dark background as specified (corner pixel #111111)
+  PASS  Wordmark area contains light text on the dark ground
+
+[4 Absolute URLs]
+  PASS  JSON-LD: 26 own URLs, all on the apex; image points to og-preview.png
+  PASS  sitemap.xml: 3 URLs on the apex; robots.txt points to the apex sitemap
+  PASS  llms.txt links use the apex
+  PASS  CNAME (GitHub Pages fallback) names the apex
+  PASS  HTML validates on every page
+
+18/18 passed
+```
