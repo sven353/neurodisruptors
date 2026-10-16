@@ -542,3 +542,18 @@ Run on 15 October 2026. The honeypot exposure check serves the live repo (commit
 
 14/14 passed
 ```
+
+## Editorial update (16 October 2026)
+
+Copy, CTA, dropdown, research and footer changes from the positioning audit. Expectations in the older suites were updated to the new copy (hero lead, CTA labels, track links now preselecting the form, board-workshop value, renamed formats, IE affiliation). Results on the final build:
+
+```
+Phase 1 71/71 passed
+Phase 2 51/51 passed
+Phase 3 70/70 passed
+Phase 4 38/38 passed
+Phase 5 (GEO schema) 40/40 passed
+Phase 6 (FAQ) 21/21 passed
+/thanks/ and redirects 21/21 passed
+Form delivery 14/14 passed
+```
