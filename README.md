@@ -29,7 +29,7 @@ llms.txt                   Plain-language site summary for AI assistants and ans
 
 ## Editing the FAQ
 
-The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Each schema answer is the preview sentence followed by the detail paragraph, or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
+The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Each schema answer is the sentence inside <summary> (.faq__preview) followed by the detail paragraph (.faq__body), or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
 
 ## Netlify checklist (form submissions)
 
@@ -77,6 +77,7 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Framework and FAQ (16 Oct 2026): #framework now shows a labelled Spiky Profile map (5 spikes, 5 valleys, dashed flat baseline; text labels on desktop, numbered markers plus legend on mobile), an operational contrast table and a scope note. FAQ rebuilt as six native details/summary items; question and first sentence always visible; the FAQPage schema mirrors the full answers. The JavaScript accordion was removed.
 - Editorial update (16 Oct 2026): hero lead grounded in executive load; CTAs now "Apply for Private Sparring" and "Request Enterprise Proposal" (both preselect the form); Track A states the retainer model; formats renamed to Asymmetric Minds in the C-Suite and Bridging the Founder-Board Interface (cards, schema, llms.txt); new dropdown labels with value board-workshop; research now names IESE and IE Business School (Prof. Dr. Thomas Kluetter, Prof. Dr. Nicolas Deuschel); footer advisory disclaimer on every page.
 - Form delivery (15 Oct 2026): honeypot renamed from company_website to bot-field and fully hidden (display none), because the old field sat off-screen where browser autofill could fill it, which makes Netlify silently drop the submission. Added a hidden subject field so notifications arrive as "New inquiry from neurodisruptors.com (id)" without the [Netlify] prefix.
 - Form confirmation fix (15 Oct 2026): /thanks/ copy updated ("Inquiry received."), Return to Homepage and Connect on LinkedIn buttons, font preloads on every subpage. _redirects audited: no rule can catch /thanks/, /privacy-policy/ or /legal-notice/. Site wording switched from enquiry to inquiry. The live 404 after submit comes from Netlify settings, see the checklist below.

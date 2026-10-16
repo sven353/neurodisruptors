@@ -557,3 +557,52 @@ Phase 6 (FAQ) 21/21 passed
 /thanks/ and redirects 21/21 passed
 Form delivery 14/14 passed
 ```
+
+## Spiky Profile map, contrast table and native FAQ (16 October 2026)
+
+The Phase 6 accordion suite is retired: its markup no longer exists. Its checks are replaced by the suite below, which covers the native details/summary FAQ. Phase 3 and Phase 5 expectations were pointed at the new structure. Results on the final build: Phase 1 71/71 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 40/40 passed, /thanks/ 21/21 passed, form delivery 14/14 passed.
+
+```
+[1 Map]
+  PASS  Labelled radar sits inside #framework .framework__visual
+  PASS  10 axis labels in the SVG, 5 spikes and 5 valleys, names exactly as briefed
+  PASS  Real-text legend groups the same 10 dimensions (screen readers and mobile)
+  PASS  SVG has role=img with title and a description naming every dimension
+  PASS  Dashed flat corporate baseline drawn and explained in the key
+
+[2 Table and note]
+  PASS  Real <table> with caption and 4 column headers: ['Cognitive Dimension', 'Natural Spike (High Leverage)', 'Operating Valley (Systemic Friction)', 'Executive Scaffolding Required']
+  PASS  3 rows with row headers: Systemic Synthesis, Crisis Hyperfocus, Relational Intuition
+  PASS  Cells carry the briefed content (spike, valley, scaffolding)
+  PASS  Every cell has a data-label for the stacked mobile layout
+  PASS  Scope note directly below the table: operational map, no assessment or diagnosis
+
+[3 FAQ]
+  PASS  6 native <details class="faq-item"> with <summary class="faq-summary">, no JavaScript accordion
+  PASS  All closed by default; question and first sentence sit inside <summary> so they stay visible
+  PASS  The 6 briefed questions, in order
+  PASS  Each visible first sentence is one complete, self-contained answer (bottom line up front)
+  PASS  Exactly one FAQPage in the page's JSON-LD (no duplicate block)
+  PASS  Schema questions and full answers match the visible text word for word
+  PASS  Research answer names IESE and IE Business School; no 'Carlos III', no 'hundreds of engagements'
+  PASS  House style in new copy: no em dash, no serial comma, UK spelling
+
+[4 Behaviour]
+  PASS  1280px: 10 text labels on the radar at 13.1px, none clipped, no page overflow
+  PASS  Click opens and closes a FAQ item (native details)
+  PASS  Keyboard: Enter opens, Space closes
+  PASS  Visible keyboard focus ring on the summary (solid faq-4)
+  PASS  Closed state shows every question and first sentence, hides only the detail
+  PASS  1280px: 0 axe violations with all FAQ items open, 0 console errors
+  PASS  768px: 10 text labels on the radar at 15.6px, none clipped, no page overflow
+  PASS  768px: 0 axe violations with all FAQ items open, 0 console errors
+  PASS  375px: 10 numbered markers on the radar at 11.5px, none clipped, no page overflow
+  PASS  375px: table rows stack as blocks (block) with visible column labels
+  PASS  375px: 0 axe violations with all FAQ items open, 0 console errors
+
+[5 Validity]
+  PASS  index.html validates (heading inside summary is permitted)
+  PASS  main.css validates; old .contrast and accordion rules removed
+
+31/31 passed
+```
