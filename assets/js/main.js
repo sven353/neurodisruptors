@@ -146,6 +146,32 @@
     else if (narrow.addListener) narrow.addListener(applyLabels);
   }
 
+  /* ---------- Copy-to-clipboard (self-reflection prompt) ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-copy-target]"), function (btn) {
+    var src = document.getElementById(btn.getAttribute("data-copy-target"));
+    var status = btn.closest(".prompt") && btn.closest(".prompt").querySelector(".prompt__status");
+    if (!src) return;
+    var label = btn.textContent;
+    var done = function (ok) {
+      btn.textContent = ok ? "Copied" : label;
+      btn.classList.toggle("is-copied", ok);
+      if (status) status.textContent = ok ? "Prompt copied. Paste it into a new chat in your AI assistant." : "Copy did not work here. Select the text and copy it manually.";
+      if (ok) setTimeout(function () { btn.textContent = label; btn.classList.remove("is-copied"); }, 2500);
+    };
+    var fallback = function () {
+      try {
+        var r = document.createRange(); r.selectNodeContents(src);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        done(document.execCommand("copy"));
+      } catch (e) { done(false); }
+    };
+    btn.addEventListener("click", function () {
+      var text = src.textContent;
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      else fallback();
+    });
+  });
+
   /* ---------- Footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = String(new Date().getFullYear());

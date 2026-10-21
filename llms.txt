@@ -16,6 +16,7 @@ Neurodisruptors offers confidential one-to-one executive sparring for founders a
 - [The Non-Linear Operating System](https://neurodisruptors.com/#book): How Exceptional Leaders Think, Decide and Build Differently (in review)
 - [Academic collaborations](https://neurodisruptors.com/#research): IESE Business School, IE Business School
 - [Frequently asked questions](https://neurodisruptors.com/#faq)
+- [Map your good day and your bad day](https://neurodisruptors.com/good-day-bad-day/): a non-clinical self-reflection prompt for your own AI assistant, using the Spiky Profile lens (not a medical diagnosis)
 
 ## Contact
 

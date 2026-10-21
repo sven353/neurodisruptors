@@ -10,6 +10,7 @@ Plain HTML, CSS and vanilla JS. No build step, no dependencies, no third-party r
 index.html                 One-page site: hero, #sparring, #workshops, #framework (+ #book), #about (+ #research), #connect
 privacy-policy/            Privacy policy (controller: Sven Mulfinger)
 legal-notice/              LSSI legal notice
+good-day-bad-day/          Self-reflection prompt page (prompt text lives in the page builder; edit both together)
 thanks/                    Contact form confirmation (Netlify Forms redirect target)
 404.html                   Not found page (Netlify and GitHub Pages both pick it up)
 about/, executive-coaching/, speaking-workshops/, ...   Legacy V1 URLs, redirect stubs (12). Needed on GitHub Pages;
@@ -81,6 +82,7 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Self-reflection prompt (21 Oct 2026): new page /good-day-bad-day/ with a non-clinical prompt for the reader's own AI assistant, a prominent "Not a medical diagnosis" notice (see a doctor if unwell, 112 in a crisis), a copy button and a sparring call to action. Linked from #framework, sitemap.xml and llms.txt. Subpage canonicals now end in a trailing slash.
 - Social metadata (16 Oct 2026): every page shares one metadata block (title, meta title, description, canonical, full Open Graph and Twitter card set). New dark og-preview.png (1200x630) replaces og-image.png. All absolute URLs (canonical, OG, schema, sitemap, robots, llms.txt) now use the apex https://neurodisruptors.com; set it as the primary domain in Netlify so www redirects to it.
 - Framework and FAQ (16 Oct 2026): #framework now shows a labelled Spiky Profile map (5 spikes, 5 valleys, dashed flat baseline; text labels on desktop, numbered markers plus legend on mobile), an operational contrast table and a scope note. FAQ rebuilt as six native details/summary items; question and first sentence always visible; the FAQPage schema mirrors the full answers. The JavaScript accordion was removed.
 - Editorial update (16 Oct 2026): hero lead grounded in executive load; CTAs now "Apply for Private Sparring" and "Request Enterprise Proposal" (both preselect the form); Track A states the retainer model; formats renamed to Asymmetric Minds in the C-Suite and Bridging the Founder-Board Interface (cards, schema, llms.txt); new dropdown labels with value board-workshop; research now names IESE and IE Business School (Prof. Dr. Thomas Kluetter, Prof. Dr. Nicolas Deuschel); footer advisory disclaimer on every page.

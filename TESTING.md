@@ -640,3 +640,49 @@ Scraper view: tags are read from the raw HTML without JavaScript, as LinkedIn, W
 
 18/18 passed
 ```
+
+## Self-reflection prompt page (21 October 2026)
+
+Includes a real clipboard check: the copied text must equal the published prompt character for character. Regression on the final build: Phase 1 72/72 passed, Phase 2 51/51 passed, Phase 3 70/70 passed, Phase 4 38/38 passed, Phase 5 40/40 passed, /thanks/ 21/21 passed, form delivery 14/14 passed, framework and FAQ 31/31 passed, social metadata 18/18 passed.
+
+```
+[1 Notice]
+  PASS  Notice titled 'Not a medical diagnosis' with role=note
+  PASS  States it is not a formal medical, psychological or psychiatric assessment and diagnoses no condition
+  PASS  Tells readers who feel unwell to see a doctor or qualified health professional
+  PASS  Crisis line: local emergency number, 112 across the EU
+  PASS  Clarifies the answers come from an AI system, not from Dr. Sven Mulfinger or a clinician
+  PASS  Notice comes before the prompt in reading order (['notice', 'prompt'])
+
+[2 Prompt]
+  PASS  Published prompt equals the builder's canonical text exactly
+  PASS  Prompt forbids estimating likelihood of any condition and forbids diagnosis
+  PASS  Prompt tells the AI to pause and point to a doctor if the user mentions feeling unwell or unsafe
+  PASS  Prompt defines the framework itself (spikes, valleys, energy triad) so no AI has to guess
+  PASS  Prompt asks about a good day and a bad day before analysing
+  PASS  No probability scorecard or PROBABLE / POSSIBLE ratings
+  PASS  House style: no em dash, no serial comma, no sales pitch inside the prompt
+
+[3 Wiring]
+  PASS  Framework section links to /good-day-bad-day/ right after the scope note
+  PASS  llms.txt and sitemap.xml list the page on the apex
+  PASS  Indexable page with its own title, description and apex canonical
+  PASS  Shared header, footer and footer disclaimer present
+  PASS  Next step goes to the homepage form with sparring preselected
+
+[4 Browser]
+  PASS  Copy button puts the exact prompt on the clipboard (2463 characters)
+  PASS  Button confirms 'Copied' and the live region announces it
+  PASS  Button label resets after a moment
+  PASS  CTA target preselects 'Private Executive Sparring' on the homepage form
+  PASS  Zero console errors or warnings
+  PASS  375px: no overflow, notice above the prompt, 0 axe violations
+  PASS  768px: no overflow, notice above the prompt, 0 axe violations
+  PASS  1280px: no overflow, notice above the prompt, 0 axe violations
+
+[5 Validity]
+  PASS  New page and homepage validate
+  PASS  CSS validates
+
+28/28 passed
+```
