@@ -31,7 +31,7 @@ llms.txt                   Plain-language site summary for AI assistants and ans
 
 ## Releasing CSS or JS changes
 
-main.css and main.js are loaded with a release tag (main.css?v=20261021). Change the tag on every release that touches either file, on all pages (ASSET_V in the page builder and design_build.py). netlify.toml also tells browsers to re-check both files on every visit, so a stale stylesheet can no longer survive a release.
+main.css and main.js are loaded with a release tag (main.css?v=2026102102, bumped for each release). Change the tag on every release that touches either file, on all pages (ASSET_V in the page builder and design_build.py). netlify.toml also tells browsers to re-check both files on every visit, so a stale stylesheet can no longer survive a release.
 
 ## Editing the FAQ
 
@@ -86,6 +86,8 @@ Netlify: connect the repo, publish directory `.`, no build command. The contact 
 GitHub Pages: works as is, including the legacy redirects (via the stub pages). Netlify Forms does not run on GitHub Pages, so the form needs another endpoint there (Formspree or similar: change the form `action`).
 
 ## Changelog
+
+- Share this site (21 Oct 2026): a share block at the top of the footer on every page ("Know a founder or colleague who would recognise this?") with WhatsApp, LinkedIn, email and Copy link, plus the phone's own share sheet where available. Plain links, no third-party scripts or tracking. The shared link always points to the homepage, so the card shows og-preview.png with the site title.
 
 - Design pass (21 Oct 2026): soft 20px corners and light shadows on every card and panel; Apple-style gradient glows on the dark bands, the radar panel and the hero; gradient proof strip, book panel and accent words; 21 custom line icons (proof bar, tracks, sparring, formats, milestones, About facts, research, connect); short scroll reveal (fade and 14px rise, 70ms stagger, off for reduced motion and without JavaScript); slimmer header once scrolled; portrait in About; radar shown on phones under the CTAs; on desktop the radar labels replace the ten-item list; FAQ closed shows only the questions. Cache fix: versioned CSS and JS plus must-revalidate headers, because a 7-day cache had served the old stylesheet to returning visitors.
 

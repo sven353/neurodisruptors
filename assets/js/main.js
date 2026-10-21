@@ -199,6 +199,36 @@
     }
   }
 
+  /* ---------- Share this site ----------
+     The WhatsApp, LinkedIn and email links work without JavaScript. Here we add Copy link
+     and, where the device offers one, its own share sheet. */
+  Array.prototype.forEach.call(document.querySelectorAll(".share__list"), function (list) {
+    var url = list.getAttribute("data-share-url");
+    var text = list.getAttribute("data-share-text");
+    var status = list.parentNode.querySelector(".share__status");
+    var say = function (msg) { if (status) { status.textContent = msg; setTimeout(function () { status.textContent = ""; }, 3000); } };
+    var nativeBtn = list.querySelector("[data-share-native]");
+    if (nativeBtn && navigator.share) {
+      nativeBtn.parentNode.hidden = false;
+      nativeBtn.addEventListener("click", function () {
+        navigator.share({ title: "Neurodisruptors", text: text, url: url }).catch(function () { /* closed by the user */ });
+      });
+    }
+    var copyBtn = list.querySelector("[data-share-copy]");
+    if (copyBtn) {
+      var label = copyBtn.querySelector("span");
+      var copied = function () {
+        label.textContent = "Copied"; copyBtn.classList.add("is-copied"); say("Link copied: " + url);
+        setTimeout(function () { label.textContent = "Copy link"; copyBtn.classList.remove("is-copied"); }, 2500);
+      };
+      copyBtn.addEventListener("click", function () {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(url).then(copied, function () { say("Copy did not work here. The address is " + url); });
+        } else { say("Copy the address: " + url); }
+      });
+    }
+  });
+
   /* ---------- Footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = String(new Date().getFullYear());

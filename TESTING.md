@@ -733,3 +733,31 @@ Soft corners, gradient bands, icon set, scroll reveal, portrait and the cache fi
 ```
 
 Regression totals: site 72/72, Phase 2 51/51, Phase 3 70/70, Phase 4 38/38, Phase 5 40/40, thanks 21/21, forms 14/14, framework and FAQ 31/31, social 18/18, prompt page 28/28, design 29/29.
+
+## Share this site (21 October 2026)
+
+Two older checks were narrowed: the Phase 1 link checker now reads only meta refresh targets (it had picked up the url= parameter of the LinkedIn share link), and the Phase 4 LinkedIn consistency check skips the share endpoint. All 428 checks across twelve suites pass.
+
+```
+[1 Share links]
+  PASS  Share block on all 6 full pages (404.html, good-day-bad-day/index.html, index.html, legal-notice/index.html, privacy-policy/index.html, thanks/index.html)
+  PASS  WhatsApp: wa.me with a ready message that ends in the homepage URL
+  PASS  LinkedIn: official share-offsite endpoint with the apex homepage
+  PASS  Email: subject 'Thought you might find this useful' and a body carrying the URL
+  PASS  External share links open in a new tab with rel=noopener
+  PASS  Copy link and native Share are real buttons; native starts hidden
+  PASS  House style in share copy: no em dash, no serial comma, UK spelling
+  PASS  No third-party scripts, widgets or tracking pixels added
+
+[2 Browser]
+  PASS  Copy link puts https://neurodisruptors.com/ on the clipboard, button says 'Copied', status announced
+  PASS  Copy button resets
+  PASS  Native Share button shown only where the browser has a share sheet (navigator.share=False, shown=False)
+  PASS  Share block works on subpages too (privacy policy)
+  PASS  Zero console errors or warnings
+  PASS  Without JavaScript the WhatsApp, LinkedIn and email links still show
+  PASS  Phone with a share sheet: Share button visible and hands over title, text and URL
+  PASS  375px: buttons in two columns, no overflow, 0 axe violations in the share block
+
+16/16 passed
+```
