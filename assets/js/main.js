@@ -178,7 +178,7 @@
      and the hidden state only exists once html.js-rv is set here, so no content depends on it. */
   var RV = ".section-head, .proof__list, .track, .xcard, .format, .section-foot, .framework__map, .framework__key, " +
            ".framework__contrast-wrap, .framework__note, .framework__try, .milestone, .book, .about__body, " +
-           ".portrait, .facts, .research, .faq, .connect > div, .form, .tool__intro, .tool__main";
+           ".about__photo, .research, .faq, .connect > div, .form, .tool__intro, .tool__main";
   if ("IntersectionObserver" in window && !reduceMotion.matches) {
     var targets = Array.prototype.slice.call(document.querySelectorAll(RV));
     if (targets.length) {

@@ -22,7 +22,7 @@ assets/css/main.css        All styles, tokens at the top; the design layer (corn
 assets/js/main.js          Mobile drawer, focus trap, Esc, section highlighting, form preselect, short dropdown labels on phones, scroll reveal
 assets/fonts/              Inter (variable) and Instrument Serif, woff2, OFL licences included
 assets/img/                Favicon, touch icon, Open Graph image, 512px logo (schema)
-                           sven-mulfinger.webp/.jpg: About portrait (640px, compressed from team-sven-mulfinger.png)
+                           sven-session-800/1200.webp, sven-session.jpg: About photo. sven-mulfinger.webp/.jpg: headshot used in the Person schema
                            Source images kept for later, not yet used: team-sven-mulfinger.png (portrait source),
                            book-nonlinear-os.png (book cover), logo-square-2026.png (V1 brain logo; clashes with the
                            V2 no-brain-imagery direction). Compress before use, they are 1.4 to 2.6 MB each.
@@ -31,7 +31,7 @@ llms.txt                   Plain-language site summary for AI assistants and ans
 
 ## Releasing CSS or JS changes
 
-main.css and main.js are loaded with a release tag (main.css?v=2026102102, bumped for each release). Change the tag on every release that touches either file, on all pages (ASSET_V in the page builder and design_build.py). netlify.toml also tells browsers to re-check both files on every visit, so a stale stylesheet can no longer survive a release.
+main.css and main.js are loaded with a release tag (main.css?v=2026102103, bumped for each release). Change the tag on every release that touches either file, on all pages (ASSET_V in the page builder and design_build.py). netlify.toml also tells browsers to re-check both files on every visit, so a stale stylesheet can no longer survive a release.
 
 ## Editing the FAQ
 
@@ -86,6 +86,8 @@ Netlify: connect the repo, publish directory `.`, no build command. The contact 
 GitHub Pages: works as is, including the legacy redirects (via the stub pages). Netlify Forms does not run on GitHub Pages, so the form needs another endpoint there (Formspree or similar: change the form `action`).
 
 ## Changelog
+
+- About rebuilt (21 Oct 2026): session photo (responsive webp 800/1200px with jpg fallback, metadata stripped) beside a shorter bio; the facts table became a three-line strip (location, languages, Kuma Partners) plus Connect on LinkedIn; academic collaborations now a quiet row of three named professors under the section. The headshot stays as the Person image in the structured data. Built by about_build.py.
 
 - Share this site (21 Oct 2026): a share block at the top of the footer on every page ("Know a founder or colleague who would recognise this?") with WhatsApp, LinkedIn, email and Copy link, plus the phone's own share sheet where available. Plain links, no third-party scripts or tracking. The shared link always points to the homepage, so the card shows og-preview.png with the site title.
 

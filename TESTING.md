@@ -761,3 +761,22 @@ Two older checks were narrowed: the Phase 1 link checker now reads only meta ref
 
 16/16 passed
 ```
+
+## About section rebuild (21 October 2026)
+
+Photo-led About layout. The design suite now checks the photo set, metadata stripping, the new structure and the Person image. All 431 checks across twelve suites pass.
+
+```
+[2 Markup]
+  PASS  Icon sprite: 21 symbols, 21 icons placed, every reference resolves
+  PASS  Every icon is decorative (aria-hidden, focusable=false)
+  PASS  Icons on proof bar, tracks, sparring, formats, milestones, About facts and connect {'proof': 3, 'tracks': 2, 'sparring': 4, 'formats': 3, 'milestones': 4, 'facts': 3, 'connect': 2}
+  PASS  Proof bar numerals replaced by icons; sparring numerals kept as muted anchors
+  PASS  About photo: responsive webp (800w, 1200w) with jpg fallback {'sven-session-800.webp': 25, 'sven-session-1200.webp': 42, 'sven-session.jpg': 90} KB, alt text, width/height, lazy
+  PASS  Photo files carry no EXIF metadata (Picasa tags stripped)
+  PASS  About: photo first, then bio with a three-item facts strip and a LinkedIn link; research row below with three named professors
+  PASS  Kuma Partners sentence moved out of the bio into the facts strip (said once)
+  PASS  Person schema carries the headshot as image, so search and AI answers can match face and name
+  PASS  Index head carries one Primary metadata block (builder no longer stacks comments)
+
+```
