@@ -97,6 +97,8 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Snippet lengths (21 Oct 2026): homepage title shortened to "Neurodisruptors | Strategic Sparring for Non-Linear Leaders" (59 characters; Bing flagged the old 84). Every page now has a title of 25 to 65 characters and its own description of 110 to 160; test_geo checks both.
+
 - Same-person links (21 Oct 2026): every link and sameAs now uses each site's own canonical address: https://mulfinger.com (no www) and https://www.kuma.partners. Matching changes ship for kuma.partners and mulfinger.com.
 
 - GEO release (21 Oct 2026): new citable pages /about/ (ProfilePage for Dr. Sven Mulfinger, replaces the old redirect) and /spiky-profile/ (DefinedTerm with the ten dimensions, explainer, contrast table and milestones, copied from the homepage at build time). Person schema now names the same person on LinkedIn, mulfinger.com and Kuma Partners (sameAs), with rel="me" links on the page. FAQ rewritten answer-first in plain language and extended to twelve questions. dateModified on every page schema. robots.txt names the AI crawlers; sitemap.xml lists the new pages with build dates; new llms-full.txt carries the full text of definitions, profile and answers. _redirects: /about/ is no longer redirected, /team/ goes to /about/, /concepts/ to /spiky-profile/. Built by geo_pages.py (inside the page builder) and geo_extra_build.py.
