@@ -176,7 +176,7 @@
      Blocks fade and rise 14px as they enter the viewport, once each, with a short stagger
      inside card groups. Skipped entirely for reduced motion or without IntersectionObserver,
      and the hidden state only exists once html.js-rv is set here, so no content depends on it. */
-  var RV = ".section-head, .proof__list, .track, .xcard, .format, .section-foot, .framework__map, .framework__key, " +
+  var RV = ".section-head, .spiky-intro, .proof__list, .track, .xcard, .format, .section-foot, .framework__map, .framework__key, " +
            ".framework__contrast-wrap, .framework__note, .framework__try, .milestone, .book, .about__body, " +
            ".about__photo, .research, .faq, .connect > div, .form, .tool__intro, .tool__main";
   if ("IntersectionObserver" in window && !reduceMotion.matches) {
@@ -227,6 +227,11 @@
         } else { say("Copy the address: " + url); }
       });
     }
+  });
+
+  /* ---------- Print: load lazy images first so Save as PDF shows them ---------- */
+  window.addEventListener("beforeprint", function () {
+    Array.prototype.forEach.call(document.querySelectorAll('img[loading="lazy"]'), function (img) { img.loading = "eager"; });
   });
 
   /* ---------- Footer year ---------- */

@@ -780,3 +780,22 @@ Photo-led About layout. The design suite now checks the photo set, metadata stri
   PASS  Index head carries one Primary metadata block (builder no longer stacks comments)
 
 ```
+
+## Spiky profile explainer, seventh FAQ and print fix (21 October 2026)
+
+FAQ suites now expect seven questions. The design suite adds explainer and print checks. All 439 checks across twelve suites pass.
+
+```
+[2b Explainer]
+  PASS  Explainer opens #framework, after the section head and before the map (['section-head', 'spiky-intro', 'framework__visual'])
+  PASS  Names the profiles as tags: ADHD, Autism, Giftedness, Dyslexia, Dyspraxia, Dyscalculia, Twice-exceptional (2e)
+  PASS  Says neurodivergence is the umbrella term, with or without a label, and frames good day versus bad day
+  PASS  Clinical line: diagnosis stays with doctors and psychologists; see a professional if unwell
+  PASS  Links to the good day and bad day prompt
+  PASS  House style: no em dash, no serial comma
+  PASS  llms.txt names the profiles and links #spiky-profile; Organization knowsAbout adds autism, dyslexia, dyspraxia and 2e
+
+[3b Print]
+  PASS  Print and Save as PDF: every block visible, accent words in solid colour, backgrounds kept, header not repeated, share box hidden, photo loaded
+
+```

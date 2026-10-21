@@ -87,6 +87,8 @@ GitHub Pages: works as is, including the legacy redirects (via the stub pages). 
 
 ## Changelog
 
+- Spiky profile explainer and print fix (21 Oct 2026): "A spiky profile, whatever you call it." opens #framework (id spiky-profile): neurodivergence as the umbrella term, tags for ADHD, autism, giftedness, dyslexia, dyspraxia, dyscalculia and twice-exceptional (2e), good day and bad day framing, clinical line, link to the prompt page. New FAQ "Is this about ADHD?" (seven questions now, schema mirrored). llms.txt and Organization knowsAbout name the profiles. Print and Save as PDF now keep colours, show every block, print accent words in solid colour, load lazy images first and hide the share box. Built by intro_build.py.
+
 - About rebuilt (21 Oct 2026): session photo (responsive webp 800/1200px with jpg fallback, metadata stripped) beside a shorter bio; the facts table became a three-line strip (location, languages, Kuma Partners) plus Connect on LinkedIn; academic collaborations now a quiet row of three named professors under the section. The headshot stays as the Person image in the structured data. Built by about_build.py.
 
 - Share this site (21 Oct 2026): a share block at the top of the footer on every page ("Know a founder or colleague who would recognise this?") with WhatsApp, LinkedIn, email and Copy link, plus the phone's own share sheet where available. Plain links, no third-party scripts or tracking. The shared link always points to the homepage, so the card shows og-preview.png with the site title.
