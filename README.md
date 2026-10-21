@@ -18,19 +18,24 @@ about/, executive-coaching/, speaking-workshops/, ...   Legacy V1 URLs, redirect
 _redirects                 Netlify 301s for the legacy V1 URLs
 netlify.toml               Security and cache headers
 CNAME, .nojekyll           GitHub Pages
-assets/css/main.css        All styles, tokens at the top
-assets/js/main.js          Mobile drawer, focus trap, Esc, section highlighting, form preselect, short dropdown labels on phones
+assets/css/main.css        All styles, tokens at the top; the design layer (corners, gradients, icons, reveal) sits at the end
+assets/js/main.js          Mobile drawer, focus trap, Esc, section highlighting, form preselect, short dropdown labels on phones, scroll reveal
 assets/fonts/              Inter (variable) and Instrument Serif, woff2, OFL licences included
 assets/img/                Favicon, touch icon, Open Graph image, 512px logo (schema)
-                           Source images kept for later, not yet used: team-sven-mulfinger.png (About portrait),
+                           sven-mulfinger.webp/.jpg: About portrait (640px, compressed from team-sven-mulfinger.png)
+                           Source images kept for later, not yet used: team-sven-mulfinger.png (portrait source),
                            book-nonlinear-os.png (book cover), logo-square-2026.png (V1 brain logo; clashes with the
                            V2 no-brain-imagery direction). Compress before use, they are 1.4 to 2.6 MB each.
 llms.txt                   Plain-language site summary for AI assistants and answer engines
 ```
 
+## Releasing CSS or JS changes
+
+main.css and main.js are loaded with a release tag (main.css?v=20261021). Change the tag on every release that touches either file, on all pages (ASSET_V in the page builder and design_build.py). netlify.toml also tells browsers to re-check both files on every visit, so a stale stylesheet can no longer survive a release.
+
 ## Editing the FAQ
 
-The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Each schema answer is the sentence inside <summary> (.faq__preview) followed by the detail paragraph (.faq__body), or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
+The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Closed, each item shows only its question. Each schema answer is the first paragraph of the opened answer (.faq__preview) followed by the detail paragraph, or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
 
 ## Netlify checklist (domain)
 
@@ -81,6 +86,8 @@ Netlify: connect the repo, publish directory `.`, no build command. The contact 
 GitHub Pages: works as is, including the legacy redirects (via the stub pages). Netlify Forms does not run on GitHub Pages, so the form needs another endpoint there (Formspree or similar: change the form `action`).
 
 ## Changelog
+
+- Design pass (21 Oct 2026): soft 20px corners and light shadows on every card and panel; Apple-style gradient glows on the dark bands, the radar panel and the hero; gradient proof strip, book panel and accent words; 21 custom line icons (proof bar, tracks, sparring, formats, milestones, About facts, research, connect); short scroll reveal (fade and 14px rise, 70ms stagger, off for reduced motion and without JavaScript); slimmer header once scrolled; portrait in About; radar shown on phones under the CTAs; on desktop the radar labels replace the ten-item list; FAQ closed shows only the questions. Cache fix: versioned CSS and JS plus must-revalidate headers, because a 7-day cache had served the old stylesheet to returning visitors.
 
 - Self-reflection prompt (21 Oct 2026): new page /good-day-bad-day/ with a non-clinical prompt for the reader's own AI assistant, a prominent "Not a medical diagnosis" notice (see a doctor if unwell, 112 in a crisis), a copy button and a sparring call to action. Linked from #framework, sitemap.xml and llms.txt. Subpage canonicals now end in a trailing slash.
 - Social metadata (16 Oct 2026): every page shares one metadata block (title, meta title, description, canonical, full Open Graph and Twitter card set). New dark og-preview.png (1200x630) replaces og-image.png. All absolute URLs (canonical, OG, schema, sitemap, robots, llms.txt) now use the apex https://neurodisruptors.com; set it as the primary domain in Netlify so www redirects to it.

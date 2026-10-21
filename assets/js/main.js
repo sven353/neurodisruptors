@@ -172,6 +172,33 @@
     });
   });
 
+  /* ---------- Scroll reveal ----------
+     Blocks fade and rise 14px as they enter the viewport, once each, with a short stagger
+     inside card groups. Skipped entirely for reduced motion or without IntersectionObserver,
+     and the hidden state only exists once html.js-rv is set here, so no content depends on it. */
+  var RV = ".section-head, .proof__list, .track, .xcard, .format, .section-foot, .framework__map, .framework__key, " +
+           ".framework__contrast-wrap, .framework__note, .framework__try, .milestone, .book, .about__body, " +
+           ".portrait, .facts, .research, .faq, .connect > div, .form, .tool__intro, .tool__main";
+  if ("IntersectionObserver" in window && !reduceMotion.matches) {
+    var targets = Array.prototype.slice.call(document.querySelectorAll(RV));
+    if (targets.length) {
+      document.documentElement.classList.add("js-rv");
+      var groupIndex = new Map();
+      targets.forEach(function (el) {
+        var n = groupIndex.get(el.parentNode) || 0;
+        groupIndex.set(el.parentNode, n + 1);
+        el.style.setProperty("--rv-d", Math.min(n, 4) * 70 + "ms");
+        el.classList.add("rv");
+      });
+      var rvo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add("rv-in"); rvo.unobserve(en.target); }
+        });
+      }, { rootMargin: "0px 0px -6% 0px", threshold: 0.08 });
+      targets.forEach(function (el) { rvo.observe(el); });
+    }
+  }
+
   /* ---------- Footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = String(new Date().getFullYear());

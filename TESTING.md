@@ -686,3 +686,50 @@ Includes a real clipboard check: the copied text must equal the published prompt
 
 28/28 passed
 ```
+
+## Design pass (21 October 2026)
+
+Soft corners, gradient bands, icon set, scroll reveal, portrait and the cache fix. Earlier suites were re-run in full; five checks were rewritten on purpose because the brief changed them: the mobile hero now shows the radar (Phase 2), the FAQ shows only questions when closed (Phase 5 and the framework suite), layout is measured without the reveal offset and alpha backgrounds are composited in the contrast check (Phase 3), and asset URLs carry a release tag (thanks suite). All 412 checks across eleven suites pass.
+
+```
+[1 Cache]
+  PASS  All 6 styled pages load main.css and main.js with a ?v= release tag
+  PASS  One release tag across the site (20261021)
+  PASS  netlify.toml: css and js revalidate on every visit; no /assets/* rule overlaps them
+  PASS  Fonts stay immutable, images cached 7 days
+
+[2 Markup]
+  PASS  Icon sprite: 21 symbols, 23 icons placed, every reference resolves
+  PASS  Every icon is decorative (aria-hidden, focusable=false)
+  PASS  Icons on proof bar, tracks, sparring, formats, milestones, facts, research and connect {'proof': 3, 'tracks': 2, 'sparring': 4, 'formats': 3, 'milestones': 4, 'facts': 4, 'research': 1, 'connect': 2}
+  PASS  Proof bar numerals replaced by icons; sparring numerals kept as muted anchors
+  PASS  Portrait: webp 16 KB with jpg fallback 34 KB, alt text, width/height, lazy
+  PASS  Research box sits under the bio, portrait and facts in the side column
+  PASS  Index head carries one Primary metadata block (builder no longer stacks comments)
+
+[3 Browser]
+  PASS  JavaScript off: every block fully visible (reveal never hides content on its own)
+  PASS  Reduced motion: reveal switched off, content shown at once
+  PASS  Below the fold, 33 of 33 blocks wait hidden (opacity 0, offset 0px 14px)
+  PASS  Stagger inside card groups: ['0ms', '70ms', '140ms', '210ms']
+  PASS  Reveal is short: fades through 8 intermediate frames, fully shown after 447ms
+  PASS  After one pass down the page every block is revealed
+  PASS  Header slims from 72px to 60px once the page scrolls
+  PASS  Card hover lift still animates after reveal (matrix(1, 0, 0, 1, 0, -3))
+  PASS  Soft corners: {'track': 20, 'xcard': 20, 'format': 20, 'map': 20, 'table': 20, 'book': 20, 'faq': 20, 'form': 20, 'input': 12}
+  PASS  Dark bands and the proof strip use gradients; accent words use gradient text
+  PASS  FAQ opens with the first sentence leading the answer
+  PASS  Zero console errors or warnings
+  PASS  375px: no overflow, hero map 268px, dimension list shown (numbered map), 0 axe violations
+  PASS  768px: no overflow, hero map 300px, dimension list hidden (labelled map), 0 axe violations
+  PASS  1280px: no overflow, hero map 355px, dimension list hidden (labelled map), 0 axe violations
+
+[4 Validity]
+  PASS  All 18 HTML pages validate
+  PASS  CSS validates
+  PASS  No third-party requests added (no external URLs in CSS)
+
+29/29 passed
+```
+
+Regression totals: site 72/72, Phase 2 51/51, Phase 3 70/70, Phase 4 38/38, Phase 5 40/40, thanks 21/21, forms 14/14, framework and FAQ 31/31, social 18/18, prompt page 28/28, design 29/29.
