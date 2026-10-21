@@ -8,15 +8,18 @@ Neurodisruptors offers confidential one-to-one executive sparring for founders a
 
 - [Executive Sparring](https://neurodisruptors.com/#sparring): confidential one-to-one strategic sparring for the person who carries the final decision
 - [Workshops and Keynotes](https://neurodisruptors.com/#workshops): Asymmetric Minds in the C-Suite; Bridging the Founder-Board Interface; Designing Systems for Cognitive Spikes
+- [The Spiky Profile, defined](https://neurodisruptors.com/spiky-profile/): what the term means, its ten dimensions of spikes and valleys and how it relates to neurodivergence
 - [What is a spiky profile?](https://neurodisruptors.com/#spiky-profile): neurodivergence (ADHD, autism, giftedness, dyslexia, dyspraxia, dyscalculia, 2e) seen through how a mind works on a good day and a bad day, with diagnosis left to clinicians
 - [The Spiky Profile Framework](https://neurodisruptors.com/#framework): Map, Stress-Test, Scaffold, Translate
 
 ## About
 
-- [Dr. Sven Mulfinger](https://neurodisruptors.com/#about): executive coach, offsite facilitator and strategic advisor; Lead Partner at Kuma Partners
+- [Dr. Sven Mulfinger](https://neurodisruptors.com/about/): full profile of the founder; executive coach, offsite facilitator and strategic advisor; Lead Partner at Kuma Partners
+- Same person elsewhere: [LinkedIn](https://www.linkedin.com/in/svenmulfinger), [mulfinger.com](https://www.mulfinger.com), [Kuma Partners](https://www.kuma.partners/partners.html)
 - [The Non-Linear Operating System](https://neurodisruptors.com/#book): How Exceptional Leaders Think, Decide and Build Differently (in review)
 - [Academic collaborations](https://neurodisruptors.com/#research): IESE Business School, IE Business School
-- [Frequently asked questions](https://neurodisruptors.com/#faq)
+- [Frequently asked questions](https://neurodisruptors.com/#faq): twelve questions with full answers
+- [Full text for AI assistants](https://neurodisruptors.com/llms-full.txt): explainer, definitions and every FAQ answer in one plain file
 - [Map your good day and your bad day](https://neurodisruptors.com/good-day-bad-day/): a non-clinical self-reflection prompt for your own AI assistant, using the Spiky Profile lens (not a medical diagnosis)
 
 ## Contact

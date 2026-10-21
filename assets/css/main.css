@@ -735,7 +735,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .legend__head span { flex-basis: 100%; padding-left: calc(12px + .6rem); margin-top: 0; }
 @media (min-width: 760px) {
   /* the map carries the ten labels itself, so the numbered list only serves the phone layout */
-  .legend__list { display: none; }
+  #framework .legend__list { display: none; }
   .legend__head { margin-bottom: 0; }
 }
 
@@ -874,3 +874,30 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   .format, .form { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .xcard, .format, .track, .milestone, .faq-item, .spiky-intro, .research__names li { break-inside: avoid; }
 }
+
+/* About links (homepage) and explainer links */
+.about__links, .spiky-intro__links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.5rem; }
+.about__links a:not(.text-link) { color: var(--ink-2); font-size: .9375rem; }
+.about__links a:not(.text-link):hover { color: var(--accent-ink); }
+
+/* /about/ and /spiky-profile/ */
+.profile, .term { padding-block: clamp(2.5rem, 6vw, 4.5rem) var(--section-y); }
+.profile__h { font-family: var(--font-serif); font-size: clamp(1.5rem, 2.4vw, 1.9rem); line-height: 1.12; letter-spacing: -0.01em; margin-bottom: .9rem; }
+.profile__grid { display: grid; gap: 2rem 3rem; margin-top: clamp(3rem, 6vw, 4.5rem); padding-top: clamp(2rem, 4vw, 3rem); border-top: 1px solid var(--rule); }
+.profile__grid p { color: var(--ink-2); margin: 0; }
+.profile__grid a { color: var(--ink); }
+@media (min-width: 900px) { .profile__grid { grid-template-columns: repeat(3, 1fr); } }
+.profile__links { list-style: none; margin: 0; padding: 0; display: grid; gap: .9rem; }
+.profile__links li { display: grid; gap: .15rem; }
+.profile__links a { font-weight: 500; }
+.profile__links span { font-size: .875rem; color: var(--ink-3); }
+.profile__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; margin-top: clamp(3rem, 6vw, 4.5rem); }
+@media (max-width: 559px) { .profile__cta .btn { width: 100%; } }
+.term__head { max-width: 50rem; margin-bottom: clamp(2.5rem, 5vw, 3.5rem); }
+.term__def { font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.5; color: var(--ink); margin: 1.5rem 0 1rem; }
+.term__def dfn { font-style: normal; font-weight: 600; }
+.term__by { color: var(--ink-3); font-size: .9375rem; }
+.term__by a { color: var(--ink-2); }
+.term__list { list-style: none; margin: .75rem 0 0; padding: 0; display: grid; gap: .45rem; font-size: .9375rem; }
+.term__block { margin-top: clamp(3rem, 6vw, 4.5rem); }
+.term .spiky-intro { margin-top: clamp(3rem, 6vw, 4.5rem); margin-bottom: 0; }

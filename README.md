@@ -13,7 +13,7 @@ legal-notice/              LSSI legal notice
 good-day-bad-day/          Self-reflection prompt page (prompt text lives in the page builder; edit both together)
 thanks/                    Contact form confirmation (Netlify Forms redirect target)
 404.html                   Not found page (Netlify and GitHub Pages both pick it up)
-about/, executive-coaching/, speaking-workshops/, ...   Legacy V1 URLs, redirect stubs (12). Needed on GitHub Pages;
+executive-coaching/, speaking-workshops/, ...   Legacy V1 URLs, redirect stubs (11). Needed on GitHub Pages;
                            on Netlify the _redirects 301! rules win, so the stubs can be deleted once Netlify is confirmed
 _redirects                 Netlify 301s for the legacy V1 URLs
 netlify.toml               Security and cache headers
@@ -27,6 +27,9 @@ assets/img/                Favicon, touch icon, Open Graph image, 512px logo (sc
                            book-nonlinear-os.png (book cover), logo-square-2026.png (V1 brain logo; clashes with the
                            V2 no-brain-imagery direction). Compress before use, they are 1.4 to 2.6 MB each.
 llms.txt                   Plain-language site summary for AI assistants and answer engines
+llms-full.txt              Full plain text of the definition, profile, explainer and every FAQ answer (generated)
+about/                     Profile page for Dr. Sven Mulfinger (ProfilePage schema)
+spiky-profile/             The Spiky Profile, defined (DefinedTerm schema)
 ```
 
 ## Releasing CSS or JS changes
@@ -36,6 +39,13 @@ main.css and main.js are loaded with a release tag (main.css?v=2026102103, bumpe
 ## Editing the FAQ
 
 The visible FAQ (#faq) and the FAQPage answers in the JSON-LD must match word for word. Closed, each item shows only its question. Each schema answer is the first paragraph of the opened answer (.faq__preview) followed by the detail paragraph, or search engines and AI answer engines treat the structured data as unreliable. If you change a question or answer in the HTML, make the same change in the JSON-LD block in the <head>.
+
+## Search and AI visibility checklist (your side)
+
+1. Google Search Console: add the property neurodisruptors.com (DNS verification), submit https://neurodisruptors.com/sitemap.xml, then request indexing for /, /about/ and /spiky-profile/.
+2. Bing Webmaster Tools: import the property from Search Console and submit the same sitemap. ChatGPT search and Copilot draw on Bing's index.
+3. Keep the three profiles pointing at each other: neurodisruptors.com, kuma.partners and mulfinger.com should each list the other two plus LinkedIn as sameAs. If the job title or bio changes, change it everywhere.
+4. Add any further profile (IESE page, Google Scholar, ORCID, Crunchbase, talk pages) to SAME_AS in geo_build.py.
 
 ## Netlify checklist (domain)
 
@@ -86,6 +96,8 @@ Netlify: connect the repo, publish directory `.`, no build command. The contact 
 GitHub Pages: works as is, including the legacy redirects (via the stub pages). Netlify Forms does not run on GitHub Pages, so the form needs another endpoint there (Formspree or similar: change the form `action`).
 
 ## Changelog
+
+- GEO release (21 Oct 2026): new citable pages /about/ (ProfilePage for Dr. Sven Mulfinger, replaces the old redirect) and /spiky-profile/ (DefinedTerm with the ten dimensions, explainer, contrast table and milestones, copied from the homepage at build time). Person schema now names the same person on LinkedIn, mulfinger.com and Kuma Partners (sameAs), with rel="me" links on the page. FAQ rewritten answer-first in plain language and extended to twelve questions. dateModified on every page schema. robots.txt names the AI crawlers; sitemap.xml lists the new pages with build dates; new llms-full.txt carries the full text of definitions, profile and answers. _redirects: /about/ is no longer redirected, /team/ goes to /about/, /concepts/ to /spiky-profile/. Built by geo_pages.py (inside the page builder) and geo_extra_build.py.
 
 - Spiky profile explainer and print fix (21 Oct 2026): "A spiky profile, whatever you call it." opens #framework (id spiky-profile): neurodivergence as the umbrella term, tags for ADHD, autism, giftedness, dyslexia, dyspraxia, dyscalculia and twice-exceptional (2e), good day and bad day framing, clinical line, link to the prompt page. New FAQ "Is this about ADHD?" (seven questions now, schema mirrored). llms.txt and Organization knowsAbout name the profiles. Print and Save as PDF now keep colours, show every block, print accent words in solid colour, load lazy images first and hide the share box. Built by intro_build.py.
 

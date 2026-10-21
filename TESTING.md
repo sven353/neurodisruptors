@@ -799,3 +799,50 @@ FAQ suites now expect seven questions. The design suite adds explainer and print
   PASS  Print and Save as PDF: every block visible, accent words in solid colour, backgrounds kept, header not repeated, share box hidden, photo loaded
 
 ```
+
+## GEO release (21 October 2026)
+
+New suite test_geo.py. Updated on purpose: FAQ suites expect twelve questions, the Person sameAs now lists three profiles, the footer carries the About link, /about/ left the legacy redirect list. All 469 checks across thirteen suites pass.
+
+```
+[1 Entity]
+  PASS  Homepage Person: same person as LinkedIn, mulfinger.com and Kuma Partners; url and mainEntityOfPage point to /about/
+  PASS  /about/ is a ProfilePage whose mainEntity is the same Person @id, with a full Person node (sameAs, image, affiliations)
+  PASS  Visible rel=me links to LinkedIn and mulfinger.com on the homepage and /about/
+  PASS  /about/ links to Kuma Partners, the book, sparring and the Spiky Profile
+  PASS  /spiky-profile/: DefinedTerm 'Spiky Profile' in the Non-Linear Operating System term set; page authored by the Person
+  PASS  Definition sentence on the page matches the DefinedTerm description and the first FAQ answer
+  PASS  Ten dimensions listed as text on the definition page (5 spikes, 5 valleys)
+  PASS  Explainer, tags and clinical line carried onto the definition page
+  PASS  /about/: indexable, own title and description, apex canonical with trailing slash, dated
+  PASS  /spiky-profile/: indexable, own title and description, apex canonical with trailing slash, dated
+  PASS  dateModified on homepage, /about/ and /spiky-profile/ pages
+
+[2 FAQ]
+  PASS  12 questions, each opening with a complete sentence that names its subject (no 'It', 'This' or 'They' openers)
+  PASS  10 of 12 first sentences carry a named entity an AI can attribute
+  PASS  White-paper phrasing removed from the answers
+  PASS  No pricing or retainer terms stated (kept general until confirmed)
+
+[3 Files]
+  PASS  robots.txt allows all and names the AI crawlers (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended)
+  PASS  sitemap.xml lists 6 pages including /about/ and /spiky-profile/, all dated 2026-10-21
+  PASS  llms.txt links /about/, /spiky-profile/, llms-full.txt and the three same-person profiles
+  PASS  llms-full.txt carries all 12 FAQ answers word for word, the definition, the profile and the explainer
+  PASS  llms-full.txt house style: no em dash, no HTML left
+  PASS  _redirects no longer sends /about/ to the homepage; /team/ goes to /about/, /concepts/ to /spiky-profile/
+  PASS  Footer links the two new pages on every full page
+
+[4 Kuma Partners zip]
+  PASS  2 Sven Person nodes in the zip, every one lists neurodisruptors.com/about/ in sameAs (JSON parses)
+  PASS  Visible neurodisruptors.com link added on 4 pages, partners.html included
+
+[5 Browser]
+  PASS  /about/ at 375px: no overflow, 0 axe violations, no console errors
+  PASS  /about/ at 1280px: no overflow, 0 axe violations, no console errors
+  PASS  /spiky-profile/ at 375px: no overflow, 0 axe violations, no console errors
+  PASS  /spiky-profile/ at 1280px: no overflow, 0 axe violations, no console errors
+  PASS  Both new pages validate
+
+29/29 passed
+```
