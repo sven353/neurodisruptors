@@ -1,6 +1,6 @@
 # Neurodisruptors: full text for AI assistants
 
-Source: https://neurodisruptors.com/ . Last updated 2026-10-21. Plain-text copy of the definitions, profile and answers published on the site.
+Source: https://neurodisruptors.com/ . Last updated 2026-10-25. Plain-text copy of the definitions, profile and answers published on the site.
 
 ## The Spiky Profile, defined
 URL: https://neurodisruptors.com/spiky-profile/
@@ -20,11 +20,53 @@ A label can explain the past. For the next quarter, the useful question is what 
 Diagnosis stays with doctors and psychologists. If you suspect a condition or feel unwell, please see a qualified professional.
 Profiles included: ADHD, Autism, Giftedness, Dyslexia, Dyspraxia, Dyscalculia, Twice-exceptional (2e).
 
-## Operational contrast
+## Gifts and costs, profile by profile
 
-- Systemic Synthesis. Spike: Identifies non-linear market shifts years ahead. Valley: Translating intuition into step-by-step documentation feels painfully slow. Scaffolding: Visual roadmaps and dedicated operational integrators.
-- Crisis Hyperfocus. Spike: Exceptional clarity and decisive execution in turnaround or high-stakes ambiguity. Valley: Low-stimulation routine reporting triggers acute cognitive drag. Scaffolding: Elimination of context-switching and full administrative delegation.
-- Relational Intuition. Spike: Senses unspoken boardroom tensions and culture drift immediately. Valley: Absorbs emotional turbulence, risking boundary collapse and burnout. Scaffolding: Strict energy recovery protocols and formalised governance boundaries.
+Every strong point comes with a weak spot. Pick a profile to see how that tends to look at work and what helps.
+
+### ADHD: the gift, the cost and what helps
+
+- Sees round corners. The gift: Spots where the market is going long before the numbers show it. The cost: Explaining the idea step by step, in writing, feels slow and painful. What helps: A visual roadmap and a strong number two who turns ideas into plans.
+- Calm in a crisis. The gift: Gets sharp and decisive when things go wrong and the stakes are high. The cost: Routine reporting and admin drain energy fast. What helps: Hand off the routine, protect deep-work blocks and cut down on switching between tasks.
+- Reads the room. The gift: Picks up tension in a meeting before anyone says a word. The cost: Takes on other people's stress and finds it hard to switch off. What helps: Real recovery time, clear boundaries and someone to think out loud with.
+
+### Dyslexia: the gift, the cost and what helps
+
+- Big-picture thinker. The gift: Grasps the core of a problem quickly and sees how the pieces connect. The cost: Turning that clarity into emails, reports and documents takes far more effort than the thinking itself. What helps: Talk it through first, then let someone else or a tool draft it.
+- Strong in the room. The gift: Persuasive and quick in conversation. Ideas land when they are spoken. The cost: Written work can look weaker than the person behind it. What helps: Judge ideas on content rather than spelling. Voice notes, sketches and short calls help too.
+- Pattern spotter. The gift: Notices contradictions and connections others miss. The cost: Dense documents and long reading under time pressure are tiring. What helps: One-page summaries, diagrams and time to prepare before key meetings.
+
+### Giftedness: the gift, the cost and what helps
+
+- High resolution. The gift: Sees details, risks and knock-on effects early. The cost: Shallow or repetitive work is draining, not just boring. What helps: Real complexity to work on and less low-value noise.
+- Connects everything. The gift: Links ideas across fields and holds the whole system in mind at once. The cost: The mind keeps running long after the problem is solved. What helps: Long blocks of thinking time, followed by proper breaks.
+- Strong sense of meaning. The gift: Cares deeply about doing the right thing well. The cost: Inconsistency and poor decisions are hard to let go of and can read as impatience. What helps: A partner who enjoys structure and room to say what does not add up.
+
+### Autism: the gift, the cost and what helps
+
+- Deep focus. The gift: Can go further into a hard problem than almost anyone. The cost: Interruptions and constant context switching are very costly. What helps: Protected focus time and fewer, better-run meetings.
+- Straight talk. The gift: Honest, precise and consistent, with no hidden agenda. The cost: Unwritten rules and office politics take a lot of energy to decode. What helps: Clear expectations, explicit decisions and agendas shared in advance.
+- Sees the system. The gift: Spots flaws in processes, logic and data that others accept. The cost: Last-minute changes and noisy settings are exhausting. What helps: Notice of changes, a quiet place to work and written follow-ups.
+
+### Dyspraxia: the gift, the cost and what helps
+
+- Strategic overview. The gift: Sees the overall plan and where it needs to end up. The cost: Sequencing the many small practical steps to get there is tiring. What helps: Checklists, templates and an operations lead who owns the logistics.
+- Finds another way. The gift: Used to working round obstacles, so comes up with unusual solutions. The cost: Tasks others do on autopilot, like travel, set-up and paperwork, take real effort. What helps: Automate or delegate the routine and build buffer time into travel days.
+- Good with people. The gift: Articulate and empathic, good at explaining and bringing people with them. The cost: Busy, fast-moving settings and writing by hand in a live session are hard work. What helps: Typed notes, digital tools, quieter rooms and fewer room changes in a day.
+
+### Twice-exceptional: the gift, the cost and what helps
+
+- Hidden range. The gift: Works at a very high level in areas of strength. The cost: The strengths hide the struggle and the struggle hides the strengths, so both get misread. What helps: Name both openly and shape the role around the peaks.
+- Big leaps. The gift: Makes jumps others cannot follow and cracks problems others gave up on. The cost: Simple tasks can trip them up, which is baffling and wears down confidence. What helps: Support for the basics without anyone questioning the ability.
+- High standards. The gift: Raises the quality bar and spots what others miss. The cost: The gap between what they see and what they can deliver on a bad day is exhausting. What helps: Honest feedback, recovery time and a sparring partner who sees both sides.
+
+### Spiky Profile: every spike comes with a valley that needs scaffolding
+
+- Systemic Synthesis. Natural Spike (High Leverage): Identifies non-linear market shifts years ahead. Operating Valley (Systemic Friction): Translating intuition into step-by-step documentation feels painfully slow. Executive Scaffolding Required: Visual roadmaps and dedicated operational integrators.
+- Crisis Hyperfocus. Natural Spike (High Leverage): Exceptional clarity and decisive execution in turnaround or high-stakes ambiguity. Operating Valley (Systemic Friction): Low-stimulation routine reporting triggers acute cognitive drag. Executive Scaffolding Required: Elimination of context-switching and full administrative delegation.
+- Relational Intuition. Natural Spike (High Leverage): Senses unspoken boardroom tensions and culture drift immediately. Operating Valley (Systemic Friction): Absorbs emotional turbulence, risking boundary collapse and burnout. Executive Scaffolding Required: Strict energy recovery protocols and formalised governance boundaries.
+
+These are patterns we see in leaders, not a diagnosis. Most people recognise themselves in more than one tab.
 
 The Spiky Profile is an operational map of executive cognitive load. It does not assess personality or diagnose any condition. It shows where executive leverage peaks under pressure, where cognitive fatigue accumulates and what structural scaffolding is needed to lead sustainably.
 

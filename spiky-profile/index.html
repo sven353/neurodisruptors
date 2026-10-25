@@ -38,8 +38,8 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/instrument-serif-latin-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/main.css?v=2026102105">
-  <script defer src="/assets/js/main.js?v=2026102105"></script>
+  <link rel="stylesheet" href="/assets/css/main.css?v=2026102501">
+  <script defer src="/assets/js/main.js?v=2026102501"></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,7 +67,7 @@
       "url": "https://neurodisruptors.com/spiky-profile/",
       "name": "What Is a Spiky Profile? | Neurodisruptors",
       "inLanguage": "en-GB",
-      "dateModified": "2026-10-21",
+      "dateModified": "2026-10-25",
       "isPartOf": {
         "@id": "https://neurodisruptors.com/#website"
       },
@@ -212,34 +212,203 @@
 
         <section class="term__block" aria-labelledby="contrast-title">
           <h2 class="profile__h" id="contrast-title">Spikes, valleys and scaffolding</h2>
-          <div class="framework__contrast-wrap">
-          <table class="framework__contrast-table">
-            <caption>Operational contrast: every spike comes with a valley that needs scaffolding</caption>
-            <thead>
-              <tr><th scope="col">Cognitive Dimension</th><th scope="col">Natural Spike (High Leverage)</th><th scope="col">Operating Valley (Systemic Friction)</th><th scope="col">Executive Scaffolding Required</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" data-label="Cognitive Dimension">Systemic Synthesis</th>
-                <td data-label="Natural Spike (High Leverage)">Identifies non-linear market shifts years ahead.</td>
-                <td data-label="Operating Valley (Systemic Friction)">Translating intuition into step-by-step documentation feels painfully slow.</td>
-                <td data-label="Executive Scaffolding Required">Visual roadmaps and dedicated operational integrators.</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="Cognitive Dimension">Crisis Hyperfocus</th>
-                <td data-label="Natural Spike (High Leverage)">Exceptional clarity and decisive execution in turnaround or high-stakes ambiguity.</td>
-                <td data-label="Operating Valley (Systemic Friction)">Low-stimulation routine reporting triggers acute cognitive drag.</td>
-                <td data-label="Executive Scaffolding Required">Elimination of context-switching and full administrative delegation.</td>
-              </tr>
-              <tr>
-                <th scope="row" data-label="Cognitive Dimension">Relational Intuition</th>
-                <td data-label="Natural Spike (High Leverage)">Senses unspoken boardroom tensions and culture drift immediately.</td>
-                <td data-label="Operating Valley (Systemic Friction)">Absorbs emotional turbulence, risking boundary collapse and burnout.</td>
-                <td data-label="Executive Scaffolding Required">Strict energy recovery protocols and formalised governance boundaries.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="framework__contrast-wrap ptabs" data-ptabs>
+          <h3 class="ptabs__title">Gifts and costs, profile by profile</h3>
+          <p class="ptabs__intro">Every strong point comes with a weak spot. Pick a profile to see how that tends to look at work and what helps.</p>
+          <div class="ptabs__list" role="tablist" aria-label="Profiles" hidden>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-adhd" aria-controls="pp-adhd" aria-selected="true">ADHD</button>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-dyslexia" aria-controls="pp-dyslexia" aria-selected="false" tabindex="-1">Dyslexia</button>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-giftedness" aria-controls="pp-giftedness" aria-selected="false" tabindex="-1">Giftedness</button>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-autism" aria-controls="pp-autism" aria-selected="false" tabindex="-1">Autism</button>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-dyspraxia" aria-controls="pp-dyspraxia" aria-selected="false" tabindex="-1">Dyspraxia</button>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-twice-exceptional" aria-controls="pp-twice-exceptional" aria-selected="false" tabindex="-1">Twice-exceptional</button>
+            <button type="button" role="tab" class="ptabs__tab" id="pt-spiky-profile" aria-controls="pp-spiky-profile" aria-selected="false" tabindex="-1">Spiky Profile</button>
           </div>
+            <div class="ptabs__panel" id="pp-adhd" role="tabpanel" aria-labelledby="pt-adhd" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>ADHD: the gift, the cost and what helps</caption>
+                <thead><tr><th scope="col">Pattern</th><th scope="col">The gift</th><th scope="col">The cost</th><th scope="col">What helps</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Sees round corners</th>
+                    <td data-label="The gift">Spots where the market is going long before the numbers show it.</td>
+                    <td data-label="The cost">Explaining the idea step by step, in writing, feels slow and painful.</td>
+                    <td data-label="What helps">A visual roadmap and a strong number two who turns ideas into plans.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Calm in a crisis</th>
+                    <td data-label="The gift">Gets sharp and decisive when things go wrong and the stakes are high.</td>
+                    <td data-label="The cost">Routine reporting and admin drain energy fast.</td>
+                    <td data-label="What helps">Hand off the routine, protect deep-work blocks and cut down on switching between tasks.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Reads the room</th>
+                    <td data-label="The gift">Picks up tension in a meeting before anyone says a word.</td>
+                    <td data-label="The cost">Takes on other people's stress and finds it hard to switch off.</td>
+                    <td data-label="What helps">Real recovery time, clear boundaries and someone to think out loud with.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ptabs__panel" id="pp-dyslexia" role="tabpanel" aria-labelledby="pt-dyslexia" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>Dyslexia: the gift, the cost and what helps</caption>
+                <thead><tr><th scope="col">Pattern</th><th scope="col">The gift</th><th scope="col">The cost</th><th scope="col">What helps</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Big-picture thinker</th>
+                    <td data-label="The gift">Grasps the core of a problem quickly and sees how the pieces connect.</td>
+                    <td data-label="The cost">Turning that clarity into emails, reports and documents takes far more effort than the thinking itself.</td>
+                    <td data-label="What helps">Talk it through first, then let someone else or a tool draft it.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Strong in the room</th>
+                    <td data-label="The gift">Persuasive and quick in conversation. Ideas land when they are spoken.</td>
+                    <td data-label="The cost">Written work can look weaker than the person behind it.</td>
+                    <td data-label="What helps">Judge ideas on content rather than spelling. Voice notes, sketches and short calls help too.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Pattern spotter</th>
+                    <td data-label="The gift">Notices contradictions and connections others miss.</td>
+                    <td data-label="The cost">Dense documents and long reading under time pressure are tiring.</td>
+                    <td data-label="What helps">One-page summaries, diagrams and time to prepare before key meetings.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ptabs__panel" id="pp-giftedness" role="tabpanel" aria-labelledby="pt-giftedness" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>Giftedness: the gift, the cost and what helps</caption>
+                <thead><tr><th scope="col">Pattern</th><th scope="col">The gift</th><th scope="col">The cost</th><th scope="col">What helps</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Pattern">High resolution</th>
+                    <td data-label="The gift">Sees details, risks and knock-on effects early.</td>
+                    <td data-label="The cost">Shallow or repetitive work is draining, not just boring.</td>
+                    <td data-label="What helps">Real complexity to work on and less low-value noise.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Connects everything</th>
+                    <td data-label="The gift">Links ideas across fields and holds the whole system in mind at once.</td>
+                    <td data-label="The cost">The mind keeps running long after the problem is solved.</td>
+                    <td data-label="What helps">Long blocks of thinking time, followed by proper breaks.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Strong sense of meaning</th>
+                    <td data-label="The gift">Cares deeply about doing the right thing well.</td>
+                    <td data-label="The cost">Inconsistency and poor decisions are hard to let go of and can read as impatience.</td>
+                    <td data-label="What helps">A partner who enjoys structure and room to say what does not add up.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ptabs__panel" id="pp-autism" role="tabpanel" aria-labelledby="pt-autism" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>Autism: the gift, the cost and what helps</caption>
+                <thead><tr><th scope="col">Pattern</th><th scope="col">The gift</th><th scope="col">The cost</th><th scope="col">What helps</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Deep focus</th>
+                    <td data-label="The gift">Can go further into a hard problem than almost anyone.</td>
+                    <td data-label="The cost">Interruptions and constant context switching are very costly.</td>
+                    <td data-label="What helps">Protected focus time and fewer, better-run meetings.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Straight talk</th>
+                    <td data-label="The gift">Honest, precise and consistent, with no hidden agenda.</td>
+                    <td data-label="The cost">Unwritten rules and office politics take a lot of energy to decode.</td>
+                    <td data-label="What helps">Clear expectations, explicit decisions and agendas shared in advance.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Sees the system</th>
+                    <td data-label="The gift">Spots flaws in processes, logic and data that others accept.</td>
+                    <td data-label="The cost">Last-minute changes and noisy settings are exhausting.</td>
+                    <td data-label="What helps">Notice of changes, a quiet place to work and written follow-ups.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ptabs__panel" id="pp-dyspraxia" role="tabpanel" aria-labelledby="pt-dyspraxia" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>Dyspraxia: the gift, the cost and what helps</caption>
+                <thead><tr><th scope="col">Pattern</th><th scope="col">The gift</th><th scope="col">The cost</th><th scope="col">What helps</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Strategic overview</th>
+                    <td data-label="The gift">Sees the overall plan and where it needs to end up.</td>
+                    <td data-label="The cost">Sequencing the many small practical steps to get there is tiring.</td>
+                    <td data-label="What helps">Checklists, templates and an operations lead who owns the logistics.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Finds another way</th>
+                    <td data-label="The gift">Used to working round obstacles, so comes up with unusual solutions.</td>
+                    <td data-label="The cost">Tasks others do on autopilot, like travel, set-up and paperwork, take real effort.</td>
+                    <td data-label="What helps">Automate or delegate the routine and build buffer time into travel days.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Good with people</th>
+                    <td data-label="The gift">Articulate and empathic, good at explaining and bringing people with them.</td>
+                    <td data-label="The cost">Busy, fast-moving settings and writing by hand in a live session are hard work.</td>
+                    <td data-label="What helps">Typed notes, digital tools, quieter rooms and fewer room changes in a day.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ptabs__panel" id="pp-twice-exceptional" role="tabpanel" aria-labelledby="pt-twice-exceptional" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>Twice-exceptional: the gift, the cost and what helps</caption>
+                <thead><tr><th scope="col">Pattern</th><th scope="col">The gift</th><th scope="col">The cost</th><th scope="col">What helps</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Hidden range</th>
+                    <td data-label="The gift">Works at a very high level in areas of strength.</td>
+                    <td data-label="The cost">The strengths hide the struggle and the struggle hides the strengths, so both get misread.</td>
+                    <td data-label="What helps">Name both openly and shape the role around the peaks.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">Big leaps</th>
+                    <td data-label="The gift">Makes jumps others cannot follow and cracks problems others gave up on.</td>
+                    <td data-label="The cost">Simple tasks can trip them up, which is baffling and wears down confidence.</td>
+                    <td data-label="What helps">Support for the basics without anyone questioning the ability.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Pattern">High standards</th>
+                    <td data-label="The gift">Raises the quality bar and spots what others miss.</td>
+                    <td data-label="The cost">The gap between what they see and what they can deliver on a bad day is exhausting.</td>
+                    <td data-label="What helps">Honest feedback, recovery time and a sparring partner who sees both sides.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="ptabs__panel" id="pp-spiky-profile" role="tabpanel" aria-labelledby="pt-spiky-profile" tabindex="0">
+              <table class="framework__contrast-table">
+                <caption>Spiky Profile: every spike comes with a valley that needs scaffolding</caption>
+                <thead><tr><th scope="col">Cognitive Dimension</th><th scope="col">Natural Spike (High Leverage)</th><th scope="col">Operating Valley (Systemic Friction)</th><th scope="col">Executive Scaffolding Required</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" data-label="Cognitive Dimension">Systemic Synthesis</th>
+                    <td data-label="Natural Spike (High Leverage)">Identifies non-linear market shifts years ahead.</td>
+                    <td data-label="Operating Valley (Systemic Friction)">Translating intuition into step-by-step documentation feels painfully slow.</td>
+                    <td data-label="Executive Scaffolding Required">Visual roadmaps and dedicated operational integrators.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Cognitive Dimension">Crisis Hyperfocus</th>
+                    <td data-label="Natural Spike (High Leverage)">Exceptional clarity and decisive execution in turnaround or high-stakes ambiguity.</td>
+                    <td data-label="Operating Valley (Systemic Friction)">Low-stimulation routine reporting triggers acute cognitive drag.</td>
+                    <td data-label="Executive Scaffolding Required">Elimination of context-switching and full administrative delegation.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" data-label="Cognitive Dimension">Relational Intuition</th>
+                    <td data-label="Natural Spike (High Leverage)">Senses unspoken boardroom tensions and culture drift immediately.</td>
+                    <td data-label="Operating Valley (Systemic Friction)">Absorbs emotional turbulence, risking boundary collapse and burnout.</td>
+                    <td data-label="Executive Scaffolding Required">Strict energy recovery protocols and formalised governance boundaries.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          <p class="ptabs__foot">These are patterns we see in leaders, not a diagnosis. Most people recognise themselves in more than one tab.</p>
+        </div>
+        <!-- /PROFILE TABS -->
           <p class="framework__note">The Spiky Profile is an operational map of executive cognitive load. It does not assess personality or diagnose any condition. It shows where executive leverage peaks under pressure, where cognitive fatigue accumulates and what structural scaffolding is needed to lead sustainably.</p>
         </section>
 

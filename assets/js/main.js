@@ -229,6 +229,34 @@
     }
   });
 
+  /* ---------- Profile tabs (profiles_build) ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-ptabs]"), function (box) {
+    var list = box.querySelector('[role="tablist"]');
+    var tabs = Array.prototype.slice.call(box.querySelectorAll('[role="tab"]'));
+    if (!list || !tabs.length) return;
+    var show = function (tab, focus) {
+      tabs.forEach(function (t) {
+        var on = t === tab, panel = document.getElementById(t.getAttribute("aria-controls"));
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        if (panel) panel.hidden = !on;
+      });
+      if (focus) tab.focus();
+    };
+    list.hidden = false;
+    box.classList.add("ptabs--on");
+    show(tabs[0], false);
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { show(t, false); });
+      t.addEventListener("keydown", function (e) {
+        var n = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+        if (n === undefined) return;
+        e.preventDefault();
+        show(tabs[(n + tabs.length) % tabs.length], true);
+      });
+    });
+  });
+
   /* ---------- Print: load lazy images first so Save as PDF shows them ---------- */
   window.addEventListener("beforeprint", function () {
     Array.prototype.forEach.call(document.querySelectorAll('img[loading="lazy"]'), function (img) { img.loading = "eager"; });
