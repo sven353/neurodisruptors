@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   var UI_LANG = (document.documentElement.lang || "en").slice(0, 2);
-  var t = function (en, es, fr) { return UI_LANG === "es" ? es : UI_LANG === "fr" ? fr : en; };
+  var t = function (en, es, fr, de) { return UI_LANG === "es" ? es : UI_LANG === "fr" ? fr : UI_LANG === "de" ? de : en; };
 
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
@@ -32,7 +32,7 @@
     void drawer.offsetWidth;
     drawer.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
-    toggle.setAttribute("aria-label", t("Close menu", "Cerrar menú", "Fermer le menu"));
+    toggle.setAttribute("aria-label", t("Close menu", "Cerrar menú", "Fermer le menu", "Menü schließen"));
     document.body.classList.add("is-locked");
     var first = focusables()[0];
     if (first) first.focus({ preventScroll: true });
@@ -43,7 +43,7 @@
     var restoreFocus = !opts || opts.restoreFocus !== false;
     drawer.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", t("Open menu", "Abrir menú", "Ouvrir le menu"));
+    toggle.setAttribute("aria-label", t("Open menu", "Abrir menú", "Ouvrir le menu", "Menü öffnen"));
     document.body.classList.remove("is-locked");
     var hide = function () { drawer.hidden = true; };
     if (reduceMotion.matches) hide(); else closeTimer = setTimeout(hide, 260);
@@ -220,13 +220,13 @@
     if (copyBtn) {
       var label = copyBtn.querySelector("span");
       var copied = function () {
-        label.textContent = t("Copied", "Copiado", "Copié"); copyBtn.classList.add("is-copied"); say(t("Link copied: ", "Enlace copiado: ", "Lien copié : ") + url);
-        setTimeout(function () { label.textContent = t("Copy link", "Copiar enlace", "Copier le lien"); copyBtn.classList.remove("is-copied"); }, 2500);
+        label.textContent = t("Copied", "Copiado", "Copié", "Kopiert"); copyBtn.classList.add("is-copied"); say(t("Link copied: ", "Enlace copiado: ", "Lien copié : ", "Link kopiert: ") + url);
+        setTimeout(function () { label.textContent = t("Copy link", "Copiar enlace", "Copier le lien", "Link kopieren"); copyBtn.classList.remove("is-copied"); }, 2500);
       };
       copyBtn.addEventListener("click", function () {
         if (navigator.clipboard && window.isSecureContext) {
-          navigator.clipboard.writeText(url).then(copied, function () { say(t("Copy did not work here. The address is ", "No se ha podido copiar. La dirección es ", "La copie n'a pas fonctionné ici. L'adresse est ") + url); });
-        } else { say(t("Copy the address: ", "Copia la dirección: ", "Copiez l'adresse : ") + url); }
+          navigator.clipboard.writeText(url).then(copied, function () { say(t("Copy did not work here. The address is ", "No se ha podido copiar. La dirección es ", "La copie n'a pas fonctionné ici. L'adresse est ", "Kopieren hat hier nicht geklappt. Die Adresse lautet ") + url); });
+        } else { say(t("Copy the address: ", "Copia la dirección: ", "Copiez l'adresse : ", "Adresse kopieren: ") + url); }
       });
     }
   });

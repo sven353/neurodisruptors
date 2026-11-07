@@ -42,3 +42,7 @@ Neurodisruptors offers confidential one-to-one executive sparring for founders a
 ## Français
 
 - [Neurodisruptors en français](https://neurodisruptors.com/fr/): la page d'accueil en français, avec les mêmes questions fréquentes
+
+## Deutsch
+
+- [Neurodisruptors auf Deutsch](https://neurodisruptors.com/de/): die Startseite auf Deutsch, mit denselben häufigen Fragen
