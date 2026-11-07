@@ -984,4 +984,5 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 @media (max-width: 420px) { .site-header .langs { display: none; } }
 .display, .h2, h1, h2, h3 { overflow-wrap: break-word; }
 [class*="__grid"] > *, .tracks > *, .connect > * { min-width: 0; }
+.form .btn, .hero .btn { white-space: normal; max-width: 100%; text-align: center; }
 html[lang="de"] .display, html[lang="de"] .h2, html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] h3, html[lang="de"] .icard__title, html[lang="de"] .btn { -webkit-hyphens: auto; hyphens: auto; }
