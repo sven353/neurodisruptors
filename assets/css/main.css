@@ -902,12 +902,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .term__block { margin-top: clamp(3rem, 6vw, 4.5rem); }
 .term .spiky-intro { margin-top: clamp(3rem, 6vw, 4.5rem); margin-bottom: 0; }
 
-/* ---------- Language switch (es_build) ---------- */
-.lang-switch { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; margin-left: auto; margin-right: .25rem; padding: 0 .5rem; font-size: .8125rem; font-weight: 600; letter-spacing: .08em; color: var(--ink-2); text-decoration: none; border-radius: var(--radius-pill); transition: color .2s var(--ease), background-color .2s var(--ease); }
-.lang-switch:hover { color: var(--ink); background: rgba(0,0,0,.05); }
-.lang-switch:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
-@media (min-width: 961px) { .lang-switch { margin-left: 0; } }
-
 /* ---------- Profile tabs (profiles_build) ---------- */
 .ptabs__title { margin: 0 0 .4rem; font-family: var(--font-serif); font-weight: 400; font-size: clamp(1.4rem, 2.2vw, 1.75rem); line-height: 1.15; color: var(--ink); }
 .ptabs__intro { margin: 0 0 1.25rem; max-width: 46rem; color: var(--ink-2); }
@@ -924,3 +918,10 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .ptabs__foot { margin: .75rem 0 1rem; font-size: .875rem; color: var(--ink-3); }
 @keyframes ptabs-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .ptabs--on .ptabs__panel { animation: none; } }
+
+/* ---------- Language switch (lang_build) ---------- */
+.langs { display: flex; align-items: center; margin-left: auto; margin-right: .25rem; }
+.lang-switch { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 44px; padding: 0 .35rem; font-size: .8125rem; font-weight: 600; letter-spacing: .08em; color: var(--ink-2); text-decoration: none; border-radius: var(--radius-pill); transition: color .2s var(--ease), background-color .2s var(--ease); }
+.lang-switch:hover { color: var(--ink); background: rgba(0,0,0,.05); }
+.lang-switch:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+@media (min-width: 961px) { .langs { margin-left: 0; } }
