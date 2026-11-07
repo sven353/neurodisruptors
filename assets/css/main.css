@@ -924,6 +924,8 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .icards { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); }
 .icard { position: relative; padding: 1.5rem 1.5rem 1.6rem; background: var(--paper); border: 1px solid var(--rule); border-radius: var(--radius-lg, 18px); transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease); }
 .icard:hover { transform: translateY(-2px); border-color: var(--ink-3); box-shadow: 0 10px 30px rgba(20,20,20,.06); }
+.icard__img { display: block; width: calc(100% + 3rem); max-width: none; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: -1.5rem -1.5rem 1.1rem; border-radius: var(--radius-lg, 18px) var(--radius-lg, 18px) 0 0; background: var(--rule); }
+.icard { overflow: hidden; }
 .icard__meta { margin: 0 0 .6rem; font-size: .8125rem; color: var(--ink-3); }
 .icard__title { margin: 0 0 .6rem; font-family: var(--font-serif); font-weight: 400; font-size: 1.45rem; line-height: 1.15; }
 .icard__title a { color: var(--ink); text-decoration: none; }
