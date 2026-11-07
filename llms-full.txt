@@ -1,6 +1,6 @@
 # Neurodisruptors: full text for AI assistants
 
-Source: https://neurodisruptors.com/ . Last updated 2026-10-25. Plain-text copy of the definitions, profile and answers published on the site.
+Source: https://neurodisruptors.com/ . Last updated 2026-11-07. Plain-text copy of the definitions, profile and answers published on the site.
 
 ## The Spiky Profile, defined
 URL: https://neurodisruptors.com/spiky-profile/
