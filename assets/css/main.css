@@ -949,9 +949,12 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .article__quote footer { font-size: .875rem; color: var(--ink-3); }
 .article__cite { color: var(--ink-2); white-space: nowrap; }
 .article__cite:hover { color: var(--ink); text-decoration: underline; }
-.article__author, .article__refs { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+.article__more, .article__author, .article__refs { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
 .article__h { font-size: .8125rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 1rem; }
 .article__author p, .article__refs li { color: var(--ink-2); }
+.article__more ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+.article__more a { font-family: var(--font-serif); font-size: 1.25rem; line-height: 1.25; color: var(--ink); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; text-decoration-color: var(--rule); }
+.article__more a:hover { text-decoration-color: currentColor; }
 .article__refs ol { padding-left: 1.2rem; display: grid; gap: .6rem; font-size: .9375rem; }
 .article__refs li:target { background: rgba(210,69,42,.08); border-radius: 6px; }
 .article__note { margin-top: 1.5rem; font-size: .875rem; color: var(--ink-3); }
