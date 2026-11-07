@@ -958,6 +958,18 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .article__body a, .article__author a, .article__refs a, .term__more a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .article__cite { text-decoration-style: dotted; }
 .article__cta .btn { white-space: normal; max-width: 100%; text-align: left; }
+.article__table { margin: 1.5rem 0 2rem; overflow-x: auto; }
+.article__table table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+.article__table caption { text-align: left; font-size: .8125rem; color: var(--ink-3); margin-bottom: .6rem; }
+.article__table th, .article__table td { text-align: left; vertical-align: top; padding: .75rem .9rem .75rem 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
+.article__table thead th { font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.article__table tbody th { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) {
+  .article__table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .article__table tr { display: block; padding: .9rem 0; border-bottom: 1px solid var(--rule); }
+  .article__table th, .article__table td { display: block; border: 0; padding: .2rem 0; }
+  .article__table td::before { content: attr(data-label); display: block; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+}
 .term__more { margin-top: 1rem; font-size: .9375rem; color: var(--ink-2); }
 @media (prefers-reduced-motion: reduce) { .icard { transition: none; } .icard:hover { transform: none; } }
 

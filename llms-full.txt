@@ -149,6 +149,100 @@ The framework draws on ongoing academic research collaborations with faculty at 
 ## Insights
 URL: https://neurodisruptors.com/insights/
 
+### Why boards misread founder variability as unreliability
+URL: https://neurodisruptors.com/insights/boards-misread-founder-variability/
+By Dr. Sven Mulfinger, 7 November 2026
+
+A founder who works in bursts looks unreliable from a boardroom. That reading costs companies more than the bursts ever do.
+
+Many non-linear founders move in cycles: exploration, a pause to rethink, then a sudden stretch of execution. Boards tend to read that rhythm as a reliability problem. The board’s real task is to tell a founder who is struggling from one who runs on a different cycle, then build the structure that lets the second one perform.
+
+#### What the board sees
+
+From the boardroom, a non-linear founder looks uneven. Weeks of rapid progress, then a stretch where the direction is suddenly reconsidered. The strategic call is sharp while the monthly report arrives late and thin. In the governance meeting the founder is impatient with the agenda and already three steps ahead of it.
+
+The usual response is more process. Tighter reporting, more checkpoints, sometimes a COO hired explicitly to add discipline.
+
+In my experience that response makes the friction worse, because it pushes the founder deeper into the work that drains them.
+
+#### Why boards prefer visible continuity
+
+Boards and investors prefer visible continuity because it feels safer. Steady output is easy to track, easy to report upwards and easy to defend.
+
+Most governance tools were built for that kind of output. Quarterly plans, monthly packs and performance reviews reward reliability ahead of originality, so they show a leader who moves in bursts as inconsistent by design.
+
+The organisation may claim it wants innovation. Yet its structures were built for stability. From The Non-Linear Operating System
+
+James March made the underlying point decades ago: organisations that become good at exploiting what they already know tend to squeeze out the exploration that keeps them alive, because the returns from exploitation are closer, surer and easier to measure (March, 1991). A governance calendar is an exploitation machine. In many companies the founder is the only exploration capacity on the agenda.
+
+In markets shaped by uncertainty, the ability to pause, rethink and redirect can produce better decisions than steady execution of the original plan. What looks irregular from a distance is often a different way of navigating complexity.
+
+#### What the board misses
+
+A non-linear founder’s strongest contribution rarely sits in the reporting cycle. It sits in framing the problem, sensing change early and connecting ideas that others keep separate. Weekly reporting, documentation and procedural cycles draw on the same system and cost it disproportionate effort.
+
+The research points the same way. A meta-analysis of the ADHD and entrepreneurship literature found that founders with ADHD symptoms tend to do well at the start of a venture and to run into difficulty later, once the demands shift towards sustained operational execution (Tran et al., 2025). Earlier work in the same stream found hyperactivity positively associated with entrepreneurial entry while inattention worked against it, a useful reminder that these traits do not move together (Wiklund et al., 2017).
+
+Read that as a design brief rather than a warning. The capability profile is uneven. The organisation around it has to be built to match.
+
+When the board measures the founder mainly on the work that drains them, it sees the valleys clearly and the spikes hardly at all.
+
+The cost of forcing the founder to fit is usually paid quietly. I remember a founder in his mid-forties, three successful exits behind him, telling me in a Barcelona café that he had spent twenty years performing a version of himself that was not quite real. The work had not burned him out. Translating himself into what the system expected had.
+
+That cost is now measurable. In a 2026 study of 202 adults diagnosed with ADHD, 91.6 per cent reported camouflaging their traits in social settings including work. The researchers found the effort draws on the same capacity needed for attention, memory and concentration, leaving exhaustion, anxiety and a weaker version of the performance the camouflage was meant to protect (Mylett, Iarocci et al., 2026). A board that asks for a smoother founder is commissioning more of that.
+
+#### Telling a different rhythm from a real struggle
+
+Variability on its own tells a board very little. The useful question is whether the cycles still add up to progress. These are the signals I look at with boards, read across several months rather than one meeting.
+
+These are leadership signals for a board conversation. They say nothing about a diagnosis. A board has no reason to ask for one.
+
+#### What boards can do instead
+
+Pair the founder with operating cadence. A COO or chief of staff who enjoys structure owns reporting and process, so the founder’s time goes to framing, sensing and deciding. This is where the meta-analytic finding earns its keep: the risk sits after launch, in sustained execution, which is precisely the part a board can staff.
+
+Judge decision quality and the trend across cycles. Week-to-week consistency is the wrong instrument.
+
+Agree the rhythm explicitly. When does the founder explore, when do execution sprints happen and how is the board kept informed in between?
+
+Separate thinking from formatting in board reporting. A short verbal or visual briefing from the founder, plus a written pack prepared by the team, usually carries more than a dense memo the founder wrote alone.
+
+Treat burnout signals as a design problem. Fragmented calendars, constant responsiveness and endless context switching drain the system long before results drop. One further finding is worth holding onto: performance in this group tracks with passion for the tasks that are central to the venture rather than with symptom level alone (Hatak et al., 2021). Protect the founder’s access to that work and you protect the output.
+
+Keep the conversation on leadership and governance. Whether a founder has ADHD, dyslexia or any other profile is theirs to share or keep private.
+
+#### The cost of getting it wrong
+
+When boards and leaders misread variance, the talent usually leaves quietly. A CEO of a multinational put it to me in a coaching call:
+
+I didn’t lose those people because they lacked talent. I lost them because I didn’t understand how they worked.
+
+I recognise that from my own career. Earlier on I let several remarkable people go because they were intense, uneven and hard to place in the systems we had built. I had no language for it and no model that showed variance could carry value.
+
+For a board, the founder is often the clearest case of that pattern. Smoothing the variance out of the system can remove exactly the capacity the company was funded for.
+
+#### Questions I get asked
+
+#### How can a board support a founder with ADHD?
+
+By treating uneven output as a pattern to design around: clear roles, the right operating partner and reporting formats that fit how the founder thinks. Judge decision quality across cycles rather than week-to-week consistency and keep the conversation on leadership and governance. The research points the same way, since the difficulty in this group concentrates in sustained operational execution, which is the part a board can staff.
+
+#### Is an uneven founder a governance risk?
+
+An uneven founder becomes a governance risk when the cycles stop adding up to progress: output falls across cycles, pauses end without decisions and senior people leave. Bursts and pauses with a rising trend, alongside sharp strategic calls, usually point to a different rhythm that needs structure around it.
+
+#### Should a board ask a founder about a diagnosis?
+
+No. Sharing a diagnosis is the founder's decision. What a board can discuss openly is how the founder works best and which roles, structure and reporting make that sustainable.
+
+References:
+- March, J. G. (1991). Exploration and exploitation in organizational learning. Organization Science, 2(1), 71 to 87.
+- Wiklund, J., Patzelt, H. and Dimov, D. (2016). Entrepreneurship and psychological disorders: how ADHD can be productively harnessed. Journal of Business Venturing Insights, 6, 14 to 20.
+- Wiklund, J., Yu, W., Tucker, R. and Marino, L. D. (2017). ADHD, impulsivity and entrepreneurship. Journal of Business Venturing, 32(6), 627 to 656.
+- Hatak, I., Chang, M., Harms, R. and Wiklund, J. (2021). ADHD symptoms, entrepreneurial passion and entrepreneurial performance. Small Business Economics, 57, 1693 to 1713.
+- Tran, M. H., Wiklund, J., Antshel, K., Jhawar, N. and Montgomery, C. (2025). Entrepreneurship and ADHD: a meta-analytical assessment of the state of the art and suggestions for the future. Entrepreneurship Theory and Practice.
+- Mylett, M., Iarocci, G. et al. (2026). Camouflaging in adults with ADHD. Research in Neurodiversity. Simon Fraser University, June 2026.
+
 ### Diagnosed with ADHD at 50: what a late diagnosis changes for a leader
 URL: https://neurodisruptors.com/insights/diagnosed-with-adhd-at-50/
 By Dr. Sven Mulfinger, 7 November 2026
