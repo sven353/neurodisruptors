@@ -984,5 +984,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 @media (max-width: 420px) { .site-header .langs { display: none; } }
 .display, .h2, h1, h2, h3 { overflow-wrap: break-word; }
 [class*="__grid"] > *, .tracks > *, .connect > * { min-width: 0; }
-.form .btn, .hero .btn { white-space: normal; max-width: 100%; text-align: center; }
+.form .btn, .hero .btn, .book .btn { white-space: normal; max-width: 100%; text-align: center; }
+@media (min-width: 961px) and (max-width: 1199px) { .site-header__inner { gap: 1.25rem; } .primary-nav ul { gap: 1.25rem; } .header-cta { padding-inline: 1rem; font-size: .875rem; } .lang-switch { min-width: 28px; } }
 html[lang="de"] .display, html[lang="de"] .h2, html[lang="de"] h1, html[lang="de"] h2, html[lang="de"] h3, html[lang="de"] .icard__title, html[lang="de"] .btn { -webkit-hyphens: auto; hyphens: auto; }
