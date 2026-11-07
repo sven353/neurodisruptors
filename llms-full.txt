@@ -113,11 +113,17 @@ A Spiky Profile is a leadership framework by Dr. Sven Mulfinger, built on the sp
 ### Is this about ADHD?
 Partly: ADHD is one of several ways a mind can run on a spiky profile, alongside autism, giftedness, dyslexia, dyspraxia and dyscalculia. Many leaders recognise themselves in more than one. The work focuses on how your mind operates as a leader, with or without a diagnosis. It does not diagnose any condition; that stays with doctors and psychologists.
 
+### What is the difference between neurodiversity and neurodivergence?
+Neurodiversity describes variation across a group, so a team or a company can be neurodiverse, while neurodivergent describes one person whose cognitive profile differs from the dominant norm. Calling a single person neurodiverse is common and technically muddled. The word neurodivergent also carries at least three meanings (medical, advocacy and operational), which is why boardroom conversations about it go wrong so easily. Three frames for the same minds sets them side by side.
+
 ### Who is Dr. Sven Mulfinger?
 Dr. Sven Mulfinger is the founder of Neurodisruptors and a Barcelona-based executive coach, offsite facilitator and strategic advisor to founders and C-suite teams across Europe. He trained as an engineer, holds a PhD in biotech engineering from the Technical University of Munich (TUM) and is a founding partner of Kuma Partners. He is writing The Non-Linear Operating System with research collaborators at IESE Business School and IE Business School. Neurodisruptors grew out of his own ADHD diagnosis at 50.
 
 ### Do I need a diagnosis to work with Neurodisruptors?
 No: the work starts from how your mind operates as a leader, so a formal diagnosis is neither required nor assessed. Some clients have a diagnosis of ADHD, autism, dyslexia or another profile, others suspect one and many simply know they think differently. Questions about diagnosis or treatment belong with a doctor or psychologist.
+
+### Can you be diagnosed with ADHD as an adult?
+Yes: ADHD can be diagnosed at any age, including in your forties or fifties, often once the coping strategies that worked for decades stop producing results. High ability and tightly built personal systems can hold performance together for a long time. A diagnosis needs a full assessment by a psychiatrist or another qualified clinician, including a look back at childhood. Dr. Sven Mulfinger writes about his own diagnosis at 50 and what it changed in how he leads.
 
 ### Where can I get a formal diagnosis?
 For a formal assessment of ADHD, autism, dyspraxia or giftedness as an adult, Neurodisruptors refers clients to Dr. Andreina Mendez, a medical doctor who sees adults in person in Madrid and London and remotely across Europe. A diagnosis is not needed for the work, but it can help. Many leaders start asking once one of their children has been diagnosed. Understanding how your own mind operates can then be a relief for parents and children alike. Sometimes you simply want to know for sure, which a medical assessment can give you. You can contact Dr. Mendez through andreinamendez.com or LinkedIn and mention that Neurodisruptors referred you.
@@ -135,10 +141,13 @@ Yes: Neurodisruptors, led by Dr. Sven Mulfinger in Barcelona, offers confidentia
 For many non-linear leaders the real constraint is energy rather than time, so a calendar of evenly spaced blocks works against how their minds perform. Deep strategic work needs motivation, activation and physical capacity to line up. Sparring helps leaders plan around those peaks, protect them and move routine work elsewhere.
 
 ### How can a board support a founder with ADHD?
-A board supports a founder with ADHD best by reading uneven output as a pattern to design around, with clear roles, the right operating partner and reporting formats that fit how the founder thinks. The half-day offsite Bridging the Founder-Board Interface works through this with boards, investors and executive committees and keeps the conversation on leadership and governance.
+A board supports a founder with ADHD best by reading uneven output as a pattern to design around, with clear roles, the right operating partner and reporting formats that fit how the founder thinks. It means judging decision quality across cycles rather than week-to-week consistency. The half-day offsite Bridging the Founder-Board Interface works through this with boards, investors and executive committees and keeps the conversation on leadership and governance.
+
+### How do you work alongside a founder with ADHD as a COO or chief of staff?
+Separate the work: settle which decisions genuinely need the founder, write down what you decide alone and keep the conversation on operating questions rather than on anyone's health. Reliability across a week is the wrong measure for someone who works in cycles. You can own reporting, cadence, decision logs and the rhythm of the week. The founder's own regulation stays with them, supported where needed by a coach or a clinician. How to work with a non-linear founder covers the role in more detail.
 
 ### Is the Spiky Profile a clinical or psychiatric diagnostic tool?
-No: the Spiky Profile is exclusively a leadership and management framework designed to map executive leverage and workplace friction. It does not provide medical, psychological or psychiatric diagnosis for ADHD, autism or other neurodevelopmental conditions.
+No: the Spiky Profile is exclusively a leadership and management framework designed to map executive leverage and workplace friction. It does not provide medical, psychological or psychiatric diagnosis for ADHD, autism or other neurodevelopmental conditions. It is designed to sit alongside clinical assessment. Neurodiversity, neurodivergence and the non-linear operating system explains how the medical, advocacy and leadership views fit together.
 
 ### What formats are available for enterprise and board engagements?
 Neurodisruptors offers two principal formats: a 45-minute keynote (Asymmetric Minds in the C-Suite) and half-day alignment offsites (Bridging the Founder-Board Interface) for boards, venture partners and executive committees. An enterprise workshop, Designing Systems for Cognitive Spikes, is also available for executive teams and HR leaders.
