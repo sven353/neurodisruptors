@@ -21,6 +21,7 @@ Neurodisruptors offers confidential one-to-one executive sparring for founders a
 - [Frequently asked questions](https://neurodisruptors.com/#faq): thirteen questions with full answers
 - [Full text for AI assistants](https://neurodisruptors.com/llms-full.txt): explainer, definitions and every FAQ answer in one plain file
 - [Insights](https://neurodisruptors.com/insights/): essays by Dr. Sven Mulfinger on non-linear leadership
+- [How to work with a non-linear founder](https://neurodisruptors.com/insights/working-with-a-non-linear-founder/): a guide for the COO, chief of staff or co-founder who holds a founder-led company together, with references
 - [Neurodiversity, neurodivergence and the non-linear operating system](https://neurodisruptors.com/insights/neurodiversity-neurodivergence-non-linear-operating-system/): the medical model, the neurodiversity movement and an operating-system frame for leaders, with references
 - [Why boards misread founder variability as unreliability](https://neurodisruptors.com/insights/boards-misread-founder-variability/): how a board can tell a different rhythm from a real struggle, with research references
 - [Diagnosed with ADHD at 50: what a late diagnosis changes for a leader](https://neurodisruptors.com/insights/diagnosed-with-adhd-at-50/): why senior people find out late, with research references

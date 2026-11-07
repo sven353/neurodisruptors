@@ -495,6 +495,147 @@ References:
 - Botha, M., Chapman, R. and Giwa Onaiwu, M. (2024). The neurodiversity concept was developed collectively: an overdue correction on the origins of neurodiversity theory. Autism, 28(6), 1591 to 1594.
 - Mulfinger, S. The Non-Linear Operating System. Book One: The Non-Linear Mind. Forthcoming.
 
+### How to work with a non-linear founder: a guide for the people who hold it together
+URL: https://neurodisruptors.com/insights/working-with-a-non-linear-founder/
+By Dr. Sven Mulfinger, 7 November 2026
+
+The person who absorbs a founder's variability rarely has a name for what they are doing. It almost never appears in their job description.
+
+If you are the COO, the chief of staff, the co-founder who runs things or the executive assistant who quietly reconstructs what was agreed, this is written for you rather than for the founder.
+
+#### What the week looks like from your seat
+
+A decision gets made on Monday and reopened on Thursday. The strategy session was the best three hours the company has had all year. The follow-up never arrived. You are the person the team asks when they want to know what was actually agreed.
+
+You translate. You rebuild the plan after the direction shifts. You hold the board reporting together. You absorb the swings so that the thirty people below you do not have to feel them.
+
+And the work is good. That is the part most advice misses. The calls your founder makes are often sharper than anything a committee would produce, which is why you are still there.
+
+None of what you do is in your job description. Most of it is invisible to the board.
+
+Much of this work happens between the founder making a decision and the rest of the company acting on it. It rarely appears in a board report, but without it decisions get lost, priorities drift and delivery slows down.
+
+This guide is about working well with a particular kind of operating logic and about protecting yourself while you do it. Managing a difficult person is a different subject.
+
+#### First, do not diagnose your founder
+
+You may have read something about ADHD, giftedness or dyslexia and recognised your founder in it with a jolt.
+
+Keep it to yourself.
+
+There are three reasons. You could easily be wrong, because the patterns you are reading overlap with stress, with grief, with a thyroid problem and with simply being busy. It is not yours to name, because a diagnosis belongs to the person and their clinician and to nobody else in the building. And it would change nothing you can act on, because knowing a label does not tell you who should own the board pack.
+
+The boundary is cleaner than it first looks. How the work is organised is entirely your business and you are paid to have opinions about it. Someone’s medical history is not your business at all. You need none of it to fix the operating problem.
+
+Everything below stays on your side of that line.
+
+#### What is actually happening
+
+The pattern you are managing is documented, which is worth knowing when you start to wonder whether you are imagining it.
+
+Access to attention varies. A meta-analysis of 319 studies found that people with ADHD show markedly greater variability in their own response times from moment to moment. The effect holds across age groups and task types and remains after average speed is accounted for (Kofler et al., 2013). The capability is stable. Reaching it is not. That is a different thing from unreliability as a choice, which is why chasing harder rarely helps.
+
+The difficulty tends to arrive late. A meta-analysis of the ADHD and entrepreneurship literature found that founders with ADHD symptoms often do well at the start of a venture and run into trouble later, once the demands shift towards sustained operational execution (Tran et al., 2025). If your company has grown and the friction has grown with it, that is the documented shape of the thing rather than a decline in your founder. I wrote about how a board can read the same pattern in Why boards misread founder variability as unreliability.
+
+Some of the cost is also hidden from you. In a 2026 study, 91.6 per cent of 202 adults diagnosed with ADHD reported camouflaging their traits in settings including work. The researchers found the effort consumes the same capacity needed for attention and memory (Mylett, Iarocci et al., 2026). The composure you see in the board meeting may be expensive. You are often the only person positioned to notice what it costs afterwards.
+
+#### How common is neurodivergence among founders?
+
+Research into ADHD, dyslexia and other cognitive differences suggests that neurodivergent characteristics may be more common among entrepreneurs than in the general population. Some studies report substantial differences, although estimates vary depending on how participants are selected and whether researchers measure diagnosed conditions or self-reported traits.
+
+There is no single reliable prevalence figure for neurodivergence among founders. The research is nevertheless relevant to understanding why conventional management structures may not suit every founder, particularly as a company grows and operational demands change. There is more on the different ways the word is used in Neurodiversity, neurodivergence and the non-linear operating system.
+
+#### The finding you should know before you build anything
+
+The standard advice is to put a complementary operating partner beside the founder and let each do what they are built for. I give that advice myself. The evidence on where founder difficulty concentrates supports it.
+
+There is a catch. It is a serious one.
+
+Using a sample of more than two thousand firms, Hendricks, Howell and Bingham found that the structure of the top management team has a significant effect on performance in firms led by non-founders and little to no effect on the operating performance of founder-led firms. Their explanation is blunt: founder chief executives are much less likely to listen to and benefit from their teams than non-founder chief executives are (Hendricks, Howell and Bingham, 2019).
+
+Read that carefully, because it describes your job. Building the structure is not the hard part. You have probably already built it. The structure only pays off if the founder actually uses it. That willingness is not something you can manufacture from your seat.
+
+So the work splits in two. There is the operating design, which is yours to do. And there is the founder’s genuine handover of authority, which is theirs and which no amount of better process on your part will produce. Confusing the two is how capable people in your role spend three years getting tired.
+
+The founder and the person running operations do not need to think alike. One may work through ideas in bursts, changing direction as new information arrives. The other needs a stable rhythm to turn those decisions into work the organisation can deliver. That difference can be useful. The trouble starts when the operating partner is held responsible for delivery but cannot make the decisions needed to deliver it.
+
+#### What works from your seat
+
+Ask for authority in writing and keep it narrow. Asking for more trust or more alignment gets you nothing measurable. Both quietly evaporate. Ask instead for a short list of named decisions you make without consulting anyone, agreed once and written down. This is the only reliable test of whether the structure is real. It is also the direct answer to the problem above.
+
+Make the rhythm explicit instead of fighting it. Agree when decisions get made and when they may be reopened. A decision log with a closing date against each item does more than any volume of chasing, because it moves the argument from your memory to a shared document.
+
+Take the formatting and leave the thinking. Stop asking your founder to write the pack. Get fifteen minutes of them talking, record it and write it yourself. You will get better material and it will arrive on time.
+
+Put the consequential choices where the attention actually is. Most founders have two or three windows a week when their thinking is genuinely sharp. Protect those for decisions and stop defending a calendar nobody honours. The Spiky Profile is one way to see where those windows sit.
+
+Name what you absorb, in operating language and without a diagnosis attached. Something like: I spend roughly half my week reconstructing decisions that were already made. Here is what I would do with that half instead. That sentence is about workflow. It is answerable. The personal version of the same sentence is not.
+
+Make the absorbed work visible to the board. If nobody above you knows who holds the operating cadence, it will never be resourced and you will remain the single point of failure. Calling that politics misses the point: it is the only way the role survives your holiday.
+
+Build a second absorber. If you are the only person who can translate, you are a risk to the company as well as to yourself.
+
+#### If nothing moves
+
+Some founders will not hand over authority. The research above suggests this is common rather than exceptional, which is worth knowing because it tells you that your failure to shift it is no reflection on your competence.
+
+At that point you have three real options. It is better to choose one deliberately than to drift.
+
+Shrink the role to what you can genuinely control. Stop being accountable for outcomes that depend on decisions you are not allowed to make. This is a smaller job. Sometimes it is also a sustainable one.
+
+Take it to the board as a governance question rather than a personal one. Framed as operating risk and succession exposure, it is a legitimate thing for a board to hear. You are not being disloyal by raising it. Framed as a complaint about your founder, it will end badly for you.
+
+Or leave, on your own timing, while you still have the energy to choose where you go next.
+
+The option that does not work is continuing to absorb it silently in the hope that it resolves on its own. That ends in your departure anyway, later and in worse condition.
+
+#### How solid any of this is
+
+Worth saying plainly, because the field is often sold with more confidence than it has earned.
+
+The evidence on how to design work around cognitive difference is considerably thinner than the evidence on medication. A systematic review from Birkbeck’s Centre for Neurodiversity Research at Work found that most intervention research in this area is pharmacological and that little is known about which workplace modifications actually improve outcomes (Lauder, McDowall and Tenenbaum, 2022).
+
+The broader employment literature is more encouraging about direction than about method. A systematic review of 79 studies covering 68,275 adults with ADHD across 22 countries points consistently at the same three things: fit between the person and the role, autonomy in how the work gets done and a workplace where someone can turn to a colleague for help without a penalty (Hotte-Meunier et al., 2024).
+
+Those are directions rather than protocols. The specifics above come from practice, including mine. They should be read as such.
+
+#### One last thing
+
+The variability you spend your week absorbing is usually attached to the capability that built the company. Those are two sides of the same person. A version of your founder who never reopened a decision would probably also be a version who never spotted the opening you are all now living off.
+
+That does not mean you should carry the cost silently. The goal is a structure that holds the variance, rather than a founder who no longer has any.
+
+#### Questions I get asked
+
+#### My co-founder works in bursts and I cannot rely on him. What do I do?
+
+Stop treating reliability as the measure and start separating the work. Identify which decisions genuinely need him and which are being routed through him out of habit. Then get a short written list of what you decide alone. Reliability across a week is the wrong unit for someone who works in cycles. Chasing it will exhaust you both. What you need is clarity about who owns what, which is achievable in an afternoon.
+
+#### Should I tell my boss I think they have ADHD?
+
+No. You could be wrong, it is not yours to name and it does not help you anyway. Raise the operating problem instead, in operating language: which decisions are getting reopened, what that costs in hours and what you propose doing about it. That conversation is yours to have and it needs no reference to anyone's health.
+
+#### How do I support a CEO with ADHD without becoming their therapist?
+
+By keeping the conversation on the work. You can own reporting, cadence, decision logs and the rhythm of the week. You cannot own their regulation, their recovery or their relationship with their own mind. Attempting it is how the role turns into something neither of you agreed to. If they need that kind of support, the right people are a coach and a clinician, not their chief of staff.
+
+#### Is a chief of staff or a COO the right answer for a founder-led company?
+
+Either can work. Neither works by itself. The evidence on founder-led firms suggests the surrounding team has little effect on operating performance unless the founder genuinely relies on it. So the question to settle before you hire is which decisions that person will make without asking and whether the founder will honour that when it is inconvenient. The title matters much less.
+
+#### Am I being disloyal if I raise this with the board?
+
+Not if you raise it as operating risk rather than as a complaint. Boards are entitled to understand where a company's execution capacity actually sits and what happens if one person goes on holiday. Framed that way it is a governance conversation and part of your job. Framed as a grievance about your founder, it will be heard as one.
+
+References:
+- Kofler, M. J., Rapport, M. D., Sarver, D. E., Raiker, J. S., Orban, S. A., Friedman, L. M. and Kolomeyer, E. G. (2013). Reaction time variability in ADHD: a meta-analytic review of 319 studies. Clinical Psychology Review, 33(6), 795 to 811.
+- Tran, M. H., Wiklund, J., Antshel, K., Jhawar, N. and Montgomery, C. (2025). Entrepreneurship and ADHD: a meta-analytical assessment of the state of the art and suggestions for the future. Entrepreneurship Theory and Practice.
+- Mylett, M., Iarocci, G. et al. (2026). Camouflaging in adults with ADHD. Research in Neurodiversity.
+- Hendricks, B., Howell, T. and Bingham, C. (2019). How much do top management teams matter in founder-led firms? Strategic Management Journal, 40(6), 959 to 986.
+- Lauder, K., McDowall, A. and Tenenbaum, H. R. (2022). A systematic review of interventions to support adults with ADHD at work: implications from the paucity of context-specific research for theory and practice. Frontiers in Psychology, 13. Centre for Neurodiversity Research at Work, Birkbeck, University of London.
+- Hotte-Meunier, A., Sarraf, L., Bougeard, A. et al. (2024). Strengths and challenges to embrace attention-deficit/hyperactivity disorder in employment: a systematic review. Neurodiversity, 2.
+- Mulfinger, S. The Non-Linear Operating System. Book One: The Non-Linear Mind. Forthcoming.
+
 ## Contact
 - Request a conversation: https://neurodisruptors.com/#connect
 - LinkedIn: https://www.linkedin.com/in/svenmulfinger
