@@ -970,6 +970,10 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   .article__table th, .article__table td { display: block; border: 0; padding: .2rem 0; }
   .article__table td::before { content: attr(data-label); display: block; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
 }
+.article__hero { margin: 0 0 2.5rem; }
+.article__hero img, .article__figure img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.article__figure { margin: 2rem 0; }
+.article__figure figcaption { margin-top: .6rem; font-size: .875rem; color: var(--ink-3); }
 .term__more { margin-top: 1rem; font-size: .9375rem; color: var(--ink-2); }
 @media (prefers-reduced-motion: reduce) { .icard { transition: none; } .icard:hover { transform: none; } }
 

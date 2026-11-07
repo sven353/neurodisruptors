@@ -21,6 +21,7 @@ Neurodisruptors offers confidential one-to-one executive sparring for founders a
 - [Frequently asked questions](https://neurodisruptors.com/#faq): thirteen questions with full answers
 - [Full text for AI assistants](https://neurodisruptors.com/llms-full.txt): explainer, definitions and every FAQ answer in one plain file
 - [Insights](https://neurodisruptors.com/insights/): essays by Dr. Sven Mulfinger on non-linear leadership
+- [Neurodiversity, neurodivergence and the non-linear operating system](https://neurodisruptors.com/insights/neurodiversity-neurodivergence-non-linear-operating-system/): the medical model, the neurodiversity movement and an operating-system frame for leaders, with references
 - [Why boards misread founder variability as unreliability](https://neurodisruptors.com/insights/boards-misread-founder-variability/): how a board can tell a different rhythm from a real struggle, with research references
 - [Diagnosed with ADHD at 50: what a late diagnosis changes for a leader](https://neurodisruptors.com/insights/diagnosed-with-adhd-at-50/): why senior people find out late, with research references
 - [Map your good day and your bad day](https://neurodisruptors.com/good-day-bad-day/): a non-clinical self-reflection prompt for your own AI assistant, using the Spiky Profile lens (not a medical diagnosis)

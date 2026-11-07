@@ -5,8 +5,8 @@ Source: https://neurodisruptors.com/ . Last updated 2026-11-07. Plain-text copy 
 ## The Spiky Profile, defined
 URL: https://neurodisruptors.com/spiky-profile/
 
-Spiky Profile: a leadership framework developed by Dr. Sven Mulfinger that maps where a leader's thinking creates exceptional leverage (spikes) and where it meets friction (valleys).
-Created by Dr. Sven Mulfinger as part of The Non-Linear Operating System, with research collaborators at IESE Business School and IE Business School.
+Spiky Profile: a leadership framework by Dr. Sven Mulfinger, built on the spiky profile concept from occupational psychology, that maps where a leader's thinking creates exceptional leverage (spikes) and where it meets friction (valleys).
+Developed by Dr. Sven Mulfinger as part of The Non-Linear Operating System, building on the spiky profile concept from occupational psychology (Doyle, 2020), with research collaborators at IESE Business School and IE Business School.
 
 Spikes (high leverage): Systemic Synthesis, Crisis Hyperfocus, Divergent Ideation, Rapid Pattern Recognition, Associative Leaps.
 Valleys (systemic friction): Routine Cadence, Linear Documentation, Calendar Fragmentation, Repetitive Execution, Translation into Text.
@@ -108,7 +108,7 @@ Collaborative research alongside faculty at IESE Business School and IE Business
 URL: https://neurodisruptors.com/#faq
 
 ### What is a Spiky Profile in executive leadership?
-A Spiky Profile is a leadership framework developed by Dr. Sven Mulfinger that maps where a leader's thinking creates exceptional leverage (spikes) and where it meets friction (valleys). It covers ten operational dimensions, from systemic synthesis and crisis hyperfocus to routine cadence and calendar fragmentation. Neurodisruptors uses it to design the roles, rhythms and support around a leader instead of asking for an even profile across every domain.
+A Spiky Profile is a leadership framework by Dr. Sven Mulfinger, built on the spiky profile concept from occupational psychology, that maps where a leader's thinking creates exceptional leverage (spikes) and where it meets friction (valleys). It covers ten operational dimensions, from systemic synthesis and crisis hyperfocus to routine cadence and calendar fragmentation. Neurodisruptors uses it to design the roles, rhythms and support around a leader instead of asking for an even profile across every domain.
 
 ### Is this about ADHD?
 Partly: ADHD is one of several ways a mind can run on a spiky profile, alongside autism, giftedness, dyslexia, dyspraxia and dyscalculia. Many leaders recognise themselves in more than one. The work focuses on how your mind operates as a leader, with or without a diagnosis. It does not diagnose any condition; that stays with doctors and psychologists.
@@ -349,6 +349,151 @@ References:
 - Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. Guilford Press.
 - Quinn, P. O. and Madhoo, M. (2014). A review of attention-deficit/hyperactivity disorder in women and girls: uncovering this hidden diagnosis. Primary Care Companion for CNS Disorders, 16(3).
 - Faraone, S. V., Biederman, J. and Mick, E. (2006). The age-dependent decline of attention deficit hyperactivity disorder: a meta-analysis of follow-up studies. Psychological Medicine, 36(2), 159 to 165.
+
+### Neurodiversity, neurodivergence and the non-linear operating system: three frames for the same minds
+URL: https://neurodisruptors.com/insights/neurodiversity-neurodivergence-non-linear-operating-system/
+By Dr. Sven Mulfinger, 7 November 2026
+
+Four people can use the word neurodivergent in the same meeting and mean four different things.
+
+A clinician means a diagnosable condition with measurable impairment. An advocate means a claim about who gets to count as normal. An HR director means a category in a policy document. A founder usually means something closer to “my mind does not work the way this company assumes it does”, which is the meaning none of the other three were built to serve.
+
+That confusion has practical consequences. It decides whether a capable leader gets treated as a patient, a cause or a design problem.
+
+#### Nobody agrees on the word, starting with where it came from
+
+The term has no settled definition. The disagreement runs all the way back to its origin.
+
+Neurodiversity first appeared in print in September 1998, in a piece by the journalist Harvey Blume in The Atlantic (Blume, 1998). Judy Singer used it the same year in her honours thesis and has been widely credited with coining it, largely through Steve Silberman’s account in NeuroTribes. In 2024 a group of autistic scholars published a correction in the journal Autism, arguing that the concept was developed collectively across an online community rather than invented by one person. They also note that Singer herself did not originally claim the coinage (Botha, Chapman and Giwa Onaiwu, 2024).
+
+A word whose own parentage is contested is unlikely to have arrived with a clean definition. It did not.
+
+Reviewing the field, Patrick Dwyer concluded plainly that defining neurodiversity is difficult. He set out several competing approaches that differ in important ways, above all in how each one relates to the social model of disability (Dwyer, 2022). Damian Milton, writing in The Psychologist, noted that the neurodiversity movement has been attacked from both directions at once: for sitting too close to the medical model and for sitting too close to the social model (Milton, 2019).
+
+When a word is used this loosely, the useful move is to separate the frames travelling under it.
+
+#### Frame one: the medical model
+
+The medical model treats a cognitive difference as a condition located in the person. It names, classifies and where possible treats. Its instruments are the DSM and the ICD. Its output is a diagnosis.
+
+It deserves better than its reputation in some quarters. It gives access to medication that works, to legal protection and to adjustments at work and school. It can also offer an explanation that ends years of private self-blame. For many people a diagnosis is the most useful thing that ever happened to them.
+
+Its limit is structural rather than ideological. A diagnosis requires evidence that the pattern impairs functioning. A leader who has built workarounds for thirty years, who compensates with intelligence and energy and who delivers results does not present as impaired. The model cannot see that person, by design.
+
+The research bears this out. Adults with ADHD and higher IQ show far fewer measurable deficits in executive function than those with average IQ. The authors concluded that intelligence can mask the condition and complicate clinical diagnosis (Milioni et al., 2017). I wrote about what that meant for me in Diagnosed with ADHD at 50.
+
+So the medical model answers one question and answers it well: what, if anything, needs treating?
+
+#### Frame two: the neurodiversity movement
+
+The second frame came out of activism rather than research. It holds that neurological variation is ordinary human variation, that much of what gets called disability is produced by environments built for one kind of mind and that the right response is acceptance and adjustment rather than correction. It draws on the social model of disability developed by physically disabled advocates in Britain and formalised in Mike Oliver’s work (Oliver, 1990).
+
+It has won real arguments. Workplace adjustments exist because of it. The language has shifted in a decade. The word neurodivergent, credited to the activist Kassiane Asasumasu, gave a great many people a way to describe themselves without a pathology attached to it.
+
+Its limit is the mirror image of the first. The strong version of the social model holds that disability is caused by society alone, which runs into difficulty the moment someone is genuinely struggling and needs help with something inside themselves rather than around them.
+
+Most people do not hold that strong version in practice. In a mixed-methods survey by Dwyer and colleagues, even respondents who endorsed the strong social model still supported teaching adaptive skills and treating co-occurring conditions such as depression and epilepsy (Dwyer et al., 2025).
+
+The second frame also answers one question well: what needs accepting and what needs changing in the environment?
+
+#### The two frames are answering different questions
+
+Set them side by side and much of the argument dissolves. One asks what needs treating. The other asks what needs accepting. Both are legitimate questions with real answers.
+
+Neither is the question a chief executive actually arrives with.
+
+That question is narrower and far more practical. How does this mind operate and what should we build around it on Monday?
+
+#### Frame three: a non-linear operating system
+
+A non-linear operating system describes operating logic. It asks how a particular mind perceives, processes and acts, where it produces disproportionate value, where it costs disproportionate effort and what structure makes the difference sustainable.
+
+It starts from a different premise than either of the other two. Strengths and difficulties are not separate ledgers to be totalled against each other. They grow out of the same architecture, which is why smoothing out the difficulty tends to remove the strength along with it.
+
+Non-linear operation is not a flaw. It is a way of perceiving, processing, and acting that favours speed, creativity, pattern recognition, and decisive movement. It often produces exceptional results, especially in uncertain or fast-moving environments. But it carries a cost when leadership systems are designed for steadiness, containment, and control. This is not a matter of preference or personality. It is a matter of operating logic. From The Non-Linear Operating System
+
+There are three things this frame deliberately does not do.
+
+It does not diagnose. The question of whether someone has ADHD, dyslexia or anything else is a clinical question, answered by a psychiatrist or clinical psychologist and by nobody else.
+
+It makes no claim to clinical validity. It is a leadership frame, built from executive practice and from interviews with leaders whose minds do not run in straight lines. It is not a validated instrument and should not be described as one.
+
+It does not replace rights. Medication, formal adjustments and legal protection run through diagnosis. Nothing in an operating-system view changes that. Anyone who needs those things needs an assessment.
+
+#### Where this sits in work that already exists
+
+The observation that these minds show an uneven cognitive profile is not new. I do not claim it.
+
+In occupational psychology it is called a spiky profile. The term traces back through the education literature and was formalised by Nancy Doyle. She defines it as large, statistically significant disparities between the peaks and troughs of an individual’s cognitive profile and proposes a biopsychosocial model of neurodiversity at work that sits deliberately between the medical and social accounts (Doyle, 2020). Anyone working seriously in this area is building on that.
+
+What I am adding sits one level up. It is a question of altitude rather than of disagreement.
+
+That literature is largely about employment: assessment, adjustment, recruitment, retention, getting capable people into work and keeping them there. The people I work with are already at the top. Their spikes built the company. Their troughs are now being absorbed by a leadership team, a board, an executive assistant and a family, usually without anyone naming what is happening.
+
+So the unit of design changes. It stops being one person’s accommodation and becomes the operating system of the organisation around them: who owns which work, how decisions get made, what the board measures, where the energy goes. That is the territory a non-linear operating system is meant to cover. It is also what the Spiky Profile maps for leaders.
+
+#### The same leader, three frames
+
+A founder in her forties takes her company through a hard year. Her strategic calls are good and the board knows it. Her reporting is late. She works in bursts, then goes quiet for a week.
+
+In the medical frame, the question is whether she meets diagnostic criteria. The answer may well be no, precisely because she is performing.
+
+In the inclusion frame, the question is whether the company is treating her fairly. The answer is probably yes, at least in intent. The conversation ends there.
+
+In the operating-system frame the questions are different. Which parts of this work does her mind do better than anyone else’s in the building? Which parts cost her three times what they cost her COO? What should move and to whom?
+
+Only the third produces something to do on Monday.
+
+#### Where this frame has to defer
+
+A frame is only useful if its edges are marked.
+
+If someone is struggling in a way that touches their health, the right move is clinical rather than structural. No amount of operating design substitutes for a doctor.
+
+If someone wants medication, formal adjustments or legal protection, they need an assessment. The route runs through diagnosis and there is no way round it.
+
+This frame also says nothing useful about people with high support needs. Milton, who is both a researcher and the father of an autistic son with severe learning disabilities, has made this point about the wider neurodiversity conversation repeatedly. It applies with full force here. A vocabulary built for chief executives describes chief executives. Treating it as a general theory of human cognition would be a mistake. It would also be a self-serving one.
+
+What it is built for is narrower: a capable person whose results are real, whose cost is hidden and whose system was designed for a different kind of mind.
+
+#### How common is neurodivergence among founders?
+
+Research suggests that neurodivergent traits and conditions may be more prevalent among entrepreneurs than in the general population. Studies examining ADHD, dyslexia, autism and cognitive ability have reported notable differences, although estimates vary considerably depending on the population studied, the definitions used and whether findings are based on clinical assessments or self-reporting.
+
+These figures should therefore be read as signals of a potentially important pattern rather than as definitive prevalence rates. The more useful question is how different cognitive profiles influence entrepreneurial behaviour, decision-making, leadership and the environments in which founders perform best.
+
+#### Questions I get asked
+
+#### What is the difference between neurodiversity and neurodivergent?
+
+Neurodiversity describes variation across a population, so a team or a company can be neurodiverse. Neurodivergent describes an individual whose cognitive profile differs from the dominant norm. One is a property of a group, the other of a person. Calling a single individual neurodiverse is common and technically muddled.
+
+#### Is neurodivergence a deficit or a difference?
+
+That depends on which frame is asking. The medical model records it as a disorder, because a diagnosis requires evidence of impairment. The neurodiversity movement treats it as ordinary human variation made disabling by environments built for one kind of mind. An operating-system view holds that the strengths and the difficulties come out of the same architecture, which is why removing the difficulty often removes the strength with it.
+
+#### Do you need a diagnosis to have a non-linear operating system?
+
+No. A non-linear operating system describes how a mind works rather than whether it meets clinical criteria. A diagnosis answers a different question, which for many people is an important one. Only a psychiatrist or clinical psychologist can answer it.
+
+#### Is the non-linear operating system a clinical model?
+
+No. It is a leadership frame, built from executive practice and from interviews with leaders whose minds do not run in straight lines. It carries no diagnostic authority and makes no claim to clinical validity. It is designed to sit alongside clinical assessment rather than in place of it.
+
+#### Why not just use the word neurodivergent?
+
+Because it now carries at least three incompatible meanings. In a boardroom the wrong one tends to get picked up. A word that signals either a medical condition or a political position makes it harder to have the practical conversation about how work should be organised. Describing operating logic keeps the discussion on ground a board can act on.
+
+References:
+- Blume, H. (1998). Neurodiversity: on the neurological underpinnings of geekdom. The Atlantic, September 1998.
+- Oliver, M. (1990). The Politics of Disablement. Macmillan.
+- Milioni, A. L. V. et al. (2017). High IQ may 'mask' the diagnosis of ADHD by compensating for deficits in executive functions in treatment-naive adults with ADHD. Journal of Attention Disorders, 21(6), 455 to 464.
+- Milton, D. (2019). Disagreeing over neurodiversity. The Psychologist, 32, 8.
+- Doyle, N. (2020). Neurodiversity at work: a biopsychosocial model and the impact on working adults. British Medical Bulletin, 135(1), 108 to 125.
+- Dwyer, P. (2022). The neurodiversity approach(es): what are they and what do they mean for researchers? Human Development, 66(2), 73 to 92.
+- Dwyer, P., Gurba, A. N., Kapp, S. K., Kilgallon, E., Hersh, L. H., Chang, D. S., Rivera, S. M. and Gillespie-Lynch, K. (2025). Community views of neurodiversity, models of disability and autism intervention: mixed methods reveal shared goals and key tensions. Autism, 29(9), 2297 to 2314.
+- Botha, M., Chapman, R. and Giwa Onaiwu, M. (2024). The neurodiversity concept was developed collectively: an overdue correction on the origins of neurodiversity theory. Autism, 28(6), 1591 to 1594.
+- Mulfinger, S. The Non-Linear Operating System. Book One: The Non-Linear Mind. Forthcoming.
 
 ## Contact
 - Request a conversation: https://neurodisruptors.com/#connect
