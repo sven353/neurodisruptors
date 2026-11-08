@@ -1011,6 +1011,58 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 @media (max-width: 600px) { .clinical__cols { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 960px) { .offers { grid-template-columns: minmax(0, 1fr); } .offer > :last-child { margin-top: .75rem; } }
 
+/* ---------- Design polish (polish_build) ---------- */
+/* One spacing scale: about 104px between sections on desktop */
+:root { --section-y: clamp(5rem, 8vw, 6.5rem); }
+/* Labels: no decorative rule, fixed gap to the heading */
+.eyebrow::before { content: none; }
+.eyebrow { margin-bottom: .9rem; }
+/* Section headings: calmer size, wider column, balanced breaks (no orphaned last word) */
+.h2 { font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.08; text-wrap: balance; }
+.display, .h2, .offer__title, .xcard__title, .clinical__h { text-wrap: balance; }
+.lead, .xcard p, .offer__text { text-wrap: pretty; }
+@media (min-width: 960px) { .section-head { grid-template-columns: 7fr 5fr; gap: 3.5rem; } }
+.section-head { margin-bottom: clamp(2.5rem, 4.5vw, 3.5rem); }
+/* The coral italic stays in the hero and three sections; elsewhere the emphasis is plain ink */
+.h2 em, .page-h1 em { font-style: normal; background: none; -webkit-text-fill-color: currentColor; color: inherit; }
+#sparring .h2 em, #clinical-partner .h2 em, #connect .h2 em { font-style: italic; color: var(--accent-ink); -webkit-text-fill-color: var(--accent-ink); }
+.section--ink .h2 em { background-image: none !important; -webkit-background-clip: border-box; background-clip: border-box; }
+#connect .h2 em { color: #f08a6f; -webkit-text-fill-color: #f08a6f; }
+.section--band .h2 em { color: inherit; -webkit-text-fill-color: currentColor; }
+/* Fewer gradients: one feature (Spiky Profile and book); strips and soft fades become flat stone */
+.proof__list, .share { background: #eeeae3; box-shadow: none; }
+#about, #faq { background: none; }
+#about { background: #eeeae3; }
+/* Prices: the free call reads as an entry point, the two paid offers share one structure */
+.offer--intro { background: transparent; box-shadow: none; border: 1px solid var(--rule); }
+.offer--intro .offer__price { font-size: clamp(1.6rem, 2.4vw, 2rem); }
+.offer__btn { margin-top: auto !important; }
+.offers { align-items: stretch; }
+/* Clinical partner: editorial, two text blocks with a thin divider instead of mini-cards */
+.clinical__cols { gap: 0; margin: 2rem 0 1.5rem; border-top: 1px solid var(--rule); }
+.clinical__col { background: none; border: 0; border-radius: 0; box-shadow: none; padding: 1.25rem 1.5rem 0 0; }
+.clinical__col + .clinical__col { border-left: 1px solid var(--rule); padding-left: 1.5rem; }
+@media (max-width: 600px) { .clinical__col + .clinical__col { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; margin-top: 1.25rem; } }
+/* Boards band: taller, content centred, no gradient */
+.section--band { padding-block: clamp(5rem, 10vw, 8rem); background: var(--ink); background-image: none; }
+.section--band .band { align-items: center; }
+/* Closing invitation on subpages */
+.next { text-align: left; }
+.next__inner { display: grid; gap: 1.5rem; align-items: center; padding: clamp(2rem, 4vw, 3rem); border-radius: var(--radius); background: var(--ink); color: #f5f3ee; }
+.next__inner .h2 { color: #f5f3ee; margin: 0; }
+.next__inner p { margin: .5rem 0 0; color: rgba(245, 243, 238, .78); }
+.next__actions { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; }
+.next__actions .text-link { color: #f5f3ee; }
+@media (min-width: 960px) { .next__inner { grid-template-columns: 1.4fr 1fr; } .next__actions { justify-content: flex-end; } }
+.next .eyebrow { color: rgba(245, 243, 238, .7); }
+/* Phones: drop the hero chart (the same map appears further down), shorter images, tighter cards */
+@media (max-width: 640px) {
+  .hero__figure { display: none; }
+  .icard__img { aspect-ratio: 2 / 1; }
+  .offer { padding: 1.4rem 1.25rem; gap: .5rem; }
+  .xcard { padding: 1.4rem 1.25rem; }
+}
+
 /* ---------- Short homepage (split_build) ---------- */
 .xcards--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 960px) { .xcards--3 { grid-template-columns: minmax(0, 1fr); } }
