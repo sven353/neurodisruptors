@@ -982,6 +982,23 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .term__more { margin-top: 1rem; font-size: .9375rem; color: var(--ink-2); }
 @media (prefers-reduced-motion: reduce) { .icard { transition: none; } .icard:hover { transform: none; } }
 
+/* ---------- Offer (offer_build) ---------- */
+.offers { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+.offer { display: flex; flex-direction: column; gap: .6rem; padding: clamp(1.5rem, 3vw, 2.25rem); border-radius: var(--radius, 20px); background: var(--card, #fff); border: 1px solid var(--card-line, var(--rule)); box-shadow: var(--shadow, none); min-width: 0; }
+.offer--main { border: 2px solid var(--ink); }
+.offer__step { margin: 0; font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); }
+.offer__title { margin: 0; font-family: var(--font-serif); font-size: clamp(1.6rem, 2.4vw, 2rem); line-height: 1.08; letter-spacing: -0.01em; font-weight: 400; }
+.offer__price { margin: .4rem 0 0; font-family: var(--font-serif); font-size: clamp(2rem, 3.2vw, 2.6rem); line-height: 1; }
+.offer__price span { display: block; margin-top: .35rem; font-family: var(--font-sans); font-size: .875rem; color: var(--ink-3); }
+.offer__meta { margin: 0; font-weight: 600; font-size: .9375rem; }
+.offer__text, .offer__list, .offer__note { margin: 0; color: var(--ink-2); }
+.offer__list { padding-left: 1.1rem; display: grid; gap: .4rem; }
+.offer__note { font-size: .9375rem; color: var(--ink-3); }
+.offer__btn { margin-top: auto; align-self: flex-start; white-space: normal; text-align: left; }
+.offer > :last-child { margin-top: auto; }
+.offers__foot { margin: 1.75rem 0 0; max-width: 44rem; }
+@media (max-width: 960px) { .offers { grid-template-columns: minmax(0, 1fr); } .offer > :last-child { margin-top: .75rem; } }
+
 /* ---------- Language switch (lang_build) ---------- */
 .langs { display: flex; align-items: center; margin-left: auto; margin-right: 0; }
 .lang-switch { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 44px; padding: 0 .2rem; font-size: .8125rem; font-weight: 600; letter-spacing: .08em; color: var(--ink-2); text-decoration: none; border-radius: var(--radius-pill); transition: color .2s var(--ease), background-color .2s var(--ease); }

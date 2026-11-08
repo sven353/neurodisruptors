@@ -69,7 +69,7 @@
       "about": {
         "@id": "https://neurodisruptors.com/#organization"
       },
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-08",
       "author": {
         "@id": "https://neurodisruptors.com/#founder"
       },
@@ -153,7 +153,15 @@
           "name": "¿Cómo funciona el sparring privado en la práctica?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El sparring privado es un acompañamiento continuado y confidencial con el Dr. Sven Mulfinger, con una cuota mensual fija, en persona en Barcelona o por videollamada segura, con acceso directo entre sesiones durante decisiones críticas. Empieza con una primera conversación confidencial para valorar si este acompañamiento es adecuado para ti. Las sesiones son en inglés, español, alemán o francés. Si hace falta, se organizan reuniones en otras ciudades europeas."
+            "text": "El sparring privado es un acompañamiento continuado y confidencial con el Dr. Sven Mulfinger, con una cuota mensual fija, en persona en Barcelona o por videollamada segura, con acceso directo entre sesiones durante decisiones críticas. Empieza con una llamada de presentación gratuita de 30 minutos para valorar si este acompañamiento es adecuado para ti. Las sesiones son en inglés, español, alemán o francés. Si hace falta, se organizan reuniones en otras ciudades europeas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta trabajar con Neurodisruptors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La primera llamada de presentación, de 30 minutos, es gratuita. El Executive Operating Review cuesta 1.950 € por tres sesiones, Spiky Profile incluido. El sparring privado empieza desde 3.500 € al mes. Los precios no incluyen IVA. El importe del Review se descuenta íntegramente si inicias un acompañamiento de sparring en los 30 días siguientes. Los talleres para consejos, los offsites y las conferencias se presupuestan por encargo. Ver cómo empezar."
           }
         },
         {
@@ -417,7 +425,52 @@
         "@type": "BusinessAudience",
         "audienceType": "Founders, CEOs and C-suite executives"
       },
-      "description": "Confidential one-to-one strategic sparring and cognitive architecture design for founders and CEOs with ADHD, giftedness and spiky cognitive profiles."
+      "description": "Confidential one-to-one strategic sparring and cognitive architecture design for founders and CEOs with ADHD, giftedness and spiky cognitive profiles.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "How to start",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Introductory call (30 minutes)",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "url": "https://neurodisruptors.com/#start",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Introductory call"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Executive Operating Review",
+            "price": "1950",
+            "priceCurrency": "EUR",
+            "url": "https://neurodisruptors.com/#start",
+            "description": "Three sessions including the Spiky Profile mapping and a written operating plan. Price excludes VAT.",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Executive Operating Review"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Private sparring partnership",
+            "url": "https://neurodisruptors.com/#start",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "minPrice": "3500",
+              "priceCurrency": "EUR",
+              "unitText": "month",
+              "valueAddedTaxIncluded": false
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private sparring partnership (6 or 12 months)"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "Service",
@@ -562,7 +615,7 @@
 <h1 class="display display--hero" id="hero-title">No todas las mentes funcionan igual. <span class="display__turn">Tampoco deber&iacute;an hacerlo las organizaciones que lideran.</span></h1>
 <p class="lead hero__lead">Algunos fundadores y directivos destacan por su capacidad para conectar ideas, detectar oportunidades y decidir en situaciones complejas. Los modelos tradicionales de gesti&oacute;n no siempre se adaptan a su manera de pensar y trabajar. Te ayudamos a entender mejor tu funcionamiento, decidir con m&aacute;s claridad y construir equipos y estructuras que aprovechen tus fortalezas sin llevarte al agotamiento.</p>
 <div class="hero__actions">
-<a class="btn btn--primary btn--lg" data-interest="sparring" href="#connect">Hablar sobre el acompa&ntilde;amiento individual <span aria-hidden="true" class="arrow">&rarr;</span></a>
+<a class="btn btn--primary btn--lg" href="#start">Ver c&oacute;mo empezar <span aria-hidden="true" class="arrow">&rarr;</span></a>
 <a class="btn btn--ghost btn--lg" href="#workshops">Propuestas para empresas y consejos</a>
 </div>
 </div>
@@ -670,8 +723,55 @@
 </ol>
 <div class="section-foot">
 <p class="muted">Confidencial. En persona en Barcelona, Madrid, M&uacute;nich y Bruselas o en remoto, en ingl&eacute;s, espa&ntilde;ol, alem&aacute;n o franc&eacute;s.</p>
-<a class="btn btn--primary btn--lg" data-interest="sparring" href="#connect">Hablar sobre el acompa&ntilde;amiento individual <span aria-hidden="true" class="arrow">&rarr;</span></a>
+<a class="btn btn--primary btn--lg" href="#start">Ver c&oacute;mo empezar <span aria-hidden="true" class="arrow">&rarr;</span></a>
 </div>
+</div>
+</section>
+<!-- ============ START (offer) ============ -->
+<section aria-labelledby="start-title" class="section section--start" id="start">
+<div class="container">
+<div class="section-head">
+<div>
+<p class="eyebrow">C&oacute;mo empezar</p>
+<h2 class="h2" id="start-title">Empieza con una conversaci&oacute;n y decide <em>paso a paso</em>.</h2>
+</div>
+<p class="lead">La mayor&iacute;a de los directivos empieza con una llamada de presentaci&oacute;n gratuita y despu&eacute;s con el Executive Operating Review. Una colaboraci&oacute;n m&aacute;s larga solo llega si ambos vemos que aporta valor.</p>
+</div>
+<ol class="offers">
+<li class="offer">
+<p class="offer__step">Paso 1</p>
+<h3 class="offer__title">Llamada de presentaci&oacute;n</h3>
+<p class="offer__price">Gratis</p>
+<p class="offer__meta">30 minutos por videollamada</p>
+<p class="offer__text">Nos conocemos y vemos si podemos trabajar juntos. No hace falta preparar nada.</p>
+<a class="btn btn--ghost offer__btn" data-interest="intro" href="#connect">Reservar la llamada gratuita <span aria-hidden="true" class="arrow">&rarr;</span></a>
+</li>
+<li class="offer offer--main">
+<p class="offer__step">Paso 2</p>
+<h3 class="offer__title">Executive Operating Review</h3>
+<p class="offer__price">1.950 &euro; <span>IVA no incluido</span></p>
+<p class="offer__meta">Tres sesiones, por videollamada o en persona</p>
+<ul class="offer__list">
+<li>Tu Spiky Profile, trazado en la primera sesi&oacute;n</li>
+<li>Tus decisiones, ritmos y puntos de fricci&oacute;n, trabajados en las dos siguientes</li>
+<li>Un plan de trabajo por escrito, para ti</li>
+</ul>
+<p class="offer__note">Se descuenta &iacute;ntegramente si inicias un acompa&ntilde;amiento de sparring en los 30 d&iacute;as siguientes.</p>
+<a class="btn btn--primary offer__btn" data-interest="review" href="#connect">Reservar el Review <span aria-hidden="true" class="arrow">&rarr;</span></a>
+</li>
+<li class="offer">
+<p class="offer__step">Paso 3</p>
+<h3 class="offer__title">Acompa&ntilde;amiento de sparring privado</h3>
+<p class="offer__price">Desde 3.500 &euro; <span>al mes, IVA no incluido</span></p>
+<p class="offer__meta">Seis o doce meses</p>
+<ul class="offer__list">
+<li>Dos sesiones al mes</li>
+<li>Acceso directo por tel&eacute;fono o mensaje para decisiones cr&iacute;ticas</li>
+</ul>
+<a class="btn btn--ghost offer__btn" data-interest="sparring" href="#connect">Solicitar el sparring <span aria-hidden="true" class="arrow">&rarr;</span></a>
+</li>
+</ol>
+<p class="offers__foot muted">Sesiones en ingl&eacute;s, alem&aacute;n, franc&eacute;s o espa&ntilde;ol. Los talleres para consejos, los offsites y las conferencias se presupuestan por encargo.</p>
 </div>
 </section>
 <!-- ============ WORKSHOPS & KEYNOTES ============ -->
@@ -1178,10 +1278,20 @@
 </summary>
 <div class="faq__body">
 <p class="faq__preview">El sparring privado es un acompa&ntilde;amiento continuado y confidencial con el Dr. Sven Mulfinger, con una cuota mensual fija, en persona en Barcelona o por videollamada segura, con acceso directo entre sesiones durante decisiones cr&iacute;ticas.</p>
-<p>Empieza con una primera conversaci&oacute;n confidencial para valorar si este acompa&ntilde;amiento es adecuado para ti. Las sesiones son en ingl&eacute;s, espa&ntilde;ol, alem&aacute;n o franc&eacute;s. Si hace falta, se organizan reuniones en otras ciudades europeas.</p>
+<p>Empieza con una llamada de presentaci&oacute;n gratuita de 30 minutos para valorar si este acompa&ntilde;amiento es adecuado para ti. Las sesiones son en ingl&eacute;s, espa&ntilde;ol, alem&aacute;n o franc&eacute;s. Si hace falta, se organizan reuniones en otras ciudades europeas.</p>
 </div>
 </details>
 <details class="faq-item" id="faq-10">
+<summary class="faq-summary">
+<h3 class="faq__q">&iquest;Cu&aacute;nto cuesta trabajar con Neurodisruptors?</h3>
+<span aria-hidden="true" class="faq__icon"></span>
+</summary>
+<div class="faq__body">
+<p class="faq__preview">La primera llamada de presentaci&oacute;n, de 30 minutos, es gratuita. El Executive Operating Review cuesta 1.950 &euro; por tres sesiones, Spiky Profile incluido. El sparring privado empieza desde 3.500 &euro; al mes.</p>
+<p>Los precios no incluyen IVA. El importe del Review se descuenta &iacute;ntegramente si inicias un acompa&ntilde;amiento de sparring en los 30 d&iacute;as siguientes. Los talleres para consejos, los offsites y las conferencias se presupuestan por encargo. <a href="#start">Ver c&oacute;mo empezar</a>.</p>
+</div>
+</details>
+<details class="faq-item" id="faq-11">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;Hay alg&uacute;n coach ejecutivo en Barcelona para fundadores con TDAH?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1191,7 +1301,7 @@
 <p>El trabajo se hace en persona en Barcelona, Madrid, M&uacute;nich y Bruselas, o en remoto, en cuatro idiomas.</p>
 </div>
 </details>
-<details class="faq-item" id="faq-11">
+<details class="faq-item" id="faq-12">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;Por qu&eacute; los l&iacute;deres no lineales chocan con la gesti&oacute;n del tiempo corporativa tradicional?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1201,7 +1311,7 @@
 <p>El trabajo estrat&eacute;gico profundo necesita que coincidan la motivaci&oacute;n, la activaci&oacute;n y la capacidad f&iacute;sica. El sparring ayuda a planificar en torno a esos picos, protegerlos y delegar o reorganizar las tareas rutinarias.</p>
 </div>
 </details>
-<details class="faq-item" id="faq-12">
+<details class="faq-item" id="faq-13">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;C&oacute;mo puede un consejo apoyar a un fundador con TDAH?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1211,7 +1321,7 @@
 <p>Significa valorar la calidad de las decisiones a lo largo de los ciclos y no la regularidad de una semana a otra. La jornada de medio d&iacute;a <cite>Bridging the Founder-Board Interface</cite> trabaja este tema con consejos, inversores y comit&eacute;s de direcci&oacute;n y mantiene la conversaci&oacute;n en el liderazgo y el gobierno corporativo.</p>
 </div>
 </details>
-<details class="faq-item" id="faq-13">
+<details class="faq-item" id="faq-14">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;C&oacute;mo se trabaja junto a un fundador con TDAH desde el puesto de COO o jefe de gabinete?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1221,7 +1331,7 @@
 <p>La fiabilidad semana a semana es la medida equivocada para alguien que trabaja por ciclos. T&uacute; puedes hacerte cargo del reporting, la cadencia, el registro de decisiones y el ritmo de la semana. La autorregulaci&oacute;n del fundador sigue siendo suya, con el apoyo de un coach o un profesional cl&iacute;nico cuando haga falta. El art&iacute;culo <a href="/insights/working-with-a-non-linear-founder/">How to work with a non-linear founder</a> (en ingl&eacute;s) explica el papel con m&aacute;s detalle.</p>
 </div>
 </details>
-<details class="faq-item" id="faq-14">
+<details class="faq-item" id="faq-15">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;Es el Spiky Profile una herramienta de diagn&oacute;stico cl&iacute;nico o psiqui&aacute;trico?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1231,7 +1341,7 @@
 <p>No ofrece diagn&oacute;stico m&eacute;dico, psicol&oacute;gico ni psiqui&aacute;trico de TDAH, autismo u otras condiciones del neurodesarrollo. Est&aacute; pensado para complementar la evaluaci&oacute;n cl&iacute;nica. El art&iacute;culo <a href="/insights/neurodiversity-neurodivergence-non-linear-operating-system/">Neurodiversity, neurodivergence and the non-linear operating system</a> (en ingl&eacute;s) explica c&oacute;mo encajan la visi&oacute;n m&eacute;dica, la activista y la de liderazgo.</p>
 </div>
 </details>
-<details class="faq-item" id="faq-15">
+<details class="faq-item" id="faq-16">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;Qu&eacute; formatos hay para empresas y consejos?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1241,7 +1351,7 @@
 <p>Tambi&eacute;n hay un taller para empresas, <cite>Designing Systems for Cognitive Spikes</cite>, para equipos directivos y responsables de RR. HH.</p>
 </div>
 </details>
-<details class="faq-item" id="faq-16">
+<details class="faq-item" id="faq-17">
 <summary class="faq-summary">
 <h3 class="faq__q">&iquest;D&oacute;nde se realiza la investigaci&oacute;n de <cite>The Non-Linear Operating System</cite>?</h3>
 <span aria-hidden="true" class="faq__icon"></span>
@@ -1260,7 +1370,7 @@
 <div>
 <p class="eyebrow">Concertar una conversaci&oacute;n</p>
 <h2 class="h2" id="connect-title">Empieza con una conversaci&oacute;n <em>confidencial</em>.</h2>
-<p class="lead lead--spaced">Una primera conversaci&oacute;n confidencial para ver si encaja el sparring individual, el asesoramiento al consejo o una conferencia.</p>
+<p class="lead lead--spaced">Reserva una llamada de presentaci&oacute;n gratuita de 30 minutos o pregunta por el Executive Operating Review, el sparring, el asesoramiento a consejos o las conferencias.</p>
 <ul class="connect__alt">
 <li><span aria-hidden="true" class="ic ic--dark ic--sm"><svg focusable="false" viewbox="0 0 24 24"><use href="#i-lock"></use></svg></span>Sven leer&aacute; personalmente tu mensaje y lo tratar&aacute; de forma confidencial.</li>
 <li><span aria-hidden="true" class="ic ic--dark ic--sm"><svg focusable="false" viewbox="0 0 24 24"><use href="#i-people"></use></svg></span>Fundadores, CEOs, consejos y responsables de RR. HH. en toda Europa.</li>
@@ -1272,6 +1382,7 @@
 </div>
 <form action="/es/gracias/" class="form" data-netlify="true" method="POST" name="conversation" netlify-honeypot="bot-field">
 <input name="form-name" type="hidden" value="conversation">
+<input id="f-referral" name="referral" type="hidden" value>
 <input data-remove-prefix name="subject" type="hidden" value="New inquiry from neurodisruptors.com/es (%{submissionId})">
 <p aria-hidden="true" class="hp" hidden><label>Deja este campo vac&iacute;o <input autocomplete="off" name="bot-field" tabindex="-1" type="text"></label></p>
 <div class="form__row form__row--2">
@@ -1287,6 +1398,8 @@
 <div class="field">
 <label for="f-interest">&iquest;En qu&eacute; podemos ayudarte?</label>
 <select id="f-interest" name="interest">
+<option value="intro">Llamada de presentaci&oacute;n gratuita (30 min)</option>
+<option value="review">Executive Operating Review</option>
 <option value="sparring">Sparring ejecutivo privado</option>
 <option value="board-workshop">Taller de alineamiento con el consejo</option>
 <option value="keynote">Conferencia</option>

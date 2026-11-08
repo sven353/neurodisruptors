@@ -130,6 +130,21 @@
     if (q) selectInterest(q);
   } catch (err) { /* URLSearchParams unsupported: ignore */ }
 
+  /* ---------- Referral source (?ref=partner) ----------
+     Kept for the visit so it survives language switches and reaches the form. */
+  try {
+    var ref = new URLSearchParams(window.location.search).get("ref");
+    if (ref && /^[a-z0-9-]{2,40}$/i.test(ref)) {
+      try { sessionStorage.setItem("nd-ref", ref.toLowerCase()); } catch (e1) { /* storage blocked */ }
+    }
+    var refStored = null;
+    try { refStored = sessionStorage.getItem("nd-ref"); } catch (e2) { refStored = ref; }
+    refStored = refStored || (ref ? ref.toLowerCase() : null);
+    var refField = document.getElementById("f-referral");
+    if (refField && refStored) refField.value = refStored;
+    if (refStored && !new URLSearchParams(window.location.search).get("interest")) selectInterest("intro");
+  } catch (err) { /* URLSearchParams unsupported: ignore */ }
+
   /* ---------- Short option labels on narrow screens ----------
      The submitted value never changes, only the visible label, so the closed
      dropdown never clips on a phone. */
