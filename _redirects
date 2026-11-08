@@ -3,12 +3,12 @@
 /team/   /about/    301!
 /executive-coaching    /#sparring    301!
 /executive-coaching/   /#sparring    301!
-/speaking-workshops    /#workshops    301!
-/speaking-workshops/   /#workshops    301!
+/speaking-workshops    /boards/    301!
+/speaking-workshops/   /boards/    301!
 /the-non-linear-operating-system    /#book    301!
 /the-non-linear-operating-system/   /#book    301!
-/research    /#research    301!
-/research/   /#research    301!
+/research    /about/#research    301!
+/research/   /about/#research    301!
 /concepts    /spiky-profile/    301!
 /concepts/   /spiky-profile/    301!
 /registration    /    301!

@@ -1011,6 +1011,16 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 @media (max-width: 600px) { .clinical__cols { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 960px) { .offers { grid-template-columns: minmax(0, 1fr); } .offer > :last-child { margin-top: .75rem; } }
 
+/* ---------- Short homepage (split_build) ---------- */
+.xcards--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 960px) { .xcards--3 { grid-template-columns: minmax(0, 1fr); } }
+.band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 5rem); align-items: end; }
+.band__body .lead { margin: 0 0 1.75rem; }
+@media (max-width: 960px) { .band { grid-template-columns: minmax(0, 1fr); align-items: start; } }
+.framework__more { margin: 2.5rem 0 0; }
+.faq__all { margin: 2rem 0 0; }
+.page-h1 { margin: 0; }
+
 /* ---------- Language switch (lang_build) ---------- */
 .langs { display: flex; align-items: center; margin-left: auto; margin-right: 0; }
 .lang-switch { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 44px; padding: 0 .2rem; font-size: .8125rem; font-weight: 600; letter-spacing: .08em; color: var(--ink-2); text-decoration: none; border-radius: var(--radius-pill); transition: color .2s var(--ease), background-color .2s var(--ease); }
