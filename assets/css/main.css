@@ -997,6 +997,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .offer__btn { margin-top: auto; align-self: flex-start; white-space: normal; text-align: left; }
 .offer > :last-child { margin-top: auto; }
 .offers__foot { margin: 1.75rem 0 0; max-width: 44rem; }
+.display__turn--inline { display: inline; margin-top: 0; }
 .section--clinical { background: var(--paper-2); }
 .clinical { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
 .clinical__body > p { margin: 0 0 1.1rem; color: var(--ink-2); max-width: 40rem; }
